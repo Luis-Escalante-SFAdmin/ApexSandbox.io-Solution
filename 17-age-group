@@ -7,7 +7,5 @@ public String ageGroup(Integer n) {
         return 'Youth';
     } else if (n => 23){
         return 'Adult';
-    } else {
-        System.debug('You have not been borned or you are too old');
     }
 }
