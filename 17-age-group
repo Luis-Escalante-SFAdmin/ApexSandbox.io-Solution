@@ -1,11 +1,11 @@
 public String ageGroup(Integer n) {
     if(n => 0 && n <= 1){
         return 'Infant';
-    } else if(n > 3 && n < 14) {
+    } else if(n >= 3 && n <= 14) {
         return 'Child';
-    } else if(n > 16 && n < 21){
+    } else if(n >= 16 && n <= 21){
         return 'Youth';
-    } else if (n > 23){
+    } else if (n => 23){
         return 'Adult';
     } else {
         System.debug('You have not been borned or you are too old');
