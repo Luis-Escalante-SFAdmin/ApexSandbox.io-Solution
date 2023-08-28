@@ -5,7 +5,6 @@ public Boolean isLeapYear(Integer year) {
         return true;
     } else if (Math.mod(year, 100) == 0){
         return false;
-        }
     } else {
         return false;
     }
