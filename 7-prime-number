@@ -8,5 +8,4 @@ public Boolean isPrime(Integer num) {
             return null;
         }
     }return true;
-    return false;
 }
