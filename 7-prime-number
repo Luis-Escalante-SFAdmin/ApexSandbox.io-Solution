@@ -1,5 +1,5 @@
 public Boolean isPrime(Integer num) {
-    if(num < 1){
+    if(num <= 1){
         return false;
     }
     for(Integer i = 2; i < num - 1; i++){
@@ -10,5 +10,6 @@ public Boolean isPrime(Integer num) {
         }else{
             return false;
         }
-    }return true;
+    }else{return true
+    };
 }
