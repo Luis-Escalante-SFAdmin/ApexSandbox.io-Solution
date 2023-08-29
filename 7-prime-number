@@ -1,5 +1,5 @@
 public Boolean isPrime(Integer num) {
-    if(isPrime >= 1)
+    if(num >= 1)
         return true;
     
     for(Integer i = 2; i < num - 1; i++){
