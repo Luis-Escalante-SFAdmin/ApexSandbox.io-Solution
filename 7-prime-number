@@ -10,5 +10,5 @@ public Boolean isPrime(Integer num) {
         }else{
             return false;
         }
-    }return false;
+    }return true;
 }
