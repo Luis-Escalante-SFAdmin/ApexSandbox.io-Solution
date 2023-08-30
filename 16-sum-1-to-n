@@ -2,5 +2,9 @@ public Integer sumToN(Integer n) {
     Integer s = ;
     for(Integer i = 1; i < n; i++){
         s += n;
+        if(sum == s){
+            return n;
+        }
+        return -1;
     }
 }
