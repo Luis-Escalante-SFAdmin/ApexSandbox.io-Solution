@@ -1,9 +1,9 @@
 public Integer sumToN(Integer n) {
     Integer s = ;
-    for(Integer i = 1; i < n; i++){
+    for(Integer i = 1; s < n; i++){
         s += n;
-        if(sum == s){
-            return n;
+        if(s == n){
+            return i;
         } 
     }
 }
