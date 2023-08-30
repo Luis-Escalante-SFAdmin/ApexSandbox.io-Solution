@@ -1,8 +1,8 @@
 public Integer sumToN(Integer n) {
     Integer s = 0;
     for(Integer i = 1; s < n; i++){
-        s = n(n + 1) / 2;
-        if(s == n)
+        
+        if(s = n(n + 1) / 2)
             return i;
     }
     return -1;
