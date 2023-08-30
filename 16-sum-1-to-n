@@ -4,8 +4,6 @@ public Integer sumToN(Integer n) {
         s += n;
         if(sum == s){
             return n;
-        }
-        
+        } 
     }
-    return -1;
 }
