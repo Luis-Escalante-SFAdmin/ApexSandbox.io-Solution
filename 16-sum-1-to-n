@@ -1,0 +1,5 @@
+public Integer sumToN(Integer n) {
+    for(Integer i = 1; i < n; i++){
+        Integer s = n(n+1)2;
+    }
+}
