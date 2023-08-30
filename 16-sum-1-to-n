@@ -7,5 +7,5 @@ public Integer sumToN(Integer n) {
         
         
     }
-    
+    return -1;
 }
