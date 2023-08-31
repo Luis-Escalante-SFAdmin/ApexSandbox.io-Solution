@@ -1,0 +1,7 @@
+public String nameFromEmail(String email) {
+    if(email.substringBefore('.') != '' && email.substringAfter('.')){
+        return true;
+    }else{
+        return false;
+    }
+}
