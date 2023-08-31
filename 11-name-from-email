@@ -1,4 +1,5 @@
 public String nameFromEmail(String email) {
+    email.toLowerCase();
     String firstName = email.substringBefore('.');
     String lastName = email.substringAfter('.');
 
