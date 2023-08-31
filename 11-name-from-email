@@ -4,6 +4,6 @@ public String nameFromEmail(String email) {
     if(fN.substringBefore('.') && lN.substringAfter('.')){
         return fN + ' ' + lN;
     }else{
-        return null;
+        return ' ';
     }
 }
