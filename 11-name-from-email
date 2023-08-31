@@ -1,6 +1,6 @@
 public String nameFromEmail(String email) {
     email = email.toLowerCase();
-    String first = email.substringBefore();
+    String first = email.substringBefore('.');
 
     return first;
     
