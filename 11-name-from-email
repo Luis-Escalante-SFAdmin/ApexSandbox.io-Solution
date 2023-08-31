@@ -1,5 +1,5 @@
 public String nameFromEmail(String email) {
-    if(email.substringBefore('.') == true && email.substringAfter('.') == true){
+    if(email.substringBefore('.') != null && email.substringAfter('.') != null){
         return true;
     }else{
         return false;
