@@ -1,7 +1,7 @@
 public String nameFromEmail(String email) {
     String fN;
     String lN;
-    if(fN.substringBefore('.') != true && lN.substringAfter('.') != true){
+    if(fN.substringBefore('.') && lN.substringAfter('.')){
         return fN + ' ' + lN;
     }else{
         return null;
