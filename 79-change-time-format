@@ -3,5 +3,5 @@ public String changeTimeFormat(String strTime) {
 
     
 
-    return strTime + ' AM' || strTime + ' PM';
+    return strTime + ' AM';
 }
