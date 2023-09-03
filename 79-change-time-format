@@ -1,6 +1,6 @@
 public String changeTimeFormat(String strTime) {
     strTime.split(' ', -1);
-
+    strTime.substring(0,2);
     
 
     return strTime + ' AM';
