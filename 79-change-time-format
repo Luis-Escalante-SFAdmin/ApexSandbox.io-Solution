@@ -1,9 +1,9 @@
 public String changeTimeFormat(String strTime) {
-    strTime.split(' ', -1);
-    if(strTime.substring(0,2) == '00'){
-        return strTime.substring(0,2) == '12';
-    }
-    
+    String hours = strTime.substringBefore(':');
+    Integer hours2 = Integer.valueOf(hours);
 
-    return strTime + ' AM';
+    if(hours2 >= 13 || hours2 <= 23){
+        hours2 - 12;
+    }
+    return strTime.format(hours2);
 }
