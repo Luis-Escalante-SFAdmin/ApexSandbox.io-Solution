@@ -11,6 +11,7 @@ public String changeTimeFormat(String strTime) {
         return hours + ':' + minutes + ' AM';
     }else if(hours2 == 00){
         system.debug(hours2 + 12);
+        return hours + ':' + minutes + ' AM';
     }
     
     return hours;
