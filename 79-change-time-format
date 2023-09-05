@@ -10,7 +10,7 @@ public String changeTimeFormat(String strTime) {
         return hours + ':' + minutes + ' PM';
     } 
     
-    if(hours2 == 00){
+    if(hours2){
         system.debug(hours2 + 12);
         return hours + ':' + minutes + ' AM';
     }
