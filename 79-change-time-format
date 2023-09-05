@@ -6,7 +6,7 @@ public String changeTimeFormat(String strTime) {
     if(hours2 > 11 && hours2 <= 23){   
         system.debug(hours2 - 12);
     } else if(hours2 >= 01 && hours2 <= 11){
-        system.debug(hours2)
+        system.debug(hours2);
     
     
     }
