@@ -5,11 +5,11 @@ public String changeTimeFormat(String strTime) {
     Integer minutes2 = Integer.valueOf(minutes);
 
     if(hours2 >= 12 && hours2 <= 23){   
-        return hours = hours2 - 12;
+    hours2 = hours2 - 12;
     } else if(hours2 >= 01 && hours2 <= 11){
         return hours + ':' + minutes + ' AM';
     }else if(hours2 == 00){
-        hours = hours2 + 12;
+        hours2 = hours2 + 12;
     }else {
         return hours + ':' + minutes + ' PM';
     }
