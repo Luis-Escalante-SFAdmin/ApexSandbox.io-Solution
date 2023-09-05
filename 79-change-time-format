@@ -1,9 +1,10 @@
 public String changeTimeFormat(String strTime) {
     String hours = strTime.substringBefore(':');
+    String minutes = strTime.substringAfter(':');
     Integer hours2 = Integer.valueOf(hours);
 
     if(hours2 >= 13 || hours2 <= 23){
         hours2 = hours2 - 12;
     }
-    return hours;
+    return hours + ':' + minutes;
 }
