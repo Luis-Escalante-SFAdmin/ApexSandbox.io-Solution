@@ -5,5 +5,5 @@ public String changeTimeFormat(String strTime) {
     if(hours2 >= 13 || hours2 <= 23){
         return hours2 = hours2 - 12;
     }
-    return strTime.format(hours2);
+    
 }
