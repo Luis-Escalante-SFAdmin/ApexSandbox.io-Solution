@@ -7,7 +7,6 @@ public String changeTimeFormat(String strTime) {
     if(hours2 >= 13 && hours2 == 00){   
         if(hours2 == 00){
             hours2 = hours2 + 12;
-            return hours + ':' + minutes + ' AM';
         }else{
             hours2 = hours2 - 12;
             return hours + ':' + minutes + ' PM';
