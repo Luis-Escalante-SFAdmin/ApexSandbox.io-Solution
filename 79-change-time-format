@@ -11,8 +11,8 @@ public String changeTimeFormat(String strTime) {
         return hours2 + ':' + minutes + ' AM';
     }else if(hours2 == 12){
     }else {
-        return hours + ':' + minutes + ' AM';
+        return hours2 + ':' + minutes + ' AM';
     }
-    return hours + ':' + minutes + ' PM'; 
+    return hours2 + ':' + minutes + ' PM'; 
    
 }
