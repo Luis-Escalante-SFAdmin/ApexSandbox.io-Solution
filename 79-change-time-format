@@ -3,10 +3,13 @@ public String changeTimeFormat(String strTime) {
     String minutes = strTime.substringAfter(':');
     Integer hours2 = Integer.valueOf(hours);
 
+    if(ho)
+
     if(hours2 >= 13 && hours2 <= 24){   
         system.debug(hours2 - 12);
-        return hours + ':' + minutes + ' PM'; 
-    } else if(hours2 >= 00 && hours2 <= 11){
+        return hours + ':' + minutes + ' PM';
+    } 
+    if(hours2 >= 00 && hours2 <= 11){
         system.debug(hours2);
         return hours + ':' + minutes + ' AM';
     }
