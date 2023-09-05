@@ -9,7 +9,7 @@ public String changeTimeFormat(String strTime) {
             return hours + ':' + minutes + ' PM';
         }
          
-    } else if(hours2 >= 01 && hours2 <= 11){
+    } else(hours2 >= 01 && hours2 <= 11){
         return hours + ':' + minutes + ' AM';
     }
     
