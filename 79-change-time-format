@@ -6,5 +6,5 @@ public String changeTimeFormat(String strTime) {
     if(hours2 == 12){   
     return hours;
     }
-    return hours;
+    return hours + ':' minutes;
 }
