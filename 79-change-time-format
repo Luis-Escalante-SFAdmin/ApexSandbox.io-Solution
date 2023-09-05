@@ -22,5 +22,4 @@ public String changeTimeFormat(String strTime) {
         
     }
     
-    return hours + ':' + minutes + ' PM';
 }
