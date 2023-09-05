@@ -4,7 +4,7 @@ public String changeTimeFormat(String strTime) {
     Integer hours2 = Integer.valueOf(hours);
 
 
-    if(hours2 > 13 || hours2 <= 23){   
+    if(hours2 > 13 && hours2 <= 23){   
         hours2 = hours2 - 12;
         return hours2 + ':' + minutes + ' PM';
     } else if (hours2 == 00){
