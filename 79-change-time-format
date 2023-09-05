@@ -5,7 +5,7 @@ public String changeTimeFormat(String strTime) {
 
     if(hours2 == 12){   
     }else if(hours2 == 24){
-        return hours2 + ' AM';
+        hours2 = (hours2 - 12) + ' AM';
     }
     return hours + ':' + minutes + ' PM';
 }
