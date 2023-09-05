@@ -4,6 +4,6 @@ public String changeTimeFormat(String strTime) {
     Integer hours2 = Integer.valueOf(hours);
 
     if(hours2 == 12){   
-    return hours2 = hours2;
+    return hours;
     }
 }
