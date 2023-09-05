@@ -1,6 +1,6 @@
 public String changeTimeFormat(String strTime) {
 
-    Integer hours2 = Integer.valueOf(hours);
+    Integer hours2 = Integer.valueOf(strTime);
 
 
     if(hours2 >= 13 && hours2 <= 24){   
