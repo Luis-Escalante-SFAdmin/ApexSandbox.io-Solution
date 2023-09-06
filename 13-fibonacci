@@ -1,17 +1,32 @@
 public Integer fibonacci(Integer n) {
-    List<Integer> fibSeq = new List<Integer>();
+    Integer current;
+Integer previous = 1;
+Integer beforePrevious = 0;
 
-    if(n >= 1){
-        n.add(0);
-    }
-    if(n >= 2){
-        n.add(1);
-    }
+// current = previous + beforePrevious
+// current = 1 + 0 = 1
 
-    for(Integer i = 2; i < n; i++){
-        Integer nextNum = fibSeq[i - 1] + fibSeq[i - 2];
-        fibSeq.add(nextNum);
-    }
+// print very first number
+System.debug(beforePrevious);
+// print 2nd number
+System.debug(previous);
 
-    return n;
+// print next 18 numbers
+Integer i = 0;
+
+while(i<18){//run loop 18 times
+	//print fibonacci numbers here
+
+    //calculate current number
+    current = previous + beforePrevious;
+    //print current value
+    System.debug(current);
+
+    //update beforePrevious with previous
+    beforePrevious = previous;
+    //update previous with current
+    previous = current;
+
+    //increment i's value
+    i++;
 }
