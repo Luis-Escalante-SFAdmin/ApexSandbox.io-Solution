@@ -14,7 +14,7 @@ System.debug(previous);
 // print next 18 numbers
 Integer i = 0;
 
-while(i<18){//run loop 18 times
+while(i<10){//run loop 18 times
 	//print fibonacci numbers here
 
     //calculate current number
