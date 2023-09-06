@@ -5,7 +5,7 @@ public Integer fibonacci(Integer n) {
 
     for(Integer i = 2; i < n; i++){
         Integer nextNum = fibSeq[i - 1] + fibSeq[i - 2];
-        fibSeq ++ nextNum;
+        fibSeq + nextNum;
     }
 
     return n;
