@@ -1,4 +1,5 @@
 public Integer fibonacci(Integer n) {
+    List<Integer> fibSeq = new List<Integer>();
 
     if(n >= 1){
         fibSeq.add(0);
@@ -12,5 +13,5 @@ public Integer fibonacci(Integer n) {
         n.add(nextNum);
     }
 
-    return n;
+    return fibSeq;
 }
