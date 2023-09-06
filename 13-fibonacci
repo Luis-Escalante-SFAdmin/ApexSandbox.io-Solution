@@ -3,8 +3,7 @@ public Integer fibonacci(Integer n) {
 
     if(n >= 1){
         fibSeq.add(0);
-    }
-    if(n >= 2){
+    }else if(n >= 2){
         fibSeq.add(1);
     }
 
