@@ -1,6 +1,8 @@
 public Integer fibonacci(Integer n) {
     List<Integer> fibSeq = new List<Integer>();
 
+    n = 10;
+
     if(n >= 1){
         fibSeq.add(0);
     }
