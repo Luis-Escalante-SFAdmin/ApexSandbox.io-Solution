@@ -9,7 +9,7 @@ while(i<10){//run loop 18 times
 	//print fibonacci numbers here
 
     //calculate current number
-    currnent = previous + beforePrevious;
+    n = previous + beforePrevious;
 
     //update beforePrevious with previous
     beforePrevious = previous;
