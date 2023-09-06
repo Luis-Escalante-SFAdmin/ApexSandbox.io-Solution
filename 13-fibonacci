@@ -3,7 +3,7 @@ public Integer fibonacci(Integer n) {
     Integer previous = 1;
     Integer beforePrevious = 0;
 
-    Integer i = 0;
+    Integer i = 3;
 
     while(i < n){
         current = previous + beforePrevious;
