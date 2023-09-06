@@ -3,7 +3,7 @@ Integer previous = 1;
 Integer beforePrevious = 0;
 
 // print next 18 numbers
-Integer i = 3;
+Integer i = 0;
 
 while(i<10){//run loop 18 times
 	//print fibonacci numbers here
