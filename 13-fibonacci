@@ -11,4 +11,5 @@ public Integer fibonacci(Integer n) {
         previous = current;
         i++;
     }
+    return n;
 }
