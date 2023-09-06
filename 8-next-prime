@@ -1,5 +1,4 @@
 public Integer nextPrime(Integer num) {
-    List<Integer> pNum = new List<Integer>();
     Integer i = 0;
     for(i = 2; i < num-1; i++){
         Integer count = 0;
