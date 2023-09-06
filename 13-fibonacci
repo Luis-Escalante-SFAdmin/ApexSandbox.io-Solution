@@ -2,7 +2,7 @@ public Integer fibonacci(Integer n) {
     List<Integer> fibSeq = new List<Integer>();
     n = 10;
 
-    if(n >= 0){
+    if(n > 0){
         fibSeq.add(0);
     }
     if(n >= 1){
