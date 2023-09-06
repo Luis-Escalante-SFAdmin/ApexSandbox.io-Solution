@@ -6,11 +6,6 @@ Integer beforePrevious = 0;
 // current = previous + beforePrevious
 // current = 1 + 0 = 1
 
-// print very first number
-System.debug(beforePrevious);
-// print 2nd number
-System.debug(previous);
-
 // print next 18 numbers
 Integer i = 0;
 
@@ -19,8 +14,6 @@ while(i<10){//run loop 18 times
 
     //calculate current number
     current = previous + beforePrevious;
-    //print current value
-    System.debug(current);
 
     //update beforePrevious with previous
     beforePrevious = previous;
