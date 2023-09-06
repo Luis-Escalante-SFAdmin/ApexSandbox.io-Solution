@@ -13,5 +13,5 @@ public Integer fibonacci(Integer n) {
         n.add(nextNum);
     }
 
-    return fibSeq;
+    return i;
 }
