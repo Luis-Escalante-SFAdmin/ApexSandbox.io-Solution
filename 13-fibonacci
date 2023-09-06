@@ -1,6 +1,6 @@
 public Integer fibonacci(Integer n) {
     Integer a, b, c;
-    for(Integer i = 0; i <= n.size(); i++){
+    for(Integer i = 0; i <= n.lenght(); i++){
         c = a + b;
         a = b;
         b = c;
