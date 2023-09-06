@@ -1,17 +1,14 @@
 public Integer fibonacci(Integer n) {
-    List<Integer> fibSeq = new List<Integer>();
+    Integer current;
+    Integer previous = 1;
+    Integer beforePrevious = 0;
 
-    if(n > 0){
-        fibSeq.add(0);
-    }
-    if(n >= 1){
-        fibSeq.add(1);
-    }
+    Integer i = 0;
 
-    for(Integer i = 2; i < n; i++){
-        Integer nextNum = fibSeq.get(i - 1) + fibSeq.get(i - 2);
-        fibSeq.add(nextNum);
+    while(i < n){
+        current = previous + beforePrevious;
+        beforePrevious = previous;
+        previous = current;
+        i++;
     }
-
-    return n;
 }
