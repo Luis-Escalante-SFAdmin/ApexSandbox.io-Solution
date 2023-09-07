@@ -2,6 +2,5 @@ public Id insertStudent(String name, String email) {
     List<apxio__Student__c> newStudent = new List<apxio__Student__c>();
     newStudent = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c];
     insert newStudent;
-    Id student = insertStudent('Luis Escalante', 'luis@apexcourse.com');
+    Id = insertStudent('Luis Escalante', 'luis@apexcourse.com');
 }
-return Id;
