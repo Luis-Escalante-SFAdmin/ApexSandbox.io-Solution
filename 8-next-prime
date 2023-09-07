@@ -1,6 +1,6 @@
 public Integer nextPrime(Integer num) {
     Integer i = 2;
-    for(i; i < num-1; i++){
+    for(i = 0; i < num-1; i++){
         Integer count = 0;
         Integer j = 0;
         for(j = i; j >= 1; j--){
