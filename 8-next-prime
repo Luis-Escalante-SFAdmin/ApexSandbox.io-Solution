@@ -13,7 +13,7 @@ public Integer nextPrime(Integer num) {
         if(count == 2 || count == 1){
             i++;
         }else{
-            System.debug('Is not a prime number');
+            return nextPrime;
         }
     }
    return i;
