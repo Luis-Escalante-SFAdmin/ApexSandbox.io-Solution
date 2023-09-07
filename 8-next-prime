@@ -6,12 +6,12 @@ public Integer nextPrime(Integer num) {
         Integer j = 0;
         for(j = i; j >= 1; j++){
             if(Math.mod(j, num) == 0){
-                count += 1;
+                count++;
                 break;
             }
         }
         if(count == 2 || count == 1){
-            return i;
+            i += 1;
         }else{
             System.debug('Is not a prime number');
         }
