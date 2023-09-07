@@ -10,7 +10,7 @@ public Integer nextPrime(Integer num) {
                 break;
             }
         }
-        if(count == 2 || count == 1){
+        if(count == 0){
             i++;
         }else{
             return num;
