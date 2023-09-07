@@ -13,7 +13,7 @@ public Integer nextPrime(Integer num) {
         if(count == 0){
             return i;
         }else{
-            return num;
+            System.debug('Is not prime');
         }
     }
    return i;
