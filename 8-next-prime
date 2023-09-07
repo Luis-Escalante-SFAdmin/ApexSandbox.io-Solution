@@ -5,7 +5,7 @@ public Integer nextPrime(Integer num) {
         Integer count = 0;
         Integer j = 0;
         for(j = i; j >= 1; j++){
-            if(Math.mod(j, num) != 0){
+            if(Math.mod(j, i) != 0){
                 count++;
                 break;
             }
