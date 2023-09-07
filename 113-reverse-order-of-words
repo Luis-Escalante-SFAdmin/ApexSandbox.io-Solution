@@ -8,7 +8,7 @@ public String reverseWordsInASentence(String sentence){
     }
     if(words == null)
     {
-        return ' ';
+        return null;
     }
 
     String reversedSentenced = String.join(reverseWords, ' ');
