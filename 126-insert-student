@@ -1,0 +1,5 @@
+public Id insertStudent(String name, String email) {
+    apxio__Student__c<sObject> newStudent = new apxio__Student__c<sObject>(apxio__Email__c= 'luisstudent@apex.com');
+    insert newStudent;
+    System.debug(Id);
+}
