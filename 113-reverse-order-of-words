@@ -4,9 +4,11 @@ public String reverseWordsInASentence(String sentence){
     List<String> reverseWords = new List<String>();
     for(Integer i = words.size() - 1; i >= 0; i--)
     {
-        
         reverseWords.add(words[i]);
-        
+    }
+    if(words == null)
+    {
+        return ' ';
     }
 
     String reversedSentenced = String.join(reverseWords, ' ');
