@@ -10,9 +10,7 @@ public Integer nextPrime(Integer num) {
         }
         if(count == 0){
             return i;
-        }else{
-            System.debug('Is not prime');
         }
     }
-   i++;
+   return i++;
 }
