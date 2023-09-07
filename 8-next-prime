@@ -4,7 +4,7 @@ public Integer nextPrime(Integer num) {
         i += 1;
         Integer count = 0;
         Integer j = 0;
-        for(j = 2; j > i; j++){
+        for(j = 2; j > Math.sqrt(i); j++){
             if(Math.mod(i, j) == 0){
                 count++;
                 break;
