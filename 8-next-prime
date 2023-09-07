@@ -12,5 +12,5 @@ public Integer nextPrime(Integer num) {
             return i;
         }
     }
-   return i++;
+   return i;
 }
