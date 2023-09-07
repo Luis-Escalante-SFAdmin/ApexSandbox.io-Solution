@@ -14,5 +14,5 @@ public Integer nextPrime(Integer num) {
             System.debug('Is not a prime number');
         }
     }
-    return i;
+    return num;
 }
