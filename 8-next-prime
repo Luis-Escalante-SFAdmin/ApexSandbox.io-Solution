@@ -1,5 +1,5 @@
 public Integer nextPrime(Integer num) {
-    Integer i;
+    Integer i =0;
     for(i = 2; i < num-1; i++){
         Integer count = 0;
         Integer j = 0;
