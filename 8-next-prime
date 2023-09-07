@@ -5,11 +5,11 @@ public Integer nextPrime(Integer num) {
         for(Integer j = 2; j <= Math.sqrt(i); j++){
             if(Math.mod(i, j) == 0){
                 count++;
-                break;
+                
             }
         }
         if(count == 0){
-            return j;
+            return i;
         }
         i++;
     }
