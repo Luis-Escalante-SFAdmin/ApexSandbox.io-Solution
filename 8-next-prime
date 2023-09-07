@@ -11,7 +11,7 @@ public Integer nextPrime(Integer num) {
             }
         }
         if(count == 2 || count == 1){
-            count;
+            count++;
         }else{
             System.debug('Is not a prime number');
         }
