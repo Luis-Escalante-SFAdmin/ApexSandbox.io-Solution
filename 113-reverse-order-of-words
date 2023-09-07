@@ -6,7 +6,11 @@ public String reverseWordsInASentence(String sentence){
     {
         reverseWords.add(words[i]);
     }
-    if(words == null)
+    if(words != null)
+    {
+        return reverseWords;
+    }
+    else
     {
         return null;
     }
