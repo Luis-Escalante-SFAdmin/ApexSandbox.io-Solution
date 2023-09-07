@@ -1,5 +1,5 @@
 public Integer nextPrime(Integer num) {
-    Integer i = num + 1;
+    Integer i = num;
     while(true){
         Integer count = 0;
         for(Integer j = 2; j < Math.sqrt(i); j++){
