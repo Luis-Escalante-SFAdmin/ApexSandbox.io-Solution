@@ -8,10 +8,10 @@ public Integer nextPrime(Integer num) {
                 count++;
             }
         }
-        if(count == 2 && count == 1){
+        if(count == 2 || count == 1){
             return i;
         }else{
-            return j;
+            System.debug('Is not a prime number');
         }
     }
    return i;
