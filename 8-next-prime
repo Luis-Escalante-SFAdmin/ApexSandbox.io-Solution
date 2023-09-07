@@ -11,6 +11,7 @@ public Integer nextPrime(Integer num) {
         if(count == 0){
             return i;
         }
+        i++;
     }
    return i;
 }
