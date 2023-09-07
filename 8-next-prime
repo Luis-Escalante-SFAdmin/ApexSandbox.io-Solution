@@ -12,6 +12,7 @@ public Integer nextPrime(Integer num) {
             return i;
         }
         i++;
+        break;
     }
    return i;
 }
