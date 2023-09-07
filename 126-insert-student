@@ -1,6 +1,5 @@
 public Id insertStudent(String name, String email) {
     List<apxio__Student__c> newStudent = new List<apxio__Student__c>();
     newStudent = [SELECT Id FROM apxio__Student__c];
-    return Id;
     insert newStudent;
 }
