@@ -6,7 +6,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     else
     {
-        System.debug(name= '', details= '', apxio__Course__c.apxio__Credits__c= '');
+        System.debug(name= '', details= '', apxio__Credits__c= '');
         
     }
     return courses.Id;
