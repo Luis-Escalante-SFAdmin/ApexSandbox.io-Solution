@@ -8,7 +8,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     else
     {
-       courses.add(Id id=null);  
+       return courses;  
     }
     
 }
