@@ -9,11 +9,11 @@ public Id insertCourse(String name, String details, Integer credits) {
     else if(apxio__Course__c.apxio__Credits__c == null)
     {
       insert courses;
-      return courses.Id;  
+       
     }
     else
     {
         System.debug('Record not inserted');
     }
-    
+    return courses.Id; 
 }
