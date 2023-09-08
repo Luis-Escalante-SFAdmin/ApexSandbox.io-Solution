@@ -1,5 +1,5 @@
 public Id insertStudent(String name, String email) {
     List<apxio__Student__c> newStudent = new List<apxio__Student__c>();
-    newStudent.add(Name='Luis Escalante', apxio__Email__c='luis@apex.com');
+    newStudent.add(Name='Luis Escalante', email='luis@apex.com');
     return newStudent.Id;
 }
