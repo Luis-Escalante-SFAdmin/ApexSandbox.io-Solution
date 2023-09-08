@@ -7,5 +7,5 @@ public Id insertCourse(String name, String details, Integer credits) {
         return courses.Id;
     }
     
-    return courses;
+    return insertCourse;
 }
