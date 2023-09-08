@@ -8,7 +8,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     else
     {
-        course<Id> courseId = null;
+        courses<Id> courseId = null;
        return courses.Id;  
     }
     
