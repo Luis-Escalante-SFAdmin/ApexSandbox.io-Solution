@@ -6,6 +6,10 @@ public Id insertCourse(String name, String details, Integer credits) {
         insert courses;
         return courses.Id;
     }
+    else if(courses.apxio__Credits__c == 5)
+    {
+        return null;
+    }
     
     return courses.Id;
 }
