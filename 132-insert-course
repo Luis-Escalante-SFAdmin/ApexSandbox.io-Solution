@@ -8,7 +8,8 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     else if(apxio__Course__c.apxio__Credits__c == null)
     {
-      insert courses;  
+      insert courses;
+      return courses.Id;  
     }
     else
     {
