@@ -1,9 +1,9 @@
 public Id insertCourse(String name, String details, Integer credits) {
-    List<String> idRecord = new List<String>(Id id);
     
-    apxio__Course__c courses = new apxio__Course__c(Name= name, apxio__Course_Details__c= details, apxio__Credits__c = String.valueOf(credits));
+    
     if(apxio__Course__c.apxio__Credits__c != null)
     {
+        apxio__Course__c courses = new apxio__Course__c(Name= name, apxio__Course_Details__c= details, apxio__Credits__c = String.valueOf(credits));
         insert courses;
         return courses.Id;
     }
