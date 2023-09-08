@@ -8,8 +8,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     else
     {
-        apxio__Course__c<Id> courseId = null;
-       return courses.Id;  
+       return 'null_record_id';  
     }
     
 }
