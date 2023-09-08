@@ -2,5 +2,5 @@ public String registerStudent(String name, String phone, String email) {
     apxio__Student__c newRegistration = new apxio__Student__c(Name= name, apxio__Phone__c= phone, apxio__Email__c= email);
     insert newRegistration;
     return newRegistration.Id;
-    regNum = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c];
+    List regNum = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c];
 }
