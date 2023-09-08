@@ -4,7 +4,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     if(apxio__Course__c.apxio__Credits__c != null)
     {
         insert courses;
-        return Id;
+        return null;
     }
     
     return courses.Id; 
