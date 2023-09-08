@@ -1,17 +1,14 @@
 public Id insertCourse(String name, String details, Integer credits) {
     
-    if (credits != null) {
-        apxio__Course__c course = new apxio__Course__c(Name = name, apxio__Course_Details__c = details, apxio__Credits__c = String.valueOf(credits));
-        
-        try {
-            insert course;
-            return course.Id;
-        } catch (Exception e) {
-            // Handle any exceptions that might occur during insertion
-            return 'insertion_failed'; // You can customize this error message
-        }
-    } else {
-        return 'null_record_id';
+    apxio__Course__c courses = new apxio__Course__c(Name= name, apxio__Course_Details__c= details, apxio__Credits__c = String.valueOf(credits));
+    if(apxio__Course__c.apxio__Credits__c == true)
+    {
+        insert courses;
+        return courses.Id;
+    }
+    else
+    {
+       return 'id record is null';  
     }
     
 }
