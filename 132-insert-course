@@ -6,7 +6,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     else
     {
-        return courses = null;
+        break;
         
     }
     return courses.Id;
