@@ -1,0 +1,4 @@
+public List<apxio__Student__c> selectUnreachableStudents() {
+    List<apxio__Student__c> students = [SELECT Id, Name, apxio__Email__c, apxio__Phone__c FROM apxio__Student__c WHERE apxio__Email__c = null AND apxio__Phone__c = null];
+    return students;
+}
