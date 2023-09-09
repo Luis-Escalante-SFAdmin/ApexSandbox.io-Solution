@@ -1,6 +1,6 @@
 public String registerStudent(String name, String phone, String email) {
     apxio__Student__c newRegistration = new apxio__Student__c(Name= name, apxio__Phone__c= phone, apxio__Email__c= email);
     insert newRegistration;
-    newRegistration = [SELECT Name, Id, apxio__Registration_Number__c, apxio__Phone__c, apxio__Email__c FROM apxio__Student__c WHERE apxio__Registration_Number__c = null].apxio__Registration_Number__c;
+    newRegistration = [SELECT Name, Id, apxio__Registration_Number__c, apxio__Phone__c, apxio__Email__c FROM apxio__Student__c WHERE apxio__Registration_Number__c = null];
     return newRegistration.apxio__Registration_Number__c;
 }
