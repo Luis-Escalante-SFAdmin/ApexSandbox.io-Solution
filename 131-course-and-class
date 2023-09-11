@@ -1,7 +1,7 @@
 public void createCourseAndClass(String name, String description) {
 
     apxio__Course__c courses = new apxio__Course__c(Name = name, apxio__Course_Details__c= description);
-    if(Name == null && apxio__Course_Details__c == null){
+    if(name == null && description == null){
         System.debug('Insert record');
     }
     insert courses;
