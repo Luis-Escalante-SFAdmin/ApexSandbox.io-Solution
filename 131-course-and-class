@@ -1,11 +1,19 @@
 public void createCourseAndClass(String name, String description) {
-
+    try{
     apxio__Course__c courses = new apxio__Course__c(Name= name, apxio__Course_Details__c= description);
     insert courses;
 
     apxio__Class__c classes = new apxio__Class__c(Name= name, apxio__Description__c = description.left(255), apxio__Course__c = courses.Id);
     insert classes;
-    
+    }
+
+    catch(DmlException e)
+    {
+        for(Integer i = 0; i < e.getNumDml(); i++)
+        {
+            System.debug(e.getDmlMessage(i));
+        }
+    }
     
 
 }
