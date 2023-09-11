@@ -11,13 +11,6 @@ public void createCourseAndClass(String name, String description) {
     insert classes;
     }
     
-    try
-    {
-        insert classes;
-    }
-    catch (DmlException e)
-    {
-        System.debug(e.getMessage());
-    }
+    
 
 }
