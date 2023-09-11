@@ -5,6 +5,7 @@ public void createCourseAndClass(String name, String description) {
     apxio__Class__c classes = new apxio__Class__c(Name= name, apxio__Description__c = description.left(255));
     classes.get(courses.Id);
     insert classes;
+    return classes.courses;
     
 
 }
