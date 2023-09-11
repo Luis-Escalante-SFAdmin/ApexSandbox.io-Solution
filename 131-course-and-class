@@ -1,8 +1,8 @@
 public void createCourseAndClass(String name, String description) {
-    List<apxio__Course__c> courses = new List<apxio__Course__c>(Name= name, apxio__Course_Details__c= description);
+    apxio__Course__c courses = new apxio__Course__c(Name= name, apxio__Course_Details__c= description);
     insert courses;
 
-    List<apxio__Class__c> classes = new List<apxio__Class__c>(Name= name, apxio__Description__c = description.left(255));
+    apxio__Class__c classes = new apxio__Class__c(Name= name, apxio__Description__c = description.left(255));
     insert classes;
     return courses.Id;
 
