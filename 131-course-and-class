@@ -8,5 +8,13 @@ public void createCourseAndClass(String name, String description) {
     classes.apxio__Course__c = courses.Id;
     insert classes;
     
+    try
+    {
+        insert classes;
+    }
+    catch (DmlException e)
+    {
+        System.debug('Error: ' + e.getMessage());
+    }
 
 }
