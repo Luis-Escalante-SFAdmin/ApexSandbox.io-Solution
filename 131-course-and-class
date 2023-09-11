@@ -1,7 +1,7 @@
 public void createCourseAndClass(String name, String description) {
 
     apxio__Course__c courses = new apxio__Course__c(Name= name);
-    courses.apxio__Course_Details__c= null;
+    courses.apxio__Course_Details__c= '';
     insert courses;
   
 
