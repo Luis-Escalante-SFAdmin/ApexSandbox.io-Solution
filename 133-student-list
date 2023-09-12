@@ -10,7 +10,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     }
 
     apxio__Student__c s = new apxio__Student__c();
-    s.Name = studentNames;
+    s.Name = '';
     t.apxio__Email__c = studentEmails;
     students.add(s);
     insert students;
