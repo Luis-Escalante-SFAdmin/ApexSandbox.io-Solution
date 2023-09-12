@@ -2,7 +2,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     List<apxio__Student__c> students = new List<apxio__Student__c>();
     for(Integer std = 0; std < students.size(); std++){
         apxio__Student__c s = [SELECT Name, apxio__Email__c FROM apxio__Student__c LIMIT 10];
-        s.Name = Name;
+        s.Name = '';
         s.apxio__Email__c = apxio__Email__c;
         
     }
