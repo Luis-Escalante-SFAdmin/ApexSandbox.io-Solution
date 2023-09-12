@@ -9,5 +9,5 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
         System.debug(numStudents);
     }
 
-    insert i;
+    insert std;
 }
