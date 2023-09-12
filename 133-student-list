@@ -6,5 +6,5 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     }
 
     
-    System.debug(students);
+    insert students;
 }
