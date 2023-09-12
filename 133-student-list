@@ -1,7 +1,9 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
     List<apxio__Student__c> students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE Name=: studentNames AND apxio__Email__c=: studentEmails];
     for(apxio__Student__c std : students){
-        System.debug(std);
+        apxio__Student__c s = new apxio__Student__c();
+        s.studentNames = Name;
+        t.studentEmails= apxio__Email__c;
     }
 
     
