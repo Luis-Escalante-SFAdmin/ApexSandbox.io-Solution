@@ -1,8 +1,11 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
     List<apxio__Student__c> students = [SELECT Name, apxio__Email__c FROM apxio__Student__c LIMIT 150];
-    for(apxio__Student__c i : students){
-        System.debug(i);
+    for(apxio__Student__c std : students){
+        System.debug(std);
     }
 
-    insert students;
+    Integer numStudents = students.size();
+    for(Integer i = 0; i < numStudents; i++){
+        System.debug(numStudents);
+    }
 }
