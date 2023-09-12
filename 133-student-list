@@ -9,5 +9,9 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
         System.debug(numStudents);
     }
 
+    apxio__Student__c s = new apxio__Student__c();
+    s.Name = studentNames;
+    t.apxio__Email__c = studentEmails;
+    students.add(s);
     insert students;
 }
