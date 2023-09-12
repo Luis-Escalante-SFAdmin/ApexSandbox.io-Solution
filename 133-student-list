@@ -1,6 +1,6 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
     List<apxio__Student__c> students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c LIMIT 50];
-    students.add(studentNames);
+    students.add(apxio__Student__c.Name);
     for(apxio__Student__c std : students){
         System.debug(std);
     }
