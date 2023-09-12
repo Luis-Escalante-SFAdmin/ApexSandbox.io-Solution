@@ -3,8 +3,8 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     for(apxio__Student__c std : students){
         apxio__Student__c s = [SELECT Name, apxio__Email__c FROM apxio__Student__c];
 
-        students.add(studentNames[s]);
-        students.add(studentEmails[s]);
+        students.add(studentNames[std]);
+        students.add(studentEmails[std]);
     }
 
     
