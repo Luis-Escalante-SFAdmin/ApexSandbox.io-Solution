@@ -1,6 +1,6 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
     List<apxio__Student__c> students = new List<apxio__Student__c>();
-    for(apxio__Student__c std : [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE Name= studentNames]){
+    for(apxio__Student__c std : [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE Name= students.studentNames]){
         System.debug(std);
     }
 
