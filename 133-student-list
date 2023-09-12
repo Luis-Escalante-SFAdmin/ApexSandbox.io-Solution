@@ -1,6 +1,7 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
     List<apxio__Student__c> students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c];
-    students.add();
+    students.add(Name);
+    students.add(apxio__Email__c);
     for(apxio__Student__c std : students){
         System.debug(std);
     }
