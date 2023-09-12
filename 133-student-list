@@ -4,14 +4,6 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
         System.debug(std);
     }
 
-    Integer numStudents = students.size();
-    for(Integer i = 0; i < numStudents; i++){
-        System.debug(numStudents);
-    }
-
-    apxio__Student__c s = new apxio__Student__c();
-    s.Name = null;
-    s.apxio__Email__c = '';
-    students.add(s);
+    
     insert students;
 }
