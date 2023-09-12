@@ -5,5 +5,5 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     }
 
     
-    return students;
+    insert students;
 }
