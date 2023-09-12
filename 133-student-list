@@ -8,4 +8,6 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     for(Integer i = 0; i < numStudents; i++){
         System.debug(numStudents);
     }
+
+    insert students;
 }
