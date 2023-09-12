@@ -1,5 +1,5 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
-    apxio__Student__c students = new List<apxio__Student__c>();
+    List<apxio__Student__c> students = new List<apxio__Student__c>();
     for(Integer i : students){
         System.debug(i);
     }
