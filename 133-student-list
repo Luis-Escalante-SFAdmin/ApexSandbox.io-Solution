@@ -1,5 +1,5 @@
 public void insertStudents(List<String> studentNames, List<String> studentEmails) {
-    List<apxio__Student__c> students = new List<apxio__Student__c>();
+    List<apxio__Student__c> students = [SELECT Name, apxio__Email__c FROM apxio__Student__c LIMIT 150];
     for(apxio__Student__c i : students){
         System.debug(i);
     }
