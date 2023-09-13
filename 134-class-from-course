@@ -8,5 +8,5 @@ public Id classFromCourse(String courseName) {
 
 
     insert cls;
-    return cls.Id;
+    return courses.Id;
 }
