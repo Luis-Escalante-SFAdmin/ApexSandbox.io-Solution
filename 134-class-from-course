@@ -4,6 +4,6 @@ public Id classFromCourse(String courseName) {
     List<apxio__Course__c> courses = new List<apxio__Course__c>(Name);
     apxio__Course__c.Id = apxio__Class__c.Id;
 
-    insert courses;
+    insert classes;
     return Id;
 }
