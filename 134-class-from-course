@@ -7,6 +7,6 @@ public Id classFromCourse(String courseName) {
     
 
 
-    insert c;
+    insert cls;
     return courses.Id;
 }
