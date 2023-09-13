@@ -10,10 +10,10 @@ public Id classFromCourse(String courseName) {
     }
     else
     {
-        return courses;
+        return c;
     }
 
 
-    insert c;
+    insert cls;
     return courses.Id;
 }
