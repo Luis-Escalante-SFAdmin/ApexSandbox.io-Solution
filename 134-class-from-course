@@ -2,13 +2,9 @@ public Id classFromCourse(String courseName) {
     apxio__Course__c c = new apxio__Course__c();
     apxio__Course__c courses = [SELECT Id, Name FROM apxio__Course__c WHERE Name = :courseName];
     if(courses == null)
-
     return null;
 
-    
-    
-
-    List<apxio__Class__c> cls = new List<apxio__Class__c>();
+    List<apxio__Class__c> cls = [SELECT Id, Name, apxio__Course__c FROM apxio__Class__c];
 
 
     insert cls;
