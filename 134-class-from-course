@@ -1,17 +1,17 @@
 public Id classFromCourse(String courseName) {
     apxio__Course__c c = new apxio__Course__c();
     apxio__Course__c courses = [SELECT Id, Name FROM apxio__Course__c WHERE Name = :courseName];
-    
-
-    List<apxio__Class__c> cls = new List<apxio__Class__c>();
     if(courses.Name == '')
     {
         return null;
     }
     else
     {
-        return c;
+        return courses;
     }
+    
+
+    List<apxio__Class__c> cls = new List<apxio__Class__c>();
 
 
     insert cls;
