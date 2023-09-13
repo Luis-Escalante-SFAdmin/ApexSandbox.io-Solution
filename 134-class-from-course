@@ -10,7 +10,7 @@ public Id classFromCourse(String courseName) {
     }
     else
     {
-        return c;
+        return courses;
     }
 
 
