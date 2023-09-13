@@ -1,9 +1,9 @@
 public Id classFromCourse(String courseName) {
     apxio__Course__c c = new apxio__Course__c();
     apxio__Course__c courses = [SELECT Id, Name FROM apxio__Course__c WHERE Name = :courseName];
-    if(courses == '')
+    if(courses != null)
     {
-        return null;
+        course = courses.Id;
     }
     else
     {
