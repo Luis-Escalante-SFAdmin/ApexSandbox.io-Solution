@@ -7,9 +7,9 @@ public void enrollStudents(List<String> emails, String className) {
     apxio__Class_Enrollment__c clEnroll = [SELEC Id, Name, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c WHERE apxio__Offered_Class__c = :className];
 
     if(students.apxio__Email__c != null)
-    {
+    
         insert clEnroll;
         return students;
         return clEnroll;
-    }
+    
 }
