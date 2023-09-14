@@ -10,10 +10,9 @@ public void enrollStudents(List<String> emails, String className) {
     {
         if(s.apxio__Email__c != null)
         insert enrollment;
-        return enrollment.apxio__Student__c;
-        return enrollment.apxio__Offered_Class__c;
+        
     }
-
-
+    return enrollment.apxio__Student__c;
+    return enrollment.apxio__Offered_Class__c;
     
 }
