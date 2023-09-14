@@ -7,12 +7,12 @@ public void enrollStudents(List<String> emails, String className) {
         System.debug('You need at least 1 record');
     }
 
-    apxio__Class__c[] classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className LIMIT 1];
+    apxio__Class__c[] classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className];
     if(classes == null){
         System.debug('You need at least 1 record');
     }
 
-    apxio__Class_Enrollment__c[] enrollment = [SELECT apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c LIMIT 1];
+    apxio__Class_Enrollment__c[] enrollment = [SELECT apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c];
 
     for(apxio__Student__c s : students){
     {
