@@ -9,6 +9,8 @@ public void enrollStudents(List<String> emails, String className) {
 
     apxio__Class_Enrollment__c[] enrollment = [SELECT apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c];
 
+    if(classes == null) System.debug('You need at least 1 record');
+
     for(apxio__Student__c s : students){
     {
         if(s.apxio__Email__c != null)
