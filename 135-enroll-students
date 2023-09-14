@@ -12,7 +12,7 @@ public void enrollStudents(List<String> emails, String className) {
 
     for(apxio__Student__c s : students){
     {
-        enrollment.apxio__Student__c = enrollment.apxio__Email__c;
+        enrollment.apxio__Student__c = students.apxio__Email__c;
     
         insert enrollment;
         
