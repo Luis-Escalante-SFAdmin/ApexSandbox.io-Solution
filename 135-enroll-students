@@ -12,11 +12,11 @@ public void enrollStudents(List<String> emails, String className) {
         System.debug('You need at least 1 record');
     }
 
-    apxio__Class_Enrollment__c[] enrollment = [SELECT apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c];
+    apxio__Class_Enrollment__c[] enrollment = [SELECT Name, apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c];
 
     for(apxio__Student__c s : students){
     {
-        if(s.apxio__Email__c != null)
+        if(s.apxio__Email__c != null s.)
         {
         insert enrollment;
         }
