@@ -7,7 +7,7 @@ public void enrollStudents(List<String> emails, String className) {
         System.debug('You need at least 1 record');
     }
 
-    apxio__Class__c[] classes = [SELECT Id, Name,  FROM apxio__Class__c WHERE Name = :className LIMIT 1];
+    apxio__Class__c[] classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className LIMIT 1];
     if(classes == null){
         System.debug('You need at least 1 record');
     }
