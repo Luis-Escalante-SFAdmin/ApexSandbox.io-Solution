@@ -2,7 +2,7 @@ public void enrollStudents(List<String> emails, String className) {
     List<apxio__Student__c> std = new List<apxio__Student__c>();
     apxio__Class__c cls = new apxio__Class__c();
 
-    apxio__Student__c[] students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails LIMIT 1];
+    apxio__Student__c[] students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails];
     if(students == null){
         System.debug('You need at least 1 record');
     }
