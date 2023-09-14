@@ -14,7 +14,7 @@ public void enrollStudents(List<String> emails, String className) {
     {
         if(s.apxio__Email__c != null)
 
-        enrollment.add(students);
+        enrollment.add(className);
         insert enrollment;
         
     }
