@@ -8,7 +8,7 @@ public void enrollStudents(List<String> emails, String className) {
 
     for(apxio__Student__c s : std)
     {
-        if(s.apxio__Email__c != null);
+        if(s.apxio__Email__c != null)
         insert enrollment;
         
     }
