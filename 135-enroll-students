@@ -8,8 +8,8 @@ public void enrollStudents(List<String> emails, String className) {
 
     if(students.apxio__Email__c != null)
     
-        insert cls;
+        insert clEnroll;
         return students;
-        return clEnroll;
+        return clEnroll.apxio__Offered_Class__c;
     
 }
