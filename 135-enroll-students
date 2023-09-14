@@ -20,7 +20,7 @@ public void enrollStudents(List<String> emails, String className) {
         insert enrollment;
         }
         else {
-            return null;
+            System.debug('No records');
         }
     }
     }
