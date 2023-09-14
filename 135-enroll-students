@@ -4,7 +4,7 @@ public void enrollStudents(List<String> emails, String className) {
 
     apxio__Student__c students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails LIMIT 1];
     apxio__Class__c classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className LIMIT 1];
-    apxio__Class_Enrollment__c enrollment = [SELECT Id, apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c WHERE apxio__Student__c = :students LIMIT 1];
+    apxio__Class_Enrollment__c enrollment = [SELECT apxio__Student__c.Id, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c WHERE apxio__Student__c = :students LIMIT 1];
 
     for(apxio__Student__c s : std)
     {
