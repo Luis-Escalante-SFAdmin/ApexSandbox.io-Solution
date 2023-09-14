@@ -8,7 +8,7 @@ public void enrollStudents(List<String> emails, String className) {
     if(students.apxio__Email__c != null);
     return true;
 
-    apxio__Class__c cls = new apxio__Class__c();
+    apxio__Class__c cls = new apxio__Class__c(Name = className);
     
     insert clEnroll;
     return students;
