@@ -12,7 +12,7 @@ public void enrollStudents(List<String> emails, String className) {
 
     for(apxio__Student__c s : students){
     {
-        if(s.apxio__Email__c != null)
+        enrollment.apxio__Student__c = std.emails;
     
         insert enrollment;
         
