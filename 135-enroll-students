@@ -4,12 +4,14 @@ public void enrollStudents(List<String> emails, String className) {
     apxio__Class_Enrollment__c enrollment = new apxio__Class_Enrollment__c();
 
     apxio__Student__c students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails];
-    apxio__Class__c classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className];
+    apxio__Class__c classes = [SELECT Id, Name, apxio__Offered_Class__c FROM apxio__Class__c WHERE Name = :className];
 
     for(apxio__Student__c s : std)
     {
         if(s.apxio__Email__c != null)
         insert enrollment;
+        return enrollment.apxio__Student__c;
+        return enrollment.apxio__Offered_Class__c;
     }
 
 
