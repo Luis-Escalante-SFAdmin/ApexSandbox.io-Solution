@@ -4,12 +4,12 @@ public void enrollStudents(List<String> emails, String className) {
 
     apxio__Student__c[] students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails LIMIT 1];
     if(students == null){
-        System.denug('You need at least 1 record');
+        System.debug('You need at least 1 record');
     }
 
     apxio__Class__c[] classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className LIMIT 1];
     if(classes == null){
-        System.denug('You need at least 1 record');
+        System.debug('You need at least 1 record');
     }
 
     apxio__Class_Enrollment__c[] enrollment = [SELECT apxio__Student__c, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c];
