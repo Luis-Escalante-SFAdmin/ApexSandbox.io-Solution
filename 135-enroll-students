@@ -16,10 +16,12 @@ public void enrollStudents(List<String> emails, String className) {
 
     for(apxio__Student__c s : students){
     {
-        if(s.apxio__Email__c != null){
+        if(s.apxio__Email__c != null)
+        {
         insert enrollment;
         }
-        else {
+        else if (s.apxio__Email__c == null) 
+        {
             System.debug('No records');
         }
     }
