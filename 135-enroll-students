@@ -14,7 +14,6 @@ public void enrollStudents(List<String> emails, String className) {
     apxio__Class__c cls = new apxio__Class__c(Name = className);
     
     insert cls;
-    return students;
-    return clEnroll.apxio__Offered_Class__c;
+
     
 }
