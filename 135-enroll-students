@@ -15,7 +15,7 @@ public void enrollStudents(List<String> emails, String className) {
         if(s.apxio__Email__c == null)
         System.debug('No records');
 
-        insert enrollment;
+        insert enrollment.s;
         
     }
     }
