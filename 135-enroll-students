@@ -1,15 +1,17 @@
 public void enrollStudents(List<String> emails, String className) {
     apxio__Student__c std = new apxio__Student__c();
-    apxio__Class__c cls = new apxio__Class__c();
     apxio__Class_Enrollment__c classEnroll = new apxio__Class_Enrollment__c();
 
     apxio__Student__c students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails];
     apxio__Class_Enrollment__c clEnroll = [SELEC Id, Name, apxio__Offered_Class__c FROM apxio__Class_Enrollment__c WHERE apxio__Offered_Class__c = :className];
 
-    if(students.apxio__Email__c != null)
+    if(students.apxio__Email__c != null);
+    return true;
+
+    apxio__Class__c cls = new apxio__Class__c();
     
-        insert clEnroll;
-        return students;
-        return clEnroll.apxio__Offered_Class__c;
+    insert clEnroll;
+    return students;
+    return clEnroll.apxio__Offered_Class__c;
     
 }
