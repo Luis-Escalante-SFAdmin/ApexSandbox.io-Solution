@@ -9,7 +9,7 @@ public void enrollStudents(List<String> emails, String className) {
     for(apxio__Student__c s : students)
     {
         if(s.apxio__Email__c == true)
-        insert enrollment.apxio__Student__c;
+        insert enrollment;
     }
 
 
