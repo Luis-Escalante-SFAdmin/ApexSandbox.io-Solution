@@ -6,7 +6,7 @@ public void enrollStudents(List<String> emails, String className) {
     apxio__Student__c students = [SELECT Id, Name, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c =:emails];
     apxio__Class__c classes = [SELECT Id, Name FROM apxio__Class__c WHERE Name = :className];
 
-    for(apxio__Student__c s : students)
+    for(apxio__Student__c s : std)
     {
         if(s.apxio__Email__c != null)
         insert enrollment;
