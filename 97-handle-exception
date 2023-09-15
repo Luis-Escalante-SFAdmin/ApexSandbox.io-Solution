@@ -1,0 +1,14 @@
+public String divide(Integer a, Integer b){
+    String valueA = String.valueOf(a);
+    String valueB = String.valueOf(b);
+    
+    try
+    {
+        String result = valueA / valueB;
+        return result;
+    }
+    catch (DmlExcelption e)
+    {
+        System.debug('Error: ' + e.getMessage);
+    }
+}
