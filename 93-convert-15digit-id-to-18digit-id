@@ -4,7 +4,7 @@ public String convert15to18DigitId(String fifteenDigit)
     String moreId = newId;
 
     if(moreId == newId){
-        return newId;
+        return moreId;
     }
 
     return '-1';
