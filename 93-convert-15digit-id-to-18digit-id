@@ -4,6 +4,6 @@ public String convert15to18DigitId(String fifteenDigit)
 
     if(newId == fifteenDigit) return newID;
 
-    if(fifteenDigit.Length != 15)    return '-1';
+    if(fifteenDigit.Length() != 15)    return '-1';
 
 }
