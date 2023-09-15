@@ -1,10 +1,7 @@
-public String divide(Integer a, Integer b){
-    String valueA = String.valueOf(a);
-    String valueB = String.valueOf(b);
-    
+public String divide(Integer a, Integer b){ 
     try
     {
-        String result = valueA / valueB;
+        String result = a / b;
         return result;
     }
     catch (DmlExcelption e)
