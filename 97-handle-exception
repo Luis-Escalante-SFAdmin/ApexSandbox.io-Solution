@@ -10,5 +10,5 @@ public String divide(Integer a, Integer b){
     {
         System.debug('Error: ' + e.getMessage());
     }
-    return String.valueOf(result);
+    return result;
 }
