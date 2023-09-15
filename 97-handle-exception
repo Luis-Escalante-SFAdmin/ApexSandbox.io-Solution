@@ -1,7 +1,7 @@
 public String divide(Integer a, Integer b){ 
     try
     {
-        Integer result = a / b;
+        String result = divide(a, b);
         return result = String.valueOf(result);
     }
     catch (DmlExcelption e)
