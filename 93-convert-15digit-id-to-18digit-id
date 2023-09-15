@@ -4,6 +4,6 @@ public String convert15to18DigitId(String fifteenDigit)
 
     if(fifteenDigit.length() == 18) return newId;
 
-    return null;
+    return '-1';
 
 }
