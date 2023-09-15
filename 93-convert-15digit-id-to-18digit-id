@@ -10,6 +10,6 @@ public String convert15to18DigitId(String fifteenDigit)
 
     if(fifteenDigit == '') return null;
 
-    return '-1';
+    return null;
 
 }
