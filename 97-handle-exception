@@ -1,7 +1,7 @@
 public String divide(Integer a, Integer b){ 
     try
     {
-        Integer division = String.valueOf(a / b);
+        String division = String.valueOf(a / b);
         String result = division;
         
     }
