@@ -3,7 +3,7 @@ public String convert15to18DigitId(String fifteenDigit)
     Id newId = Id.valueOf(fifteenDigit);
     String moreId = newId;
 
-    if(newId == fifteenDigit){
+    if(moreId == newId){
         return newId;
     }
 
