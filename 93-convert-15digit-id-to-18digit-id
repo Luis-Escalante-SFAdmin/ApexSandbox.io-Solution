@@ -2,7 +2,7 @@ public String convert15to18DigitId(String fifteenDigit)
 {
     Id newId = Id.valueOf(fifteenDigit);
 
-    if(newId.length() == 18){
+    if(newId == fifteenDigit){
         return newId;
     }
     return '-1';
