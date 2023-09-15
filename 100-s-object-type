@@ -1,6 +1,6 @@
 public Boolean isTypeAccount(sObject record)
 {
-    record = acc InstanceOf Account;
+    record = InstanceOf Account;
 
     if(acc != null)
     {
