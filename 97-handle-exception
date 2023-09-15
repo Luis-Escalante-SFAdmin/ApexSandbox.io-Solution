@@ -3,12 +3,11 @@ public String divide(Integer a, Integer b){
     {
         String division = String.valueOf(a / b);
         String result = division;
-        return result;
         
     }
     catch (Exception e)
     {
-        System.debug('Error: ' + e.getMessage());
+        return e.getMessage();
     }
-    
+    return result;
 }
