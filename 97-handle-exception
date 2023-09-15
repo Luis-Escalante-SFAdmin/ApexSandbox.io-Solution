@@ -6,6 +6,6 @@ public String divide(Integer a, Integer b){
     }
     catch (DmlExcelption e)
     {
-        System.debug('Error: ' + e.getMessage);
+        System.debug('Error: ' + e.getMessage());
     }
 }
