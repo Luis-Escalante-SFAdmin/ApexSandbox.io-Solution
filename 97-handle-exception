@@ -3,7 +3,7 @@ public String divide(Integer a, Integer b){
     {
         Integer valueA = a;
         Integer valueB = b;
-        Integer result = String.valueOf.(a / b);
+        Integer result = valueA / valueB;
         
     }
     catch (Exception e)
