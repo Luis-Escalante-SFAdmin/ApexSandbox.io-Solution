@@ -1,9 +1,8 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
-    fifteenDigit = fifteenDigit.length(18);
     Id newId = fifteenDigit;
 
-    if(newId == 18){
+    if(newId == fifteenDigit){
         return newId;
     }
     
