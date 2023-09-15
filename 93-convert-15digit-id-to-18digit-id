@@ -1,17 +1,11 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
-    if (fifteenDigit.length() == 15) {
-        String eighteenDigit = '';
-        for (Integer i = 0; i < 3; i++) {
-            // Perform some logic to convert each group of 5 characters
-            String eighting = fifteenDigit.substring(i * 5, (i + 1) * 5);
-            // Append the converted group to the 18-digit ID
-            eighteenDigit += eighting + 'XYZ'; // Example conversion logic
-        }
-        return eighteenDigit;
-    } else {
-        // Handle invalid input or throw an exception
-        return null;
+    Id newId = fifteenDigit;
+
+    if(fifteenDigit.length() == 18){
+        return newId;
+
     }
+    return '-1';
 
 }
