@@ -3,11 +3,11 @@ public String convert15to18DigitId(String fifteenDigit)
     Id newId = Id.valueOf(fifteenDigit);
 
     if(newId != fifteenDigit){
-        return newId;
+        return '-1';
     }
     else
     {
-    return '-1';
+    return newId;
     }
 
 }
