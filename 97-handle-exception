@@ -2,7 +2,7 @@ public String divide(Integer a, Integer b){
     try
     {
         String div = divide(a, b);
-        String result = division;
+        String result = div;
         
     }
     catch (Exception e)
