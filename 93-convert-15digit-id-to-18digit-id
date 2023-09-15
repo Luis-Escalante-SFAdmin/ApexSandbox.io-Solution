@@ -6,7 +6,7 @@ public String convert15to18DigitId(String fifteenDigit)
         return newId;
     }
     else{
-        System.debug('-1');
+        return '-1';
     }
 
 
