@@ -1,9 +1,7 @@
 public String divide(Integer a, Integer b){ 
     try
     {
-        Integer valueA = a;
-        Integer valueB = b;
-        Integer result = String.valueOf(valueA / valueB);
+        Integer result = String.valueOf(a / b);
         
     }
     catch (Exception e)
