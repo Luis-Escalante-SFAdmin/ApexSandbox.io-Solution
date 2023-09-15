@@ -4,10 +4,11 @@ public String divide(Integer a, Integer b){
         Integer valueA = a;
         Integer valueB = b;
         Integer result = a / b;
-        return String.valueOf(result);
+        
     }
     catch (Exception e)
     {
         System.debug('Error: ' + e.getMessage());
     }
+    return String.valueOf(result);
 }
