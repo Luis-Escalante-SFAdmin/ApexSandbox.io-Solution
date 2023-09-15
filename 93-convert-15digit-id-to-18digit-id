@@ -8,6 +8,8 @@ public String convert15to18DigitId(String fifteenDigit)
 
     if(fifteenDigit.Length() != 18) return null;
 
+    if(fifteenDigit == '') return null;
+
     return '-1';
 
 }
