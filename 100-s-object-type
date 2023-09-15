@@ -1,0 +1,14 @@
+public Boolean isTypeAccount(sObject record)
+{
+    Account acc = null;
+    Boolen result = acc instanceOf Account;
+
+    if(acc != null)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
