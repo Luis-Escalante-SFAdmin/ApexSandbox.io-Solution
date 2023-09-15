@@ -6,6 +6,6 @@ public String convert15to18DigitId(String fifteenDigit)
         return newId;
     }
 
-    return newId;
+    return '-1';
 
 }
