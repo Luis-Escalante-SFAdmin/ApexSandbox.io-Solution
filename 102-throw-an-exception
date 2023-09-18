@@ -1,7 +1,6 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-        accounts = [SELECT Id, name, BillingCity FROM Account WHERE BillingCity =: BillingCity];
     try
     {
 
