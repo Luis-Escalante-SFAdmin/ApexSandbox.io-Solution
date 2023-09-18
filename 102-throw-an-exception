@@ -4,7 +4,8 @@ public List<Account> checkAccounts(List<Account> accounts)
     Account[] acc = new Account[](String BillingCity, String name);
     
     try
-    {                
+    {         
+        for(Account a : acc){       
         if(accounts == null)
         {
             throw new IllegalArgumentException('accounts should not be null');
@@ -13,7 +14,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         {
             throw new AccountException('Invalid BillingCity');
         }
-
+        }
     }
     catch(Exception e)
     {
