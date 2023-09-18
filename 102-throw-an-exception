@@ -1,10 +1,12 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-    Account[] acc = new Account[](String BillingCity, String name);
+    String billingCity = BillingCity;
     
     try
-    {                
+    {   
+        if(accounts != null) return accounts;
+
         if(accounts == null)
         {
             throw new IllegalArgumentException('accounts should not be null');
