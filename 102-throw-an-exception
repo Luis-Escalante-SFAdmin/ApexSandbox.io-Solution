@@ -1,10 +1,10 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
+    Account acc = new Account (BillingCity = accounts.BillingCity);
+
 
     try
-    {
-        Account acc = new Account (BillingCity = accounts.BillingCity);
-        
+    {        
         if(accounts.BillingCity != null) return accounts;
         
         if(accounts == null)
