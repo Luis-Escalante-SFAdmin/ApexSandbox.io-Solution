@@ -2,6 +2,9 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     try
     {
+
+        String BillingCity;
+        
         if(accounts.BillingCity != null) return accounts;
         
         if(accounts == null)
