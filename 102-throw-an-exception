@@ -6,7 +6,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {         
         for(Account a : acc){       
-        if(accounts == null)
+        if(a.BillingCity == null)
         {
             throw new IllegalArgumentException('accounts should not be null');
         }
