@@ -1,12 +1,9 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
-    Account acc = new Account (BillingCity = accounts.BillingCity);
 
-
+    Account acc = new Account(String BillingCity, String name);
     try
-    {        
-        if(accounts.BillingCity != null) return accounts;
-        
+    {                
         if(accounts == null)
         {
             throw new IllegalArgumentException('accounts should not be null');
