@@ -1,7 +1,7 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-    String billingCity = BillingCity;
+    String billingCity = accounts.BillingCity;
     
     try
     {   
