@@ -4,8 +4,8 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
         Account acc = new Account();
-        
-        if(acc.BillingCity != null) return acc;
+
+        if(BillingCity != null) return acc;
         
         if(accounts == null)
         {
