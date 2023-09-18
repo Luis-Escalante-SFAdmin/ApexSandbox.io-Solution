@@ -4,9 +4,9 @@ public String divide(Integer a, Integer b){
         String division = String.valueOf(a / b);
         String result = division;
 
-        if(Math.mod(a, b) == 0)
+        if(a != 0)
         {
-            return null;
+            return result;
         }
         
     }
