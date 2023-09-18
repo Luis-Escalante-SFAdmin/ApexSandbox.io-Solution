@@ -1,8 +1,10 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
+
+        accounts = [SELECT Id, name, BillingCity FROM Account];
     try
     {
-        
+
         if(accounts.BillingCity != null) return accounts;
         
         if(accounts == null)
