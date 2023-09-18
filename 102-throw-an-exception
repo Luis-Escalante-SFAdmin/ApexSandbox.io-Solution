@@ -1,7 +1,7 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-    Account acc = new Account(accounts.BillingCity, accounts.Name);
+    Account acc = new Account(BillingCity, Name);
     
     try
     {   
