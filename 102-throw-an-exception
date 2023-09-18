@@ -3,8 +3,9 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
-
-        if(BillingCity != null) return accounts;
+        Account acc = new Account (BillingCity = accounts.BillingCity);
+        
+        if(accounts.BillingCity != null) return accounts;
         
         if(accounts == null)
         {
