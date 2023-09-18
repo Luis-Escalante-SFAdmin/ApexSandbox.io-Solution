@@ -3,9 +3,9 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
 
-        String BillingCity;
-        
-        if(accounts.BillingCity != null) return accounts;
+        String billingCity = BillingCity;
+
+        if(billingCity != null) return accounts;
         
         if(accounts == null)
         {
