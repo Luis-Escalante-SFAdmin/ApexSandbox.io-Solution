@@ -4,7 +4,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
         for(Account acc : accounts){
-        if(accounts.BillingCity != null) return accounts;
+        if(acc.BillingCity != null) return acc;
         
         if(accounts == null)
         {
