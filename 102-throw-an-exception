@@ -3,7 +3,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
-        Account acc = new Account();
+        Account acc = [SELECT Id, name, BillingCity FROM Account];
 
         if(BillingCity != null) return acc;
         
