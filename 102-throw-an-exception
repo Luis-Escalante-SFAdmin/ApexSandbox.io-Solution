@@ -3,9 +3,8 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
-        Account acc = [SELECT Id, name, BillingCity FROM Account];
 
-        if(acc.BillingCity != null) return acc;
+        if(accounts.BillingCity != null) return accounts;
         
         if(accounts == null)
         {
