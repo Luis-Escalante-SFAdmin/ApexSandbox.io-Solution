@@ -3,7 +3,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
-
+        for(Account acc : accounts){
         if(accounts.BillingCity != null) return accounts;
         
         if(accounts == null)
@@ -13,6 +13,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         else if(accounts.BillingCity == null)
         {
             throw new AccountException('Invalid BillingCity');
+        }
         }
     }
     catch(Exception e)
