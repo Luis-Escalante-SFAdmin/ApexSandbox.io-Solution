@@ -5,7 +5,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         Account acc = [SELECT Id, name, BillingCity FROM Account];
 
-        if(BillingCity != null) return acc;
+        if(acc.BillingCity != null) return acc;
         
         if(accounts == null)
         {
