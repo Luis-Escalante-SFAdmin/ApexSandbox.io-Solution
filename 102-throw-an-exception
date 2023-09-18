@@ -1,7 +1,8 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-    Account acc = new Account(String BillingCity, String name);
+    Account acc = new Account(BillingCity, String name);
+
     try
     {                
         if(accounts == null)
