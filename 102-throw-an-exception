@@ -3,7 +3,8 @@ public List<Account> checkAccounts(List<Account> accounts)
     List<Account> acc = new List<Account>();
     String Name;
     String BillingCity;
-    acc.add(new Account(BillingCity = 'city', Name = 'name'));
+    acc.add(new Account());
+    acc1.add(new Account(name = Name, billing = BillingCity));
 
     try
     {
