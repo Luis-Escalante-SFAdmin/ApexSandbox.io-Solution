@@ -6,17 +6,15 @@ public List<Account> checkAccounts(List<Account> accounts)
     {   
         Account acc = new Account(String billing = BillingCity, string name = Name);
 
-        if(acc != null) return acc;
 
         if(acc.billing == null) throw new IllegalArgumentException('accounts should not be null');
         
-        if(acc.billing == null) throw new AccountException('Invalid BillingCity');
-        
+        if(acc.billing == null) throw new AccountException('Invalid BillingCity'); 
 
     }
     catch(Exception e)
     {
-        return e.getMessage();
+        retSurn e.getMessage();
     } 
 }
 
