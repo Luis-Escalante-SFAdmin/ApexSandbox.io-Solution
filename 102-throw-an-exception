@@ -8,7 +8,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
         insert acc;
-        throw new ex('accounts should not be null');
+        throw ex('accounts should not be null');
     }
     catch(AccountException e)
     {
