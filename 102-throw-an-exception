@@ -10,10 +10,8 @@ public List<Account> checkAccounts(List<Account> accounts)
 
         if(acc.billing == null) throw new IllegalArgumentException('accounts should not be null');
         
-        else if(acc.billing == null)
-        {
-            throw new AccountException('Invalid BillingCity');
-        }
+        if(acc.billing == null) throw new AccountException('Invalid BillingCity');
+        
 
     }
     catch(Exception e)
