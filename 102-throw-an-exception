@@ -1,27 +1,16 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
+    List<Account> acc = new List<Account>();
+    acc.add(new Account(name != null, BillingCity != null));
+    acc.add(new Account(name != null));
 
-    
     try
-    {   
-        Account acc = new Account(String billing = BillingCity, string name = Name);
-
-        if(acc != null) return acc;
-
-        if(acc.billing == null) throw new IllegalArgumentException('accounts should not be null');
-        
-        if(acc.billing == null) throw new AccountException('Invalid BillingCity'); 
-
-    }
-    catch(AccountException ae)
     {
-        System.debug(ae.getMessage());
+        return acc;
+        throw new IllegalArgumentException('accounts should not be null');
     }
-    catch(Exception e)
-    {
-        System.debug(e.getMessage());
-    } 
-}
+    catch()
+} 
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {}
