@@ -14,10 +14,6 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug(e.getMessage());
     }
-    catch(AccountException ae)
-    {
-        System.debug(ae.getMessage());
-    }
 
     return accounts;
 
