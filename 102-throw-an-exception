@@ -4,8 +4,10 @@ public List<Account> checkAccounts(List<Account> accounts)
     String Name;
     String BillingCity;
 
-    if(BillingCity == null) throw new IllegalArgumentException('accounts should not be null');
-
+    if(BillingCity == null) 
+    {
+        throw new IllegalArgumentException('accounts should not be null');
+    }
     try
     {
         if(BillingCity == null) 
