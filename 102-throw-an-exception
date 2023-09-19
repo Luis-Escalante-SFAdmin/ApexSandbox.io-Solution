@@ -1,14 +1,12 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
-
-    for(List<Account> a : acc);
     
-    a.add(new Account(name = 'Lindsey'));
+    acc.add(new Account(name = 'Lindsey'));
 
     try
     {
-        return a;
+        return acc;
         throw new IllegalArgumentException('accounts should not be null');
     }
     catch(IllegalArgumentException ae)
