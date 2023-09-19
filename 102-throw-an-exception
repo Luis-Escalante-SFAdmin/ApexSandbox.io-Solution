@@ -1,7 +1,7 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
-    List<Account> acc = new List<Account>();
-    acc.add(new Account(BillingCity = null));
+    List<Account> acc = new List<Account>(String BillingCity, String Name);
+    acc.add(new Account());
     try
     {
         if(BillingCity == null){
