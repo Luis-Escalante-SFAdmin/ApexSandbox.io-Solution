@@ -1,11 +1,11 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
-    String Name;
-    String BillingCity = null;
 
     try
     {
+        String Name;
+        String BillingCity = null;
         acc.add(new Account());
 
     }
