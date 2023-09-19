@@ -1,13 +1,12 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
-    String Name;
-    String BillingCity;
 
     if(BillingCity == null) 
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
+
     try
     {
         if(BillingCity == null) 
