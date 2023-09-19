@@ -6,11 +6,16 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
+        if(BillingCity == null) 
         throw new AccountException('Invalid BillingCity'); 
     }
-    catch (DmlException dml)
+    catch (IllegalArgumentException ae)
     {
         throw new IllegalArgumentException('accounts should not be null');
+    }
+    finally
+    {
+        System.debug('accounts should not be null');
     }
     return acc;
 } 
