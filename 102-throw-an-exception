@@ -4,15 +4,12 @@ public List<Account> checkAccounts(List<Account> accounts)
     String BillingCity;
     String Name;
     acc.add(new Account());
+    acc
     try
     {
 
-        if(BillingCity == null)
-        {
-        throw new AccountException('Invalid BillingCity');
-        }
-
-        return acc;
+        if(BillingCity == null) throw new AccountException('Invalid BillingCity');
+        
     }
     catch(IllegalArgumentException e)
     {
