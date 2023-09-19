@@ -17,6 +17,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new AccountException('Invalid BillingCity');
     }
+    insert accounts;
 } 
 
 //do not remove the following custom-defined exception
