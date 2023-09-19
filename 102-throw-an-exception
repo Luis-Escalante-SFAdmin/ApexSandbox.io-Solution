@@ -15,7 +15,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     finally
     {
-        System.debug(exc);
+        throw ae;
     }
     return acc;
 } 
