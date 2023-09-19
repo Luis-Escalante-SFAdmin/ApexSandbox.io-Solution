@@ -7,7 +7,11 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
         if(BillingCity == null) 
-        throw new AccountException('Invalid BillingCity'); 
+        throw new AccountException('Invalid BillingCity');
+
+        IllegalArgumentException iae = new IllegalArgumentException();
+        iae.setMessage('accounts should not be null');
+        throw iae;
     }
     catch(IllegalArgumentException e)
     {
