@@ -6,7 +6,6 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
-        insert acc; 
         throw new AccountException('Invalid BillingCity'); 
     }
     catch (DmlException dml)
