@@ -9,13 +9,13 @@ public List<Account> checkAccounts(List<Account> accounts)
         if(BillingCity == null) 
         throw new AccountException('Invalid BillingCity'); 
     }
-    catch(Exception e)
-    {
-        System.debug(e);
-    }
     catch (IllegalArgumentException ae)
     {
         throw new IllegalArgumentException('accounts should not be null');
+    }
+    catch(Exception e)
+    {
+        System.debug(e);
     }
     return acc;
 } 
