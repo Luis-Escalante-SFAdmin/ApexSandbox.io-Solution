@@ -14,6 +14,10 @@ public List<Account> checkAccounts(List<Account> accounts)
         {
         throw new AccountException('Invalid BillingCity');
         }
+        else if(BillingCity != null)
+        {
+            return acc;
+        }
     }
     catch (AccountException ae)
     {
