@@ -13,11 +13,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     catch(IllegalArgumentException e)
     {
-        throw IllegalArgumentException('accounts should not be null');
-    }
-    catch(AccountException ae)
-    {
-        throw new AccountException('Invalid BillingCity');
+        throw new IllegalArgumentException('accounts should not be null');
     }
 
     return acc;
