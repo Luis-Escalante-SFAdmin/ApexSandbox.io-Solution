@@ -11,9 +11,9 @@ public List<Account> checkAccounts(List<Account> accounts)
         if(BillingCity == null) 
         throw new AccountException('Invalid BillingCity'); 
     }
-    catch (IllegalArgumentException ae)
+    catch (AccountException ae)
     {
-        throw new IllegalArgumentException('accounts should not be null');
+        throw new AccountException('Invalid BillingCity');
     }
     return acc;
 } 
