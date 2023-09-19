@@ -2,7 +2,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
     
-    acc.add(new Account(name = Name));
+    acc.add(new Account(Name = 'Luis'));
 
     try
     {
