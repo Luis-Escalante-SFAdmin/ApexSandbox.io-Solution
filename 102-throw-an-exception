@@ -1,11 +1,11 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-    public class AccountException extends Exception {}
-    Account acc = new Account(String billing = BillingCity, string name = Name);
     
     try
     {   
+        Account acc = new Account(String billing = BillingCity, string name = Name);
+
         if(acc != null) return acc;
 
         if(acc.billing == null)
@@ -25,3 +25,4 @@ public List<Account> checkAccounts(List<Account> accounts)
 }
 
 //do not remove the following custom-defined exception
+public class AccountException extends Exception {}
