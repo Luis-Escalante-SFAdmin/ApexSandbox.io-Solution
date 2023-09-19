@@ -13,9 +13,9 @@ public List<Account> checkAccounts(List<Account> accounts)
         iae.setMessage('accounts should not be null');
         throw iae;
     }
-    catch(IllegalArgumentException e)
+    catch(Exception e)
     {
-        throw new IllegalArgumentException('accounts should not be null');
+        System.debug(e);
     }
     return acc;
 } 
