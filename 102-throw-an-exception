@@ -9,7 +9,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         if(BillingCity == null) 
         throw new AccountException('Invalid BillingCity'); 
     }
-    catch (IllegalArgumentException ae)
+    catch (DmlException dml)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
