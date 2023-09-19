@@ -14,7 +14,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     finally (Exception e)
     {
-        System.debug('Error: ' + e.getMessage());
+        System.debug(e.getMessage());
     }
 
     return acc;
