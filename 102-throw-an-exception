@@ -7,7 +7,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
-    else if(accounts.BillingCity != null)
+    else if(accounts != null)
     {
         return accounts;
     }
