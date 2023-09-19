@@ -14,7 +14,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         }
         else
         {
-            return accounts;
+            return acc;
         }
     }
     catch(IllegalArgumentException e)
