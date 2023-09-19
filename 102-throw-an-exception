@@ -16,7 +16,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         }
         else if(BillingCity != null)
         {
-            return acc;
+            return accounts;
         }
     }
     catch (AccountException ae)
