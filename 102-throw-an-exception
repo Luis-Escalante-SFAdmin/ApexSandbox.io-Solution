@@ -24,6 +24,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug('accounts should not be null');
     }
+    accounts.add(acc);
     return accounts;
 } 
 
