@@ -14,6 +14,10 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
+    catch (AccountException ae)
+    {
+        System.debug(ae.getMessage());
+    }
 
     return acc;
 
