@@ -9,7 +9,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     catch(IllegalArgumentException e)
     {
-        Syste.debug(e.getMessage());
+        System.debug(e.getMessage());
     }
 
 } 
