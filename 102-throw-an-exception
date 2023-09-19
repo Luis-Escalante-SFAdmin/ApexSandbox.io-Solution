@@ -8,16 +8,17 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
 
-        if(BillingCity == null) throw new IllegalArgumentException('accounts should not be null');
+        if(BillingCity == null) throw new AccountException('Invalid BillingCity');
 
+        insert acc;
         
     }
-    catch(AccountException e)
+    catch(IllegalArgumentException e)
     {
-        throw new AccountException('Invalid BillingCity');
+        throw new IllegalArgumentException('accounts should not be null');
     }
 
-    return acc;
+    return accounts;
 
 } 
 
