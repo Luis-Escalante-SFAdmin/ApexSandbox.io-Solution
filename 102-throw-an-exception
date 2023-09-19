@@ -13,10 +13,6 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
-    catch(Exception e)
-    {
-        System.debug(e);
-    }
     return acc;
 } 
 
