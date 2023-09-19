@@ -7,6 +7,10 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
+    else if(accounts.BillingCity != null)
+    {
+        return accounts;
+    }
     
     try
     {
@@ -24,7 +28,6 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug('accounts should not be null');
     }
-    acc.add(accounts);
     return accounts;
 } 
 
