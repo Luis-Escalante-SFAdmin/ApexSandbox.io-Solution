@@ -1,16 +1,21 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
-    acc.add(new Account(name = 'Luis', BillingCity = 'Rocky Point'));
-    acc.add(new Account(name = 'Lindsey'));
+
+    for(List<Account> a : acc);
+    
+    /*acc.add(new Account(name = 'Luis', BillingCity = 'Rocky Point'));
+    acc.add(new Account(name = 'Lindsey'));*/
 
     try
     {
-        return acc;
+        if(a.BillingCity == null);
+        throw new IllegalArgumentException('accounts should not be null');
     }
     catch(IllegalArgumentException ae)
     {
         System.debug(ae.getMessage());
+        System.debug('Get Message: ' + )
     }
 
     return acc;
