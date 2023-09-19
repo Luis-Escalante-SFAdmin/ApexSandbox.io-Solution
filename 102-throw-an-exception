@@ -6,14 +6,13 @@ public List<Account> checkAccounts(List<Account> accounts)
     acc.add(new Account());
     try
     {
+
         if(BillingCity == null)
         {
         throw new AccountException('Invalid BillingCity');
         }
-        else
-        {
-            insert acc;
-        }
+
+        insert acc;
     }
     catch(IllegalArgumentException e)
     {
