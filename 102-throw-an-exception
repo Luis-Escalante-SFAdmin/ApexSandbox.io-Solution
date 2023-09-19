@@ -6,8 +6,11 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
-        if(BillingCity == null) 
-        throw new AccountException('Invalid BillingCity'); 
+        if(BillingCity == null)
+
+        AccountException accex = new AccountException();
+        accex.setMessage('Invalid BillingCity'); 
+        throw accex; 
     }
     catch (IllegalArgumentException ae)
     {
