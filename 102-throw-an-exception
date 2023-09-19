@@ -9,6 +9,8 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
 
         if(BillingCity == null) throw new AccountException('Invalid BillingCity');
+
+        insert acc;
         
     }
     catch(IllegalArgumentException e)
