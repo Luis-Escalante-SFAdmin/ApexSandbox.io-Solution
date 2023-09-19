@@ -10,7 +10,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 
         AccountException accex = new AccountException();
         accex.setMessage('Invalid BillingCity'); 
-        throw accex; 
+        throw new accex; 
     }
     catch (IllegalArgumentException ae)
     {
