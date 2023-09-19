@@ -8,7 +8,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         String BillingCity = null;
         if(BillingCity == null) throw new AccountException('Invalid BillingCity');
-        if(acc.isEmpty) throw new IllegalArgumentException('accounts should not be null');
+        if(acc.isEmpty()) throw new IllegalArgumentException('accounts should not be null');
 
     }
     catch(IllegalArgumentException e)
