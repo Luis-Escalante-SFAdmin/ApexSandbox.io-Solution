@@ -11,7 +11,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         List<Account> acc = new List<Account>();
         String BillingCity;
-        return acc;
+        return accounts;
 
         if(BillingCity == null) 
         {
