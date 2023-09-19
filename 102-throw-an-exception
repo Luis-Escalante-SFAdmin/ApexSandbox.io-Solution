@@ -21,7 +21,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug('accounts should not be null');
     }
-    return accounts;
+    return acc;
 } 
 
 //do not remove the following custom-defined exception
