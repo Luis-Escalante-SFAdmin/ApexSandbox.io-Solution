@@ -12,7 +12,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         }
         else
         {
-            return acc;
+            insert acc;
         }
     }
     catch(IllegalArgumentException e)
