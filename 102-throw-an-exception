@@ -2,11 +2,11 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
     String Name;
-    String BillingCity;
+    String BillingCity = null;
 
     try
     {
-        if(BillingCity == null) 
+        if(BillingCity != null) 
         throw new AccountException('Invalid BillingCity'); 
     }
     catch (IllegalArgumentException ae)
