@@ -13,7 +13,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
-    finally (AccountException exc)
+    finally
     {
         System.debug(exc);
     }
