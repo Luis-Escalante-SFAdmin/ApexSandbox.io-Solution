@@ -6,6 +6,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {   
         Account acc = new Account(String billing = BillingCity, string name = Name);
 
+        if(acc != null) return acc;
 
         if(acc.billing == null) throw new IllegalArgumentException('accounts should not be null');
         
@@ -14,7 +15,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     catch(Exception e)
     {
-        retSurn e.getMessage();
+        System.debug(e.getMessage());
     } 
 }
 
