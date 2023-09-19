@@ -11,7 +11,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         {
             throw new IllegalArgumentException('accounts should not be null');
         }
-        else if(accounts.billing == null)
+        else if(acc.billing == null)
         {
             throw new AccountException('Invalid BillingCity');
         }
