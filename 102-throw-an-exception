@@ -11,7 +11,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     catch(AccountException e)
     {
         System.debug(e.getMessage());
-        throw e;
+        throw e('Invalid BillingCity');
     }
 
 } 
