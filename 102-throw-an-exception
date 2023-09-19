@@ -12,7 +12,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         throw new AccountException('Invalid BillingCity');
         }
 
-        insert acc;
+        return acc;
     }
     catch(IllegalArgumentException e)
     {
