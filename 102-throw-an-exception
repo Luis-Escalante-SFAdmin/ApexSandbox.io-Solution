@@ -23,7 +23,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug('accounts should not be null');
     }
-    return acc;
+    return accounts;
 } 
 
 //do not remove the following custom-defined exception
