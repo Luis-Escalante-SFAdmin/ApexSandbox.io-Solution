@@ -8,9 +8,8 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
 
-        throw new IllegalArgumentException('accounts should not be null');
+        if(BillingCity == null) throw new IllegalArgumentException('accounts should not be null');
 
-        insert acc;
         
     }
     catch(AccountException e)
