@@ -10,6 +10,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     
     try
     {
+        return accounts;
         if(BillingCity == null) 
         {
         throw new AccountException('Invalid BillingCity');
@@ -24,8 +25,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug('accounts should not be null');
     }
-    acc.add(accounts);
-    return accounts;
+    
 } 
 
 //do not remove the following custom-defined exception
