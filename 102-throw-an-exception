@@ -8,7 +8,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
         
-        if(BillingCity == null) 
+        if(BillingCity == null && Name != null) 
         {
             throw new AccountException('Invalid BillingCity');
         }
@@ -21,7 +21,6 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
-
 
 } 
 
