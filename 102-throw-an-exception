@@ -1,16 +1,14 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
-    String BillingCity;
     String Name;
     acc.add(new Account());
 
     try
     {
-
+        String BillingCity = null;
         if(BillingCity == null) throw new AccountException('Invalid BillingCity');
 
-        
     }
     catch(IllegalArgumentException e)
     {
