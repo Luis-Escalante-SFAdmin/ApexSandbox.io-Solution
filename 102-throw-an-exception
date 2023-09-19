@@ -12,6 +12,8 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug(ae.getMessage());
     }
+
+    return acc;
 } 
 
 //do not remove the following custom-defined exception
