@@ -14,7 +14,6 @@ public List<Account> checkAccounts(List<Account> accounts)
         throw e;
     }
 
-    return acc;
 } 
 
 //do not remove the following custom-defined exception
