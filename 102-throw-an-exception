@@ -1,7 +1,6 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
-    List<Account> acc = new List<Account>();
-    String BillingCity;
+    
 
     if(accounts == null) 
     {
@@ -10,6 +9,9 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     try
     {
+        List<Account> acc = new List<Account>();
+        String BillingCity;
+        
         if(BillingCity == null) 
         {
         throw new AccountException('Invalid BillingCity');
