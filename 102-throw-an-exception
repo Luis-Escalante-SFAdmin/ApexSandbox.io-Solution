@@ -9,7 +9,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     else
     {
-        return accounts;
+        return acc;
     }
     
     try
