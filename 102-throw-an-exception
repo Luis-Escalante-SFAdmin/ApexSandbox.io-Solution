@@ -8,9 +8,9 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new IllegalArgumentException('accounts should not be null');
     }
-    catch(AccountException ae)
+    catch(DmlException e)
     {
-        System.debug(ae.getMessage());
+        System.debug(e.getMessage(Exception));
     }
 
     return acc;
