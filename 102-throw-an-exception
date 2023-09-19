@@ -3,9 +3,13 @@ public List<Account> checkAccounts(List<Account> accounts)
     List<Account> acc = new List<Account>();
     String BillingCity;
 
-    if(accounts != null) 
+    if(accounts == null) 
     {
         throw new IllegalArgumentException('accounts should not be null');
+    }
+    else
+    {
+        return accounts;
     }
     
     try
@@ -17,7 +21,6 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         throw new AccountException('Invalid BillingCity');
     }
-    return accounts;
 } 
 
 //do not remove the following custom-defined exception
