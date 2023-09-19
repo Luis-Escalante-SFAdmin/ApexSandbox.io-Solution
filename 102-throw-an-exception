@@ -14,7 +14,6 @@ public List<Account> checkAccounts(List<Account> accounts)
         {
         throw new AccountException('Invalid BillingCity');
         }
-        insert accounts;
     }
     catch (AccountException ae)
     {
@@ -25,7 +24,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         System.debug(le.getMessage());
     }
 
-    return acc;
+    return accounts;
     
 } 
 
