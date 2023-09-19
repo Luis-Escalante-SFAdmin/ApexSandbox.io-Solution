@@ -4,7 +4,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     String BillingCity;
     String Name;
     acc.add(new Account());
-    acc
+
     try
     {
 
