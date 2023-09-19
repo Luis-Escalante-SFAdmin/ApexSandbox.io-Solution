@@ -7,6 +7,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     try
     {
         acc.add(new Account());
+        insert acc;
 
     }
     catch(IllegalArgumentException e)
