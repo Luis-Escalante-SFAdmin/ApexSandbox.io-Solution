@@ -1,10 +1,10 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
+    acc.add(new Account(name = 'Lindsey'));
     
     try
     {
-        acc.add(new Account(name = 'Lindsey'));
         throw new IllegalArgumentException('accounts should not be null');
     }
     catch(IllegalArgumentException e)
