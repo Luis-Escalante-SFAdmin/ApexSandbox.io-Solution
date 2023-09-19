@@ -1,7 +1,7 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
 
-    
+    public static ExtendedException(){
     try
     {   
         Account acc = new Account(String billing = BillingCity, string name = Name);
@@ -17,6 +17,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         System.debug(e.getMessage());
     } 
+}
 }
 
 //do not remove the following custom-defined exception
