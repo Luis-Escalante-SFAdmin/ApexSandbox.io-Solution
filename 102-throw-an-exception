@@ -13,7 +13,11 @@ public List<Account> checkAccounts(List<Account> accounts)
         if(acc.billing == null) throw new AccountException('Invalid BillingCity'); 
 
     }
-    catch(AccountException e)
+    catch(AccountException ae)
+    {
+        System.debug(ae.getMessage());
+    }
+    catch(Exception e)
     {
         System.debug(e.getMessage());
     } 
