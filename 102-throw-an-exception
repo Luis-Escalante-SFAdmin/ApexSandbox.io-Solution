@@ -7,9 +7,9 @@ public List<Account> checkAccounts(List<Account> accounts)
         acc.add(new Account(name = 'Lindsey'));
         throw new IllegalArgumentException('accounts should not be null');
     }
-    catch(AccountException e)
+    catch(IllegalArgumentException e)
     {
-        throw new AccountException('Invalid BillingCity');
+        Syste.debug(e.getMessage());
     }
 
 } 
