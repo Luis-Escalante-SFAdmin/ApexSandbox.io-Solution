@@ -10,7 +10,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     catch(DmlException e)
     {
-        System.debug(e.getMessage(Exception));
+        System.debug(e.getMessage());
     }
 
     return acc;
