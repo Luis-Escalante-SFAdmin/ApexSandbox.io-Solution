@@ -5,7 +5,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     
     try
     {   
-        if(accounts != null) return accounts;
+        if(acc != null) return acc;
 
         if(accounts.BillingCity == null)
         {
