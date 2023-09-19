@@ -1,8 +1,8 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
-    acc.add(new Account(name = 'Name', BillingCity = 'BillingCity'));
-    acc.add(new Account(name = 'Name'));
+    acc.add(new Account(name = 'Luis', BillingCity = 'Rocky Point'));
+    acc.add(new Account(name = 'Lindsey'));
 
     try
     {
