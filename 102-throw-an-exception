@@ -2,12 +2,12 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     List<Account> acc = new List<Account>();
     String Name;
-    String BillingCity;
-    acc.add(new Account(BillingCity = null));
+    String BillingCity = null;
 
     try
     {
-        insert acc;
+        acc.add(new Account());
+
     }
     catch(IllegalArgumentException e)
     {
@@ -19,6 +19,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
 
     return acc;
+
 } 
 
 //do not remove the following custom-defined exception
