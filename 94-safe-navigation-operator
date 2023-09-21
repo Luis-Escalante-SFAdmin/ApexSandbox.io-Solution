@@ -3,7 +3,7 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    {
        if(account[0]?.getAccountBillingCityWithSafeNavigation().BillingCity)
        {
-           return null
+           return null;
        }
        else if(BillingCity != null)
        {
