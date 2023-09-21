@@ -1,5 +1,5 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
-   for(Account account : accounts)
+   for(List<Account> account : accounts)
    {
        if(account[0]?.getAccountBillingCityWithSafeNavigation().BillingCity)
        {
