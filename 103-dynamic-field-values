@@ -1,13 +1,13 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-    List<Account> accFields = new List<Account>();
+    List<Account> accounts = new List<Account>();
 
-    for(Account accounts : acc)
+    for(String field : fields)
     {
-        String fieldValues = (String)accounts.get(fields);
+        acc.get(field);
     }
 
-    return fieldValues;
+    return accounts;
    
 
 }
