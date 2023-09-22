@@ -1,14 +1,10 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-
+    fields = String.valueOf(fields);
     for(String field : fields)
     {
-        if(field == 0)
-        {
-            return String.valueOf(field);
-        }
         field = (String)acc.get(field);
-
+        
     }
 
     return fields;
