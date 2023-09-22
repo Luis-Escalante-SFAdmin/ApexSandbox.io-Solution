@@ -1,15 +1,8 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-    Account accounts = new Account(Name = '', BillingCity= '', AnnualRevenue = 0, Rating = '');
-    String name = (String)accounts.get('Name');
-    String bCity = (String)accounts.get('BillingCity');
-    String revenue = (String)accounts.get('AnnualRevenue');
-    String rate = (String)accounts.get('Rating');
+    List<SObject> accObj = new List<SObject>(Name= '', BillingCity= ''; AnnualRevenuew= 0, Rating= '');
+    String fieldValues = (String)accObj.get();
 
-    List<String> newFields = new List<String>();
-
-    String strFields = String.valueOf(newFields);
-
-    return strFields;
+    return fieldValues;    
 
 }
