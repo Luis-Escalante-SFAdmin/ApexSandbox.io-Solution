@@ -4,9 +4,9 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     for(String field : fields)
     {
         field = (String)acc.get(field);
-        return fields;
     }
 
-   
+    return fields;
+
 
 }
