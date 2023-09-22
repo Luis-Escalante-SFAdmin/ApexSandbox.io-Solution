@@ -3,6 +3,10 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 
     for(String field : fields)
     {
+        if(field == null)
+        {
+            return null;
+        }
         field = (String)acc.get(field);
 
     }
