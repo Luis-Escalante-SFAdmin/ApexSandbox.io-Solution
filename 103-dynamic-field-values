@@ -3,10 +3,11 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 
     for(String field : fields)
     {
-        String accFields = String.valueOf(field);
+        String accFields = String.valueOf(field);    
+        return accFields;
+
     }
 
-    return accFields;
 
 
 }
