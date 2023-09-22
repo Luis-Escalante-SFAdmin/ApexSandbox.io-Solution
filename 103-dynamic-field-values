@@ -1,7 +1,7 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
 
-    for(List<String> field : fields)
+    for(String field : fields)
     {
         return (String)fields.get(field);
         
