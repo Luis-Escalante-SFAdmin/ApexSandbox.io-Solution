@@ -1,6 +1,6 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-    Account accounts = new Account(String Name, String BillingCity, String AnnualRevenue);
+    Account accounts = new Account(Name = '', BillingCity= '', AnnualRevenue = 0);
     String name = (String)accounts.get('Name');
     String bCity = (String)accounts.get('BillingCity');
     String revenue = (String)accounts.get('AnnualRevenue');
