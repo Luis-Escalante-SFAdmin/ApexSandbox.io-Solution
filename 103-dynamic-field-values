@@ -1,6 +1,6 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-    List<SObject> accObj = query(fields);
+    List<SObject> accObj = new List<SObject>(fields);
     String fieldValues = String.valueOf(accObj);
 
     return fieldValues;    
