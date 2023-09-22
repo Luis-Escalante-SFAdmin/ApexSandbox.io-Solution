@@ -1,7 +1,6 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
-    List<SObject> accObj = new List<SObject>();
-    String fieldValues = (String)accObj.get('Name');
+    List<SObject> accObj = new List<SObject>(fields);
 
     return accObj;    
 
