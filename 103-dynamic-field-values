@@ -6,7 +6,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     String revenue = (String)accounts.get('AnnualRevenue');
     String rate = (String)accounts.get('Rating');
 
-    List<String> newFields = new List<String>(name, bCity, revenue);
+    List<String> newFields = new List<String>();
 
     String strFields = String.valueOf(newFields);
 
