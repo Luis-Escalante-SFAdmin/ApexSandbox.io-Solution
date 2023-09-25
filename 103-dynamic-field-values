@@ -8,11 +8,10 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
         if(field != null)
         {
             String values = (String)acc.get(field);
-        
         }
         
     }
 
-    return results;
+    return fields;
 
 }
