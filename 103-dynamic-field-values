@@ -4,6 +4,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     for(String field : fields)
     {
         if(field == null) acc.get(field);
+        if(field != null) acc.get(field);
         
     }
 
