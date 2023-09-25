@@ -3,22 +3,18 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 
     List<String> results = new List<String>();
 
-    for (String field : fields) {
-        if (field != null) {
-            Object fieldValue = acc.get(field);
+    for(String field : fields)
+    {
 
-            if (fieldValue != null) {
-                if (fieldValue instanceof String) {
-                    // If it's already a String, add it directly to the results
-                    results.add((String) fieldValue);
-                } else {
-                    // Convert non-String values to String and add them
-                    results.add(String.valueOf(fieldValue));
-                }
-            }
+
+        if(field != null)
+        {
+        String values = (String).valueOf(field);
+        results.add(values);
+
         }
     }
-
+    
     return results;
 
 }
