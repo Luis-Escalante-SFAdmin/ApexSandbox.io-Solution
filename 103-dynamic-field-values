@@ -5,13 +5,13 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 
     for(String field : fields)
     {
-        String values = String.valueOf(acc[0]);
+        String values = String.valueOf(field);
         values = (String)acc.get(field);
         results.add(values);
         
         
     }
-
+    results.add(acc);
     return results;
 
 }
