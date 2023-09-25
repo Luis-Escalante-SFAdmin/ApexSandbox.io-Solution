@@ -14,8 +14,8 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
         results.add(values);
 
         }
-        fields.add(field);
     }
+    fields.add(results);
     return results;
 
 }
