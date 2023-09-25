@@ -10,7 +10,6 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 
         if(values != null)
         {
-        values = String.valueOf(field);
         results.add(values);
 
         }
