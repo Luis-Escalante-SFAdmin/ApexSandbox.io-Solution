@@ -7,15 +7,11 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     {
         String values = String.valueOf(fields);
 
-        if(values != null)
-        {
+       
             values = (String)acc.get(field);
             results.add(values);
-        }
-        else
-        {
-            return results;
-        }
+        
+        
     }
 
     return results;
