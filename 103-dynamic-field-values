@@ -7,10 +7,9 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     {
         if(field != null)
         {
-            String values = (String)acc.get(field);
-            
+            String values = (String)acc.get(Schema.String.field);
+            results.add(values);
         }
-        results.add(values);
         
     }
 
