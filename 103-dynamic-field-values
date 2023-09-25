@@ -11,11 +11,10 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
         {
         String values = String.valueOf(field);
         values = (String)acc.get(field);
+        results.add(values);
 
         }
-                results.add(values);
-
-        
+        fields.add(field);
     }
     return results;
 
