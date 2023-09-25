@@ -11,7 +11,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
         {
         String values = String.valueOf(field);
         acc.get(values);
-        results.add(field);
+        field.add(values);
 
         }
         
