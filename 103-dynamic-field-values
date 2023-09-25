@@ -1,17 +1,17 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
 
+    List<String> results = new List<String>('Account');
+
     for(String field : fields)
     {
-        List<String> results = new List<String>();
-
         if(field != null)
         {
-            acc.get(field);
+            results = acc.get(field);
         }
         
     }
 
-    return fields;
+    return results;
 
 }
