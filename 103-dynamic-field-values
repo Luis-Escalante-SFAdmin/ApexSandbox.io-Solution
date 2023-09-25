@@ -14,7 +14,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
         }
         else
         {
-            return values;
+            return results;
         }
     }
 
