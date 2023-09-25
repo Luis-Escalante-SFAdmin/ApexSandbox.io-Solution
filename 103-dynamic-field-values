@@ -12,7 +12,10 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
             values = (String)acc.get(field);
             results.add(values);
         }
-        
+        else if(values == 0)
+        {
+            result.add(values);
+        }
     }
 
     return results;
