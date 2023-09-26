@@ -1,11 +1,10 @@
 public String getAccountsInJSONFormat(List<Account> accounts){
-  
+  List<String> results = new List<String>();
+
   for(Account acc : accounts)
   {
+      String obJson = JSON.serialize(acc);
+  }
 
-  
-   acc = Account.newInstance(String str = JSON.serialize(acc));
-    }
-
-  return a;
+  return acc;
 }
