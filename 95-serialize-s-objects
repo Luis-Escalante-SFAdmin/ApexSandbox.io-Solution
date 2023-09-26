@@ -1,7 +1,7 @@
 public String getAccountsInJSONFormat(List<Account> accounts){
-  List<Account> acc = new List<Account>();
+  Account acc = new Account();
   
-  Account a = Account.newInstance(acc.newInstance()String str = JSON.serialize(a));
+  Account a = Account.newInstance(String str = JSON.serialize(a));
 
   return a;
 }
