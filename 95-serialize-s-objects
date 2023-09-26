@@ -4,7 +4,8 @@ public String getAccountsInJSONFormat(List<Account> accounts){
   for(Account acc : accounts)
   {
       String obJson = JSON.serialize(acc);
+    return acc;
   }
 
-  return acc;
+  
 }
