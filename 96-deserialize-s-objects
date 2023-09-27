@@ -4,12 +4,12 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
 
     if(inputJSON != null)
     {
-        Account acc = (Account)JSON.deserialize(inputJSON, Account.class);
+        accounts = (List<Account>)JSON.deserialize(inputJSON, List<Account>.class);
     }
     else
     {
         return null;
     }
-
+    
     return accounts;
 }
