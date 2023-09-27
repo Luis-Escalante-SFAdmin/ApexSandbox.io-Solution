@@ -3,10 +3,10 @@ public Map<String,String> getContextUserInformation(){
 
     if(user != null)
     {
-    userInfo.getUserEmail();
-    userInfo.getUserName();
-    userInfo.getUserType();
-    userInfo.getProfileId();
+    String email = userInfo.getUserEmail();
+    String username = userInfo.getUserName();
+    String userType = userInfo.getUserType();
+    String profileId = userInfo.getProfileId();
     }
 
     return user;
