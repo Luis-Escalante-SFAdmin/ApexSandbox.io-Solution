@@ -5,6 +5,5 @@ public Map<String,String> getContextUserInformation(){
     String userType = userInfo.getUserType();
     String userProfile = userInfo.getProfileId();
     
-    
-    
+    return getContextUserInformation;
 }
