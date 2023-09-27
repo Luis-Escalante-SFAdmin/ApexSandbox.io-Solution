@@ -2,10 +2,10 @@ public Map<String,String> getContextUserInformation(){
     String info = new String();
 
     
-    userInfo.getUserEmail();
-    userInfo.getUserName();
-    userInfo.getUserType();
-    userInfo.getProfileId();
+    userInfo.getUserEmail(info);
+    userInfo.getUserName(info);
+    userInfo.getUserType(info);
+    userInfo.getProfileId(info);
     
     return info;
 }
