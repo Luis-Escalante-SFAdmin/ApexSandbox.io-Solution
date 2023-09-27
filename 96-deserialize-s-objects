@@ -6,7 +6,7 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
     {
         if(str != null)
         {
-            result = JSON.deserialize(inputJSON);
+            (String)result = JSON.deserialize(inputJSON);
         }
         else
         {
