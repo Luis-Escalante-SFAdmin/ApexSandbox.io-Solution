@@ -1,11 +1,13 @@
 public Map<String,String> getContextUserInformation(){
-    String info = new String();
+    Map<String, String> info = new Map<String, String>();
 
-    
-    userInfo.getUserEmail(info);
-    userInfo.getUserName(info);
-    userInfo.getUserType(info);
-    userInfo.getProfileId(info);
+    for(String information : info)
+    {    
+    userInfo.getUserEmail();
+    userInfo.getUserName();
+    userInfo.getUserType();
+    userInfo.getProfileId();
+    }
     
     return info;
 }
