@@ -1,10 +1,13 @@
 public Map<String,String> getContextUserInformation(){
     Map<String, String> user = new Map<String, String>();
 
+    is(user != null)
+    {
     userInfo.getUserEmail();
     userInfo.getUserName();
     userInfo.getUserType();
     userInfo.getProfileId();
+    }
 
     return user;
 }
