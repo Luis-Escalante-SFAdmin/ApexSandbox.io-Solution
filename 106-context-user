@@ -1,9 +1,9 @@
 public Map<String,String> getContextUserInformation(){
     
-    String email = userInfo.getUserEmail(),
-    String username = userInfo.getUserName(),
-    String userType = userInfo.getUserType(),
-    String profileId = userInfo.getProfileId(),
+    String email = userInfo.getUserEmail();
+    String username = userInfo.getUserName();
+    String userType = userInfo.getUserType();
+    String profileId = userInfo.getProfileId();
     
 
     
