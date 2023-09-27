@@ -8,6 +8,10 @@ public Map<String,String> getContextUserInformation(){
     String userType = userInfo.getUserType();
     String profileId = userInfo.getProfileId();
     }
+    else
+    {
+        return null;
+    }
 
     return user;
 }
