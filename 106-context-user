@@ -1,7 +1,7 @@
 public Map<String,String> getContextUserInformation(){
     Map<String, String> info = new Map<String, String>();
 
-    for(Map<String, String> information : info)
+    for(String information : info)
     {    
     String userEmail = userInfo.getUserEmail();
     String userName = userInfo.getUserName();
