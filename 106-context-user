@@ -1,5 +1,5 @@
 public Map<String,String> getContextUserInformation(){
-    Map<String, String> userInfo = new Map<String>();
+    Map<String, String> userInfo = new Map<String, String>();
 
     userInfo.getUserEmail();
     userInfo.getUserId();
