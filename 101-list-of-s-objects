@@ -4,6 +4,6 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 
     newList.add(accounts, contacts);
 
-    return newList;
+    insert newList;
 
 }
