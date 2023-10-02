@@ -1,6 +1,9 @@
 public void validateInsert(List<Opportunity> opportunities){
+
+    Opportunity opp = new Opportunity();
+
     if('Description' == null)
     {
-        opportunities.addError('Description should not be empty for Closed Won opportunity.');
+        opp.addError('Description should not be empty for Closed Won opportunity.');
     }
 }
