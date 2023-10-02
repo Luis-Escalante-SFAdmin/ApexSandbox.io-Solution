@@ -11,13 +11,12 @@ public void validateInsert(List<Opportunity> opportunities){
         }
         else if('Description' != null)
         {
-            o.add('Name');
-            o.add('CloseDate');
-            o.add('StageName');
+            o.add(Name);
+            o.add(CloseDate);
+            o.add(StageName);
             insert o;
         }
         
     }
-    insert opportunities;
     
 }
