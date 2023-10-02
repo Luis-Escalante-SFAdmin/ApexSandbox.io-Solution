@@ -12,9 +12,6 @@ public void validateInsert(List<Opportunity> opportunities){
         }
         else
         {
-            o.add('Name');
-            o.add('CloseDate');
-            o.add('StageName');
             insert o;
         }
         
