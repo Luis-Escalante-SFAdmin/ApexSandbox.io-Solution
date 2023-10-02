@@ -1,15 +1,15 @@
 public void validateInsert(List<Opportunity> opportunities){
 
-    List<Opportunity> opp = new List<Opportunity>(StageName = 'Closed Won', Description = '');
+    List<Opportunity> opp = new List<Opportunity>(StageName = '', Description = '');
 
 
     for(Opportunity o : opp)
     {
-        if(Description != null && StageName)
+        if(Description != null && StageName == 'Closed Won')
         {
             insert o;
         }
-        else if(Description == null && StageName)
+        else if(Description == null && StageName == 'Closed Won')
         {
             o.addError('Description should not be empty for Closed Won opportunity.');
         }
