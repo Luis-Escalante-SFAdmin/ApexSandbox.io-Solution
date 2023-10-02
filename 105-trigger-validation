@@ -9,11 +9,11 @@ public void validateInsert(List<Opportunity> opportunities){
         {
             o.addError('Description', errorMessage);
         }
-        else if('Description' != null)
+        else
         {
-            o.add(Name);
-            o.add(CloseDate);
-            o.add(StageName);
+            o.add('Name');
+            o.add('CloseDate');
+            o.add('StageName');
             insert o;
         }
         
