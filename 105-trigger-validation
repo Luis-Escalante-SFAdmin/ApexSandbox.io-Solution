@@ -7,10 +7,13 @@ public void validateInsert(List<Opportunity> opportunities){
         
         if('Description' == null)
         {
-            o.addError('Description', errorMessage);
+            o[0].Description.addError(errorMessage);
         }
         else
         {
+            o.add('Name');
+            o.add('CloseDate');
+            o.add('StageName');
             insert o;
         }
         
