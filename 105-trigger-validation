@@ -5,12 +5,15 @@ public void validateInsert(List<Opportunity> opportunities){
     for(Opportunity o : opportunities)
     {
         
-        if('Description' == null && 'Name' != null && 'CloseDate' != null)
+        if('Description' == null)
         {
             o.addError('Description', errorMessage);
         }
-        else if('Description' != null && 'Name' != null && 'CloseDate' != null)
+        else if('Description' != null)
         {
+            o.add('Name');
+            o.add('CloseDate');
+            o.add('StageName');
             insert o;
         }
         
