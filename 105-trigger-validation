@@ -1,13 +1,13 @@
 public void validateInsert(List<Opportunity> opportunities){
 
     Opportunity opp = new Opportunity();
-    
-    if('Description' == null)
+
+    if('Description' != null)
+    {
+        insert opp;
+    }
+    else if('Description' == null)
     {
         opp.addError('Description should not be empty for Closed Won opportunity.');
-    }
-    else
-    {
-        System.debug('No fields missed');
     }
 }
