@@ -9,7 +9,7 @@ public void validateInsert(List<Opportunity> opportunities){
         {
             o.addError('Description', errorMessage);
         }
-        else if('Description' != null)
+        else if('Description' != null && 'Name' != null && 'CloseDate' != null)
         {
             insert o;
         }
