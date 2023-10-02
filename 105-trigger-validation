@@ -8,6 +8,10 @@ public void validateInsert(List<Opportunity> opportunities){
         {
             o.Description.addError(errorMessage);
         }
+        else if(o.Description == '' && o.StageName == 'Closed Won')
+        {
+            o.Description.addError(errorMessage);
+        }
 
     }
     
