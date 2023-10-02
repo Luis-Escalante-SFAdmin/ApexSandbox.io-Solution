@@ -6,12 +6,11 @@ public void validateInsert(List<Opportunity> opportunities){
     for(Opportunity o : opp)
     {
         
-
-        if('Description' == null && 'StageName' == 'Closed Won')
+        if('Description' == null)
         {
             o.addError('Description', errorMessage);
         }
-        else if('Description' != null && 'StageName' == 'Closed Won')
+        else if('Description' != null)
         {
             insert o;
         }
