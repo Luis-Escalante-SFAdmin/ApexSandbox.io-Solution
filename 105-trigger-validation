@@ -8,7 +8,7 @@ public void validateInsert(List<Opportunity> opportunities){
         
         if(o.Description == null)
         {
-            o.addError(errorMessage);
+            o.Description.addError(errorMessage);
         }
 
     }
