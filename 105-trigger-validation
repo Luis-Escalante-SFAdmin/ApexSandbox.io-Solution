@@ -5,11 +5,11 @@ public void validateInsert(List<Opportunity> opportunities){
 
     for(Opportunity o : opp)
     {
-        o.addError('Description', errorMessage);
+        
 
         if('Description' == null && 'StageName' == 'Closed Won')
         {
-            o.addError('Description should not be empty for Closed Won opportunity.');
+            o.addError('Description', errorMessage);
         }
         else if('Description' != null && 'StageName' == 'Closed Won')
         {
