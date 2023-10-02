@@ -2,12 +2,17 @@ public void validateInsert(List<Opportunity> opportunities){
 
     Opportunity opp = new Opportunity();
 
-    if('Description' != null && 'Name' != null && 'StageName' != null && 'CloseDate' != null)
+
+    for(Opportunity o : opp)
     {
-        insert opp;
+        if('Description' != null)
+        {
+            insert o;
+        }
+        else if('Description' == null)
+        {
+            opp.addError('Description should not be empty for Closed Won opportunity.');
+        }
     }
-    else if('Description' == null)
-    {
-        opp.addError('Description should not be empty for Closed Won opportunity.');
-    }
+    insert opp;
 }
