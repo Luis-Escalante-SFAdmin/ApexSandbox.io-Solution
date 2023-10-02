@@ -1,6 +1,6 @@
 public void validateInsert(List<Opportunity> opportunities){
 
-    List<Opportunity> opp = new List<Opportunity>();
+    List<Opportunity> opp = new List<Opportunity>(StageName = '', Description = '');
 
 
     for(Opportunity o : opp)
