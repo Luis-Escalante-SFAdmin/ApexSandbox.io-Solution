@@ -1,9 +1,8 @@
 public void validateInsert(List<Opportunity> opportunities){
 
-    List<Opportunity> opp = new List<Opportunity>();
     String errorMessage = 'Description should not be empty for Closed Won opportunity.';
 
-    for(Opportunity o : opp)
+    for(Opportunity o : opportunities)
     {
         
         if('Description' == null)
