@@ -9,4 +9,14 @@ public List<Account> getAccounts(List<Account> accounts) {
     accWrapper.sort();
 }
 // write extra class here 
-public class AccountWrapper implements Comparable{}
+public class AccountWrapper implements Comparable
+{
+    public Account account {get; set;}
+    public Integer AnnualRevenue {get; set;}
+
+    public AccountWrapper(Account a)
+    {
+        account = a;
+        revenue = a.AnnualRevenue;
+    }
+}
