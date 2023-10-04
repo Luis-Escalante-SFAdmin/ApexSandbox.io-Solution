@@ -17,7 +17,7 @@ public class AccountWrapper implements Comparable
     public AccountWrapper(Account a)
     {
         account = a;
-        revenue = AnnualRevenue;
+        Integer revenue = a.AnnualRevenue;
     }
 
     public Integer compareTo(Object compareTo)
