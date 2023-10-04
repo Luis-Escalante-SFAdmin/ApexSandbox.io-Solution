@@ -19,4 +19,21 @@ public class AccountWrapper implements Comparable
         account = a;
         revenue = a.AnnualRevenue;
     }
+
+    public Integer compareTo(Object compareTo)
+    {
+        AccountWrapper otherAcc = (AccountWrapper)compareTo;
+        if(revenue == a.AnnualRevenue)
+        {
+            return 0;
+        }
+        else if(revenue < a.AnnualRevenue)
+        {
+            return -1;
+        }
+        else
+        {
+            return 1;    
+        }
+    }
 }
