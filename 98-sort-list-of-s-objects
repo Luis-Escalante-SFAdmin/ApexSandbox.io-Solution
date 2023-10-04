@@ -28,7 +28,7 @@ public class AccountWrapper implements Comparable
         {
             return 0;
         }
-        else if(revenue < a.AnnualRevenue)
+        else if(revenue < AnnualRevenue)
         {
             return -1;
         }
