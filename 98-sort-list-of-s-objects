@@ -23,7 +23,7 @@ public class AccountWrapper implements Comparable
     public Integer compareTo(Object compareTo)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
-        if(revenue == a.AnnualRevenue)
+        if(revenue == AnnualRevenue)
         {
             return 0;
         }
