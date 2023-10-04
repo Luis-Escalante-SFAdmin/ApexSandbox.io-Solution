@@ -11,8 +11,8 @@ public List<Account> getAccounts(List<Account> accounts) {
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
-    public Account account {get; set;}
-    public Decimal AnnualRevenue {get; set;}
+    Account account {get; set;}
+    Decimal AnnualRevenue {get; set;}
 
     public AccountWrapper(Account a)
     {
