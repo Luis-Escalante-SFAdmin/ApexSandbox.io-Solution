@@ -1,5 +1,4 @@
 public List<Account> getAccounts(List<Account> accounts) {
-    accounts = [SELECT Name, AnnualRevenue FROM Account];
 
     accWrapper = new List<AccountWrapper>();
     for(Account a : accounts)
@@ -7,6 +6,7 @@ public List<Account> getAccounts(List<Account> accounts) {
         accWrapper.add(new AccountWrapper(a));
     }
     accWrapper.sort();
+    return accWrapper;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
