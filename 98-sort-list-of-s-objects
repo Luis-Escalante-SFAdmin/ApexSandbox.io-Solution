@@ -12,12 +12,12 @@ public List<Account> getAccounts(List<Account> accounts) {
 public class AccountWrapper implements Comparable
 {
     public Account account {get; set;}
-    public Integer AnnualRevenue {get; set;}
+    public Decimal AnnualRevenue {get; set;}
 
     public AccountWrapper(Account a)
     {
         account = a;
-        Integer revenue = a.AnnualRevenue;
+        Decimal revenue = a.AnnualRevenue;
     }
 
     public Integer compareTo(Object compareTo)
