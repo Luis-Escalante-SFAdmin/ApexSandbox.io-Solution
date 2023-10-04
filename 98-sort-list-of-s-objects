@@ -17,13 +17,12 @@ public class AccountWrapper implements Comparable
     public AccountWrapper(Account a)
     {
         account = a;
-        revenue = a.AnnualRevenue;
     }
 
     public Integer compareTo(Object compareTo)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
-        if(revenue == AnnualRevenue)
+        if(revenue == a.AnnualRevenue)
         {
             return 0;
         }
