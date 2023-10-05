@@ -10,25 +10,25 @@ public class AccountWrapper implements Comparable
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
-        Decimal AnnualRevenue = 0;
+        Decimal annualRevenue = 0;
         Integer returnValue = 0;
-        if((AnnualRevenue == null) && (otherAcc.AnnualRevenue == null))
+        if((annualRevenue == null) && (otherAcc.annualRevenue == null))
         {
             returnValue = 0;
         }
-        else if((AnnualRevenue == null) && (otherAcc.AnnualRevenue != null))
+        else if((annualRevenue == null) && (otherAcc.annualRevenue != null))
         {
             returnValue = -1;
         }
-        else if((AnnualRevenue != null) && (otherAcc.AnnualRevenue == null))
+        else if((annualRevenue != null) && (otherAcc.annualRevenue == null))
         {
             returnValue = 1;
         }
-        else if(AnnualRevenue > otherAcc.AnnualRevenue)
+        else if(annualRevenue > otherAcc.annualRevenue)
         {
             returnValue = 1;
         }
-        else if(AnnualRevenue < otherAcc.AnnualRevenue)
+        else if(annualRevenue < otherAcc.annualRevenue)
         {
             returnValue = -1;
         }
