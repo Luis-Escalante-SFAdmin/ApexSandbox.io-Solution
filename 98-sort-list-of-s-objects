@@ -2,9 +2,9 @@ public List<Account> getAccounts(List<Account> accounts) {
 
     for(Account a : accounts)
     {
-        
+        accounts.sort(new AccountWrapper());
     }
-    accounts.sort(new AccountWrapper());
+    
     return accounts;
 }
 // write extra class here 
