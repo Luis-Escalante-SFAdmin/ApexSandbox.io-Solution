@@ -1,6 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
-    for(AccountWrapper aWrap : accWrapper)
+    for(Account a : accounts)
     {
         
     }
