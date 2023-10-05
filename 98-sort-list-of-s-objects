@@ -4,7 +4,8 @@ public List<Account> getAccounts(List<Account> accounts) {
 
         for(Account a : accounts)
         {
-            accWrapper.add(new AccountWrapper(a));
+            AccountWrapper wrapperAcc = new AccountWrapper(a);
+            accWrapper.add(wrapperAcc);
         }
     accounts.sort();
     return accounts;
