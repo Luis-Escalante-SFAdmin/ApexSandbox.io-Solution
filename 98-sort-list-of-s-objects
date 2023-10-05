@@ -22,18 +22,27 @@ public class AccountWrapper implements Comparable
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
+        Integer returnValue = 0;
         if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
         {
-            return null;
+            returnValue = 0;
+        }
+        else if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue != null))
+        {
+            returnValue = -1;
+        }
+        else if((acc.AnnualRevenue != null) && (otherAcc.acc.AnnualRevenue == null))
+        {
+            returnValue = 1;
         }
         else if(acc.AnnualRevenue > otherAcc.acc.AnnualRevenue)
         {
-            return -1;
+            returnValue = 1;
         }
         else if(acc.AnnualRevenue < otherAcc.acc.AnnualRevenue)
         {
-            return 1;
+            returnValue = -1;
         }
-        return compareTo;
+        return returnValue;
     }
 }
