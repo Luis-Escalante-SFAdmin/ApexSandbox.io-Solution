@@ -38,6 +38,5 @@ public class AccountWrapper implements Comparable
         {
             return 1;    
         }
-        return revenue;
     }
 }
