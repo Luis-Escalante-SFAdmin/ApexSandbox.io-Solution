@@ -15,7 +15,7 @@ public class AccountWrapper implements Comparable
 {
     Account account {get; set;}
     Decimal AnnualRevenue {get; set;}
-    Decimal revenue {get; set;}
+    Integer revenue {get; set;}
 
     public AccountWrapper(Account a)
     {
