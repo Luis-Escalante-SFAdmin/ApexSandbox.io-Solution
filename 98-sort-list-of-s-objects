@@ -10,7 +10,7 @@ public class AccountWrapper implements Comparable
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
-        Decimal AnnualRevenue;
+        Decimal AnnualRevenue = 0;
         Integer returnValue = 0;
         if((AnnualRevenue == null) && (otherAcc.AnnualRevenue == null))
         {
