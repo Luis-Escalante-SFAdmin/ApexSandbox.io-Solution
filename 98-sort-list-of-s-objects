@@ -33,7 +33,7 @@ public class AccountWrapper implements Comparable
         }
         else if((acc.AnnualRevenue != null) && (otherAcc.acc.AnnualRevenue == null))
         {
-            returnValue = -1;
+            returnValue = 1;
         }
         else if(acc.AnnualRevenue > otherAcc.acc.AnnualRevenue)
         {
