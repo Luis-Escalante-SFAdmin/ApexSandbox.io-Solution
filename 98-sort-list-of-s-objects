@@ -18,11 +18,11 @@ public class AccountWrapper implements Comparable
 {
     public Account acc;
 
-    public Decimal compareTo(Object compareTo)
+    public Integer compareTo(Object compareTo)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
-        Decimal returnValue = 0;
+        Integer returnValue = 0;
         if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
         {
             returnValue = 0;
