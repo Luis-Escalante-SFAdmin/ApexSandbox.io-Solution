@@ -7,7 +7,7 @@ public List<Account> getAccounts(List<Account> accounts) {
             AccountWrapper wrapperAcc = new AccountWrapper(a);
             accWrapper.add(wrapperAcc);
         }
-    accWrapper.sort(Comparator.comparing(AccountWrapper));
+    accWrapper.sort(Comparator.comparing());
     return accWrapper;
 }
 // write extra class here 
