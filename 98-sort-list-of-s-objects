@@ -2,7 +2,7 @@ public List<Account> getAccounts(List<Account> accounts) {
 
     for(Account a : accounts)
     {
-        
+        accounts.sort(new AccountWrapper(a));
     }
 
     accounts.sort(new AccountWrapper());
