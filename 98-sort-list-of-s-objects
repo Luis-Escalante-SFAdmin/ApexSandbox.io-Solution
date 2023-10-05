@@ -1,34 +1,45 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
+    for(Account a : accounts)
+    {
+        
+    }
+
     accounts.sort(new AccountWrapper());
     return accounts;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
+    public Account acc;
+
+    public AccountWrapper(Account act)
+    {
+        acc = act;
+    }
+
     public Integer compareTo(Object compareTo)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
-        Decimal annualRevenue;
         Integer returnValue = 0;
-        if((annualRevenue == null) && (otherAcc.annualRevenue == null))
+        if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
         {
             returnValue = 0;
         }
-        else if((annualRevenue == null) && (otherAcc.annualRevenue != null))
+        else if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue != null))
         {
             returnValue = -1;
         }
-        else if((annualRevenue != null) && (otherAcc.annualRevenue == null))
+        else if((acc.AnnualRevenue != null) && (otherAcc.acc.AnnualRevenue == null))
         {
             returnValue = 1;
         }
-        else if(annualRevenue > otherAcc.annualRevenue)
+        else if(acc.AnnualRevenue > otherAcc.acc.AnnualRevenue)
         {
             returnValue = 1;
         }
-        else if(annualRevenue < otherAcc.annualRevenue)
+        else if(acc.AnnualRevenue < otherAcc.acc.AnnualRevenue)
         {
             returnValue = -1;
         }
