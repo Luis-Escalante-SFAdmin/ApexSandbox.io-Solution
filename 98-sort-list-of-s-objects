@@ -1,9 +1,10 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
     List<AccountWrapper> accWrapper = new List<AccountWrapper>();
+
     for(AccountWrapper aWrap : accWrapper)
     {
-        accWrapper.add(accounts);
+        accWrapper.add(aWrap);
     }
     accWrapper.sort();
     return accounts;
