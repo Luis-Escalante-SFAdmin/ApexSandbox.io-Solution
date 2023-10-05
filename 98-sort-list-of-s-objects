@@ -43,7 +43,8 @@ public class AccountWrapper implements Comparable
         {
             returnValue = 1;
         }
+        otherAcc.sort();
         return returnValue;
     }
-    otherAcc.sort();
+    
 }
