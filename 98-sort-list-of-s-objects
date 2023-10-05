@@ -5,8 +5,9 @@ public List<Account> getAccounts(List<Account> accounts) {
     for(AccountWrapper aWrap : accWrapper)
     {
         accWrapper.add(aWrap);
+        aWrap.sort();
     }
-    accWrapper.sort();
+    
     return accounts;
 }
 // write extra class here 
