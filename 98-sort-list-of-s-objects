@@ -18,7 +18,7 @@ public class AccountWrapper implements Comparable
 {
     public Account acc;
 
-    public Integer compareTo(Object compareTo)
+    public Decimal compareTo(Object compareTo)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
