@@ -1,5 +1,10 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
+    public AccountWrapper(List<Account> accList)
+    {
+        accList = accounts;
+    }
+
     List<AccountWrapper> accWrap = new List<AccountWrapper>();
 
     for(AccountWrapper a : accWrap)
