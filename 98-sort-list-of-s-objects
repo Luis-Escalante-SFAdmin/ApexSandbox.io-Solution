@@ -2,7 +2,6 @@ public List<Account> getAccounts(List<Account> accounts) {
 
     for(Account a : accounts)
     {
-        accounts.add(a);
     }
 
     accounts.sort();
