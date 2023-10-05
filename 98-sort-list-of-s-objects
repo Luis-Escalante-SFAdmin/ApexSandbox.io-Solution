@@ -10,7 +10,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
         account.AnnualRevenue = aWrap.acc.AnnualRevenue;
         accounts.add(account);
     }
-    accWrapper.sort(accounts);
+    accWrapper.sort(new AccountWrapper(accounts));
     return accounts;
 }
 // write extra class here 
