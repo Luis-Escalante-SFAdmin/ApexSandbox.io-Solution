@@ -11,12 +11,7 @@ public List<Account> getAccounts(List<Account> accounts) {
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
-    public Account acc;
 
-    public AccountWrapper(Account act)
-    {
-        acc = act;
-    }
 
     public Integer compareTo(Object compareTo)
     {
