@@ -2,13 +2,8 @@ public List<Account> getAccounts(List<Account> accounts) {
 
     List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 
-    for(AccountWrapper aWrap : accWrapper)
-    {
-        accWrapper.add(aWrap);
-        accWrapper.sort(new AccountWrapper());
-        
-    }
-    
+    accWrapper.sort(new AccountWrapper());
+
     return accounts;
 }
 // write extra class here 
