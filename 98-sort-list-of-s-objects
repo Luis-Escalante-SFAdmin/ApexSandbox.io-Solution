@@ -1,6 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
-    List<AccountWrapper> accWrapper = new List<AccountWrapper>();   
+    List<AccountWrapper> accWrapper = new ArrayList<>();   
 
         for(Account a : accounts)
         {
