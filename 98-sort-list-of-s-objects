@@ -16,7 +16,6 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
-    public Account acc;
 
     public Integer compareTo(Object compareTo)
     {
@@ -34,6 +33,6 @@ public class AccountWrapper implements Comparable
         {
             return 1;
         }
+        
     }
-    return acc;
 }
