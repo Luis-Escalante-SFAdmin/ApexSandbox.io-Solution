@@ -24,7 +24,7 @@ public class AccountWrapper implements Comparable
 
         if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
         {
-            return 0;
+            return null;
         }
         else if(acc.AnnualRevenue > otherAcc.acc.AnnualRevenue)
         {
