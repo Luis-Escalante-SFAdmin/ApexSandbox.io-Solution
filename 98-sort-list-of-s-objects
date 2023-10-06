@@ -11,7 +11,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
         accWrapper.add(aWrap);
         
     }
-    accounts.sort(accWrapper);
+    accounts.sort();
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
