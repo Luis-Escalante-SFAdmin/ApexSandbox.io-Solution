@@ -2,32 +2,23 @@ public List<Account> getAccounts(List<Account> accounts) {
 
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(Account a : accounts)
-    {
-        AccountWrapper account = new AccountWrapper();
-
-        account.a = a;
-        account.AnnualRevenue = a.AnnualRevenue;
-        accWrapper.add(account);    
-    }
-    accWrapper.sort();
-    
-    List<Account> sorted = new List<Account>();
-
     for(AccountWrapper aWrap : accWrapper)
     {
-        sorted.add(aWrap.a);
-    }
+        Account account = new Account();
 
-    return sorted;
+        account.Name = aWrap.acc.Name;
+        account.AnnualRevenue = aWrap.acc.AnnualRevenue;        
+    }
+    accWrapper.sort();
+    return accounts;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
-    public Account a;
-    public Decimal AnnualRevenue;
+    public Account acc;
+    public Integer AnnualRevenue;
 
-    public Decimal compareTo(Object obj)
+    public Integer compareTo(Object obj)
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
 
