@@ -8,7 +8,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 
         account.Name = aWrap.acc.Name;
         account.AnnualRevenue = aWrap.acc.AnnualRevenue;
-        accWrapper.add(accounts);
+        accWrapper.add(aWrap);
         
     }
     accWrapper.sort();
@@ -24,15 +24,15 @@ public class AccountWrapper implements Comparable
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
 
-        if(this.AnnualRevenue < otherAcc.AnnualRevenue)
+        if(this.AnnualRevenue == otherAcc.AnnualRevenue)
         {
-          return 1;
+          return 0;
         }
         else if(this.AnnualRevenue > otherAcc.AnnualRevenue)
         {
-            return -1;
+            return 1;
         }
-        return 0;
+        return -1;
     }
 
 }
