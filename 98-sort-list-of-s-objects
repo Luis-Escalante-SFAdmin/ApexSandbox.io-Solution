@@ -24,7 +24,7 @@ public class AccountWrapper implements Comparable
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
         Integer returnValue = 0;
-        if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
+        if((acc.AnnualRevenue) && (otherAcc.acc.AnnualRevenue))
         {
             returnValue = 0;
         }
