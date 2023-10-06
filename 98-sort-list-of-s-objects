@@ -20,9 +20,8 @@ public class AccountWrapper implements Comparable
 
     public Integer compareTo(Object obj)
     {
-        AccountWrapper otherAcc = (AccountWrapper)obj;
 
-        return otherAcc.AnnualRevenue - this.AnnualRevenue;
+        return AnnualRevenue - this.AnnualRevenue;
     }
 
 }
