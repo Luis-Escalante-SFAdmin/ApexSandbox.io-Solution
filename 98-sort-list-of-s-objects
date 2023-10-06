@@ -43,7 +43,7 @@ public class AccountWrapper implements Comparable
         {
             returnValue = 1;
         }
-        AnnualRevenue.sort();
+        otherAcc.sort();
         return returnValue;
     }
     
