@@ -1,6 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
-List<AccountWrapper> accWrapper = [SELECT Name, AnnualRevenue FROM Account];
+List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
     for(AccountWrapper aWrap : accWrapper)
     {
