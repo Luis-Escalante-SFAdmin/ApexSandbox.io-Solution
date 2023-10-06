@@ -16,6 +16,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
+    public Integer AnnualRevenue;
 
     public Integer compareTo(Object compareTo)
     {
