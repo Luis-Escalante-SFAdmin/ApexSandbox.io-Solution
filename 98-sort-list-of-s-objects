@@ -18,9 +18,9 @@ public class AccountWrapper implements Comparable
 {
     public Account acc;
 
-    public Integer compareTo(Object acc)
+    public Integer compareTo(Object compareTo)
     {
-        AccountWrapper otherAcc = (AccountWrapper)acc;
+        AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
         Integer returnValue = 0;
         if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
