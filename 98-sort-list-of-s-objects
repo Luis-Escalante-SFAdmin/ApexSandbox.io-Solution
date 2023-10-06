@@ -23,11 +23,11 @@ public class AccountWrapper implements Comparable
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
-        if(AnnualRevenue < otherAcc.AnnualRevenue)
+        if(this.AnnualRevenue < otherAcc.AnnualRevenue)
         {
           return 1;
         }
-        else if(AnnualRevenue > otherAcc.AnnualRevenue)
+        else if(this.AnnualRevenue > otherAcc.AnnualRevenue)
         {
             return -1;
         }
