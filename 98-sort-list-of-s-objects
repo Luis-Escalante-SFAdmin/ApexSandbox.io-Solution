@@ -24,7 +24,7 @@ public class AccountWrapper implements Comparable
         AnnualRevenue = rev;
     }
 
-    public Integer compareTo(AccountWrapper compareTo)
+    public Integer compareTo(AccountWrapper rev)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
