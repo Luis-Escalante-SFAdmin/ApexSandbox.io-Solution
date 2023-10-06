@@ -6,8 +6,8 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     {
         Account account = new Account();
 
-        account.Name = aWrap.Name;
-        account.AnnualRevenue = aWrap.AnnualRevenue;
+        account.Name = aWrap.acc.Name;
+        account.AnnualRevenue = aWrap.acc.AnnualRevenue;
         accounts.add(account);
     }
     accWrapper.sort();
@@ -16,6 +16,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
+    public Account acc;
     public Integer AnnualRevenue;
 
     public Integer compareTo(Object compareTo)
