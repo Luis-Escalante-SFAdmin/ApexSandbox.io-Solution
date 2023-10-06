@@ -2,7 +2,7 @@ public List<Account> getAccounts(List<Account> accounts) {
 
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(AccountWrapper aWrap : [SELECT Name, AnnualRevenue FROM Account])
+    for(AccountWrapper aWrap : accounts)
     {
         Account account = new Account();
 
