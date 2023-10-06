@@ -4,9 +4,11 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
     for(AccountWrapper aWrap : accWrapper)
     {
-        List<Account> account = new List<Account>();
+        Account account = new Account();
 
-        accounts.add(account);
+        account.Name = accounts.Name;
+        account.AnnualRevenue = accounts.AnnualRevenue;
+        accWrapper.add(aWrap);
         
     }
     accWrapper.sort();
