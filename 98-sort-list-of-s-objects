@@ -2,7 +2,7 @@ public List<Account> getAccounts(List<Account> accounts) {
 
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(AccountWrapper aWrap : accounts)
+    for(AccountWrapper aWrap : accWrapper)
     {
         Account account = new Account();
 
@@ -31,7 +31,8 @@ public class AccountWrapper implements Comparable
         {
             return -1;
         }
-        return 0;
+        
     }
+    return 0;
 
 }
