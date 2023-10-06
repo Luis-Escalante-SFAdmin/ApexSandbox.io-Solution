@@ -10,13 +10,6 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
         account.AnnualRevenue = aWrap.acc.AnnualRevenue;        
     }
     accWrapper.sort();
-
-    List<Account> sorted = new List<Account>();
-
-    for(Account a : accounts)
-    {
-        sorted.add(a);
-    }
     return accounts;
 }
 // write extra class here 
