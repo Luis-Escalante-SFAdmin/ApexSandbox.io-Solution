@@ -15,7 +15,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 
     for(Account a : accounts)
     {
-        sorted.add(a.acc);
+        sorted.add(a.aWrap);
     }
     return sorted;
 }
