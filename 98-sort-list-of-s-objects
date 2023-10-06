@@ -14,11 +14,11 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     return accounts;
 }
 // write extra class here 
-global class AccountWrapper implements Comparable
+public class AccountWrapper implements Comparable
 {
     public Account acc;
 
-    public Integer compareTo(Object compareTo)
+    public Integer compareTo(Object acc)
     {
         AccountWrapper otherAcc = (AccountWrapper)compareTo;
 
