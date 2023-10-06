@@ -6,8 +6,8 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     {
         Account account = new Account();
 
-        account.Name = aWrap.acc.Name;
-        account.AnnualRevenue = aWrap.acc.AnnualRevenue;
+        account.Name = aWrap.Name;
+        account.AnnualRevenue = aWrap.AnnualRevenue;
         accounts.add(account);
     }
     accWrapper.sort();
