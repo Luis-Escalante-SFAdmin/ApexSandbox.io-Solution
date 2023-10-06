@@ -1,10 +1,10 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
-List<AccountWrapper> accWrapper = [SELECT Name, AnnualRevenue FROM Account SORT BY AnnualRevenue DESC];
+List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
     for(AccountWrapper aWrap : accWrapper)
     {
-        Account account = new Account();
+        Account account = [SELECT Name, AnnualRevenue FROM Account ORDER BY AnnualRevenue DESC];
 
         account.Name = aWrap.acc.Name;
         account.AnnualRevenue = aWrap.acc.AnnualRevenue;        
