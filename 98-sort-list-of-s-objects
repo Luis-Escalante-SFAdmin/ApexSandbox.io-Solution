@@ -14,7 +14,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     return accounts;
 }
 // write extra class here 
-public class AccountWrapper implements Comparable
+public class AccountWrapper implements Comparable<AccountWrapper>
 {
     public Account acc;
 
