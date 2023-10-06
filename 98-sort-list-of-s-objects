@@ -4,7 +4,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
     for(AccountWrapper aWrap : accWrapper)
     {
-        Account account = new Account();
+        List<Account> account = new List<Account>();
 
         account.add(accounts);
         
