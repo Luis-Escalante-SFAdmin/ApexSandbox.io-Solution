@@ -10,7 +10,7 @@ List<Account> accountList = [SELECT Name, AnnualRevenue FROM Account ORDER BY An
         
         accWrapperList.sort();
         
-        return accWrapperList;
+        return accounts;
     }
     
     public class AccountWrapper implements Comparable {
