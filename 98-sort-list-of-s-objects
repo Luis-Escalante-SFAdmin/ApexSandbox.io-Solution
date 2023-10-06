@@ -8,11 +8,11 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 
         account.Name = aWrap.acc.Name;
         account.AnnualRevenue = aWrap.acc.AnnualRevenue;
-        accWrapper.add(aWrap.acc);
+        accWrapper.add(aWrap);
         
     }
-    accWrapper.sort();
-    return accWrapper;
+    accounts.sort();
+    return accounts;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
