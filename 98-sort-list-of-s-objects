@@ -2,12 +2,12 @@ public List<Account> getAccounts(List<Account> accounts) {
 
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(Account a : accWrapper)
+    for(Account aWrap : accWrapper)
     {
         Account account = new Account();
 
-        account.Name = a.Name;
-        account.AnnualRevenue = a.AnnualRevenue;
+        account.Name = aWrap.acc.Name;
+        account.AnnualRevenue = aWrap.acc.AnnualRevenue;
         
     }
     return accounts;
