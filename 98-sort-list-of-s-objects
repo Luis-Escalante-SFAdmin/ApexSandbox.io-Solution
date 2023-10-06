@@ -25,7 +25,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 public class AccountWrapper implements Comparable
 {
     public Account a;
-    public Integer AnnualRevenue;
+    public Decimal AnnualRevenue;
 
     public Integer compareTo(Object obj)
     {
