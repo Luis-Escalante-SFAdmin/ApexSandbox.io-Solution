@@ -4,7 +4,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
     for(Account a : [SELECT Name, AnnualRevenue FROM Account])
     {
-        accWrapper.ad(new accWrapper(a.Name, a.AnnualRevenue));
+        accWrapper.add(new accWrapper(a.Name, a.AnnualRevenue));
     }
     if(accWrapper != null && accWrapper.size() > 0)
     {
