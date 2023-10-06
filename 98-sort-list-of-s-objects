@@ -32,5 +32,4 @@ public class AccountWrapper implements Comparable
         }
         return 1;
     }
-
 }
