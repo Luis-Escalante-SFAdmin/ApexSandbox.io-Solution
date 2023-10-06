@@ -10,7 +10,14 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
         account.AnnualRevenue = aWrap.acc.AnnualRevenue;        
     }
     accWrapper.sort();
-    return accounts;
+
+    List<Account> sorted = new List<Account>();
+
+    for(Account a : accounts)
+    {
+        sorted.add(a);
+    }
+    return sorted;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
