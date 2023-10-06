@@ -2,16 +2,15 @@ public List<Account> getAccounts(List<Account> accounts) {
 
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(AccountWrapper aWrap : accWrapper)
+    for(Account a : [SELECT Name, AnnualRevenue FROM Account])
     {
-        Account account = new Account();
-
-        account.Name = aWrap.acc.Name;
-        account.AnnualRevenue = aWrap.acc.AnnualRevenue;
-        accounts.add(account);
+        accWrapper.ad(new accWrapper(a.Name, a.AnnualRevenue));
     }
-    accWrapper.sort();
-    return accounts;
+    if(accWrapper != null && accWrapper.size() > 0)
+    {
+        accWrapper.sort();
+    }
+    return accWrapper;
 }
 // write extra class here 
 public class AccountWrapper implements Comparable
