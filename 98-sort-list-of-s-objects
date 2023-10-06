@@ -20,7 +20,7 @@ public class AccountWrapper implements Comparable
 
     public Integer compareTo(Object acc)
     {
-        AccountWrapper otherAcc = (AccountWrapper)compareTo;
+        AccountWrapper otherAcc = (AccountWrapper)acc;
 
         Integer returnValue = 0;
         if((acc.AnnualRevenue == null) && (otherAcc.acc.AnnualRevenue == null))
