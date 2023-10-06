@@ -12,25 +12,28 @@ List<Account> accountList = [SELECT Name, AnnualRevenue FROM Account ORDER BY An
         
         return accWrapperList;
     }
-// write extra class here 
-public class AccountWrapper implements Comparable
-{
-    public Account acc;
-    public Integer AnnualRevenue;
-
-    public Integer compareTo(Object obj)
-    {
-        AccountWrapper otherAcc = (AccountWrapper)obj;
-
-        if(this.AnnualRevenue == otherAcc.AnnualRevenue)
-        {
-          return 0;
+    
+    public class AccountWrapper implements Comparable {
+        public Account acc { get; set; }
+        public String name { get; set; }
+        public Decimal annRev { get; set; }
+        
+        public AccountWrapper(Account act) {
+            acc = act;
+            name = act.Name;
+            annRev = act.AnnualRevenue;
         }
-        else if(this.AnnualRevenue > otherAcc.AnnualRevenue)
-        {
-            return -1;
+        
+        public Integer compareTo(Object compareTo) {
+            AccountWrapper otherAcc = (AccountWrapper)compareTo;
+            
+            if (this.annRev == otherAcc.annRev) {
+                return 0;
+            } else if (this.annRev < otherAcc.annRev) {
+                return -1;
+            } else {
+                return 1;
+            }
         }
-        return 1;
-    }
 
 }
