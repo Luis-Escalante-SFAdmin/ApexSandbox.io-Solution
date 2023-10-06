@@ -1,39 +1,36 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
-List<Account> accountList = [SELECT Name, AnnualRevenue FROM Account ORDER BY AnnualRevenue DESC];
-        
-        List<AccountWrapper> accWrapperList = new List<AccountWrapper>();
-        
-        for (Account a : accountList) {
-            accWrapperList.add(new AccountWrapper(a));
-        }
-        
-        accWrapperList.sort();
-        
-        return accounts;
-    }
+List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    public class AccountWrapper implements Comparable {
-        public Account acc { get; set; }
-        public String name { get; set; }
-        public Decimal annRev { get; set; }
-        
-        public AccountWrapper(Account act) {
-            acc = act;
-            name = act.Name;
-            annRev = act.AnnualRevenue;
+    for(AccountWrapper aWrap : accWrapper)
+    {
+        Account account = new Account();
+
+        account.Name = aWrap.acc.Name;
+        account.AnnualRevenue = aWrap.acc.AnnualRevenue;        
+    }
+    accWrapper.sort();
+    return accounts;
+}
+// write extra class here 
+public class AccountWrapper implements Comparable
+{
+    public Account acc;
+    public Integer AnnualRevenue;
+
+    public Integer compareTo(Object obj)
+    {
+        AccountWrapper otherAcc = (AccountWrapper)obj;
+
+        if(this.AnnualRevenue == otherAcc.AnnualRevenue)
+        {
+          return 0;
         }
-        
-        public Integer compareTo(Object compareTo) {
-            AccountWrapper otherAcc = (AccountWrapper)compareTo;
-            
-            if (this.annRev == otherAcc.annRev) {
-                return 0;
-            } else if (this.annRev < otherAcc.annRev) {
-                return -1;
-            } else {
-                return 1;
-            }
+        else if(this.AnnualRevenue > otherAcc.AnnualRevenue)
+        {
+            return -1;
         }
+        return 1;
+    }
 
 }
