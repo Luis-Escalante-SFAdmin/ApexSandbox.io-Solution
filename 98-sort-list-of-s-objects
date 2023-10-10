@@ -19,6 +19,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 public class AccountWrapper implements Comparable
 {
     public Account acc;
+    public String Name;
     public Integer AnnualRevenue;
 
     public AccountWrapper(Account act)
