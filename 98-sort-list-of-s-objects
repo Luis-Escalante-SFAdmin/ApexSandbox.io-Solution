@@ -33,11 +33,11 @@ public class AccountWrapper implements Comparable
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
 
-        if(this.annRev == otherAcc.annRev)
+        if(annRev == otherAcc.annRev)
         {
           return 0;
         }
-        else if(this.annRev < otherAcc.annRev)
+        else if(annRev < otherAcc.annRev)
         {
             return 1;
         }
