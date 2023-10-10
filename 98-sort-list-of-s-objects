@@ -2,14 +2,17 @@ public List<Account> getAccounts(List<Account> accounts) {
 
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(AccountWrapper aWrap : accWrapper)
+    for(Account a : accounts)
     {
-        Account account = new Account();
-
-        account.Name = aWrap.acc.Name;
-        account.AnnualRevenue = aWrap.acc.AnnualRevenue;        
+        accWrapper.add(new AccountWrapper(a));       
     }
     accWrapper.sort();
+
+    List<Account> sortedAcc = new List<Account>();
+    for(AccountWrapper aw : accWrapper)
+    {
+        sortedAcc.add(aw.acc);
+    }
     return accounts;
 }
 // write extra class here 
