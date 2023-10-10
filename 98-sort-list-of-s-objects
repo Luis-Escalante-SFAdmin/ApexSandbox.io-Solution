@@ -20,7 +20,7 @@ public class AccountWrapper implements Comparable
 {
     public Account acc;
     public String Name;
-    public Integer AnnualRevenue;
+    public Integer annRev;
 
     public AccountWrapper(Account act)
     {
