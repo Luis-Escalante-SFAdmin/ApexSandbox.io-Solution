@@ -21,6 +21,13 @@ public class AccountWrapper implements Comparable
     public Account acc;
     public Integer AnnualRevenue;
 
+    public AccountWrapper(Account act)
+    {
+        acc = act;
+        name = act.Name;
+        annRev = act.AnnualRevenue;
+    }
+
     public Integer compareTo(Object obj)
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
