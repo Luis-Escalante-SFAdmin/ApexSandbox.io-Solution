@@ -29,7 +29,7 @@ public class AccountWrapper implements Comparable
         annRev = act.AnnualRevenue;
     }
 
-    public Decimal compareTo(Object obj)
+    public Integer compareTo(Object obj)
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
 
@@ -41,6 +41,9 @@ public class AccountWrapper implements Comparable
         {
             return 1;
         }
+        else
+        {
         return -1;
+        }
     }
 }
