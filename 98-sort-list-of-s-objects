@@ -37,7 +37,7 @@ public class AccountWrapper implements Comparable
         {
           return 0;
         }
-        else if(annRev < otherAcc.annRev)
+        else if(annRev > otherAcc.annRev)
         {
             return -1;
         }
