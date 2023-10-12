@@ -21,24 +21,24 @@ public class AccountWrapper implements Comparable
 {
     Account acc = new Account();
     String Name;
-    Integer AnnualRevenue;
+    Decimal annRev;
 
     public AccountWrapper(Account act)
     {
         acc = act;
         Name = act.Name;
-        AnnualRevenue = act.AnnualRevenue;
+        annRev = act.AnnualRevenue;
     }
 
     public Integer compareTo(Object obj)
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
 
-        if(AnnualRevenue == otherAcc.AnnualRevenue)
+        if(annRev == otherAcc.annRev)
         {
           return 0;
         }
-        else if(AnnualRevenue < otherAcc.AnnualRevenue)
+        else if(annRev < otherAcc.annRev)
         {
             return 1;
         }
