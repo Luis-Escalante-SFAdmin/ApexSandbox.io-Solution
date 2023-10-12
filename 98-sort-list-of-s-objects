@@ -19,7 +19,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
 // write extra class here 
 public class AccountWrapper implements Comparable
 {
-    Account acc = new Account();
+    Account acc = [SELECT Name, AnnualRevenue FROM Account];
     String Name;
     Decimal annRev;
 
