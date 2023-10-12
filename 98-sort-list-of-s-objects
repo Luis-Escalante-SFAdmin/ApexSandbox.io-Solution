@@ -27,18 +27,18 @@ public class AccountWrapper implements Comparable
     {
         acc = act;
         Name = act.Name;
-        annRev = act.AnnualRevenue;
+        AnnualRevenue = act.AnnualRevenue;
     }
 
     public Integer compareTo(Object obj)
     {
         AccountWrapper otherAcc = (AccountWrapper)obj;
 
-        if(annRev == otherAcc.annRev)
+        if(AnnualRevenue == otherAcc.AnnualRevenue)
         {
           return 0;
         }
-        else if(annRev < otherAcc.annRev)
+        else if(AnnualRevenue < otherAcc.AnnualRevenue)
         {
             return 1;
         }
