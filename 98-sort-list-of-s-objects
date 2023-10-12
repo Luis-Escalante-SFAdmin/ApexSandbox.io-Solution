@@ -21,7 +21,7 @@ public class AccountWrapper implements Comparable
 {
     Account acc = new Account();
     String Name;
-    Decimal annRev;
+    Decimal AnnualRevenue;
 
     public AccountWrapper(Account act)
     {
