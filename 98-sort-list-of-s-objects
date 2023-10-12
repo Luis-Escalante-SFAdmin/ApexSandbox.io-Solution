@@ -25,7 +25,7 @@ public class AccountWrapper implements Comparable
 
     public AccountWrapper(Account act)
     {
-        acc = act;
+        acc : act;
         Name = act.Name;
         annRev = act.AnnualRevenue;
     }
