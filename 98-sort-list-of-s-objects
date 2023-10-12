@@ -1,5 +1,7 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
+    accounts = [SELECT AnnualRevenue, Name FROM Account];
+
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
     for(Account a : accounts)
@@ -25,7 +27,7 @@ public class AccountWrapper implements Comparable
 
     public AccountWrapper(Account act)
     {
-        acc : act;
+        acc = act;
         Name = act.Name;
         annRev = act.AnnualRevenue;
     }
