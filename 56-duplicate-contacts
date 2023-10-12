@@ -3,14 +3,26 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     {
         if(c1.Email == c2.Email)
         {
+            if(c1.Email != c2.Email)
+            {
+                return false;
+            }
             return true;
         }
         else if(c1.Phone == c2.Phone)
         {
+            if(c1.Phone != c2.Phone)
+            {
+                return false;
+            }
             return true;
         }
         else if(c1.LastName == c2.LastName)
         {
+            if(c1.LastName != c2.LastName)
+            {
+                return false;
+            }
             return true;
         }
         else
