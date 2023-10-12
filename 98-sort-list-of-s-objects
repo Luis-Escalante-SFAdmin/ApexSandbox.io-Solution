@@ -8,7 +8,7 @@ List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     }
     accWrapper.sort();
 
-    List<Account> sortedAcc = new List<Account>();
+    List<Account> sortedAcc = [SELECT Name, AnnualRevenue FROM Account];
 
     for(AccountWrapper aw : accWrapper)
     {
