@@ -1,10 +1,8 @@
 public List<Account> getAccounts(List<Account> accounts) {
 
-    accounts = [SELECT AnnualRevenue, Name FROM Account];
-
 List<AccountWrapper> accWrapper = new List<AccountWrapper>();
     
-    for(Account a : accounts)
+    for(Account a : [SELECT Name, AnnualRevenue FROM Account])
     {
         accWrapper.add(new AccountWrapper(a));       
     }
