@@ -8,11 +8,11 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     }
     else if((c1.LastName != c2.LastName) && (c1.Email == c2.Email) && (c1.Phone == c2.Phone))
     {
-        return true;
+        return false;
     }
     else if((c1.LastName == c2.LastName) && (c1.Email != c2.Email) && (c1.Phone == c2.Phone))
     {
-        return true;
+        return false;
     }
    
     return false;
