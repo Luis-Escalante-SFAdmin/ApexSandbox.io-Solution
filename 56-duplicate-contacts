@@ -20,6 +20,10 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     {
         return false;
     }
+    else if(c1.Email == c2.Email)
+    {
+        return true;
+    }
    
     return true;
 
