@@ -6,13 +6,5 @@ public Boolean isBirthday(Contact c) {
     {
         return true;
     }
-    else if(bDay != notBday)
-    {
-        return false;
-    }
-    else if(bDay > notBday)
-    {
-        return false;
-    }
-    return true;
+    return false;
 }
