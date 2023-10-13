@@ -1,9 +1,11 @@
 public Boolean isBirthday(Contact c) {
     Date bDay = Date.today();
 
+    if(bDay == null) return false;
+
     if(bDay != null)
     {
         return true;
     }
-    return false;
+
 }
