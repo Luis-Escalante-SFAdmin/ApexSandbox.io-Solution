@@ -24,10 +24,6 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
         {
             return false;
         }
-        else if(c1.LastName != c2.LastName)
-        {
-            return false;
-        }
     }
         return true; 
 }
