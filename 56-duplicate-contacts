@@ -4,6 +4,10 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     {
         return true;
     }
+    else if(c1.Email != c2.Email)
+    {
+        return false;
+    }
     else if(c1.Email == c2.Email)
     {
         return true;
@@ -11,10 +15,6 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     else if(c1.Phone == c2.Phone)
     {
         return true;
-    }
-    else if(c1.Email != c2.Email)
-    {
-        return false;
     }
     return true;
 
