@@ -9,5 +9,4 @@ public Boolean isBirthday(Contact c) {
     {
         return false;
     }
-    return false;
 }
