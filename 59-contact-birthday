@@ -5,5 +5,9 @@ public Boolean isBirthday(Contact c) {
     {
         return true;
     }
+    else
+    {
+        return false;
+    }
     return false;
 }
