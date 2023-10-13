@@ -1,5 +1,5 @@
 public Boolean isBirthday(Contact c) {
-    Date bDay = Date.today(5, 15, 2020);
+    Date bDay = Date.today(5/15/2020);
 
     if(c.Date == bDay)
     {
