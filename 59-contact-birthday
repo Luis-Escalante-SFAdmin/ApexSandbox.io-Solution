@@ -1,12 +1,16 @@
 public Boolean isBirthday(Contact c) {
     Date bDay = Date.today();
-    Date notBday = Date.newInstance(5, 15, 2015);
+    Date notBday = Date.today();
 
-    if(bDay != null)
+    if(bDay == notBday)
     {
         return true;
     }
     else if(bDay < notBday)
+    {
+        return false;
+    }
+    else if(bDay > notBday)
     {
         return false;
     }
