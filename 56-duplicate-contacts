@@ -20,7 +20,7 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     }
     else if((c1.LastName == null && c2.LastName == null) && (c1.Email == c2.Email) && (c1.Phone == c2.Phone))
     {
-        return false;
+        return true;
     }
     return true;
 
