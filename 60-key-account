@@ -6,17 +6,17 @@ public Boolean isKeyAccount(Account a) {
     }
     else if(a.AnnualRevenue == 800000)
     {
-        a == 'Technology';
+        a.Industry = 'Technology';
         return true;
     }
     else if(a.AnnualRevenue == 2000000)
     {
-        a == 'Retail';
+        a.Industry = 'Retail';
         return true;
     }
     else if(a.AnnualRevenue == 500000)
     {
-        a == 'All others';
+        a.Industry = 'All others';
         return true;
     }
     return true;
