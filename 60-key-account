@@ -1,5 +1,5 @@
 public Boolean isKeyAccount(Account a) {
-    switch on AnnualRevenue
+    switch on a.AnnualRevenue
     {
         when 600000
         {
