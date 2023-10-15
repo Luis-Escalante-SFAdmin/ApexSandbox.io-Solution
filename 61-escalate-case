@@ -3,4 +3,8 @@ public void escalateIfMeetsCriteria(Case c) {
     {
         c.isEscalated = true;
     }
+    escalateIfMeetsCriteria
+    {
+        c.isEscalated = false;
+    }
 }
