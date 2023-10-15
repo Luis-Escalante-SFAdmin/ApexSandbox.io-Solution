@@ -1,4 +1,6 @@
 public Boolean isKeyAccount(Account a) {
+    Integer AnnualRevenue;
+    
     switch on a.AnnualRevenue
     {
         when 600000
