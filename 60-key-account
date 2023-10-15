@@ -1,0 +1,21 @@
+public Boolean isKeyAccount(Account a) {
+    switch on a
+    {
+        when 600000
+        {
+            return 'Banking';
+        }
+        when 800000
+        {
+            return 'Technology';
+        }
+        when 2000000
+        {
+            return 'Retail';
+        }
+        when 500000
+        {
+            return 'All others';
+        }
+    }
+}
