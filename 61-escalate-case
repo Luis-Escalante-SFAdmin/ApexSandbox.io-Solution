@@ -5,6 +5,6 @@ public void escalateIfMeetsCriteria(Case c) {
     }
     escalateIfMeetsCriteria
     {
-        c.isEscalated = false;
+        c.isEscalated == false;
     }
 }
