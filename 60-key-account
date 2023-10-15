@@ -19,5 +19,5 @@ public Boolean isKeyAccount(Account a) {
         a.Industry = 'All others';
         return true;
     }
-    return true;
+    return false;
 }
