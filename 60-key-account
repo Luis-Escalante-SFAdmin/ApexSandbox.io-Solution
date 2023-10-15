@@ -1,23 +1,23 @@
 public Boolean isKeyAccount(Account a) {
-    Integer AnnualRevenue;
-    
-    switch on a.AnnualRevenue
+    if(a.AnnualRevenue == 600000)
     {
-        when 600000
-        {
-            return 'Banking';
-        }
-        when 800000
-        {
-            return 'Technology';
-        }
-        when 2000000
-        {
-            return 'Retail';
-        }
-        when 500000
-        {
-            return 'All others';
-        }
+        a == 'Banking';
+        return true;
     }
+    else if(a.AnnualRevenue == 800000)
+    {
+        a == 'Technology';
+        return true;
+    }
+    else if(a.AnnualRevenue == 2000000)
+    {
+        a == 'Retail';
+        return true;
+    }
+    else if(a.AnnualRevenue == 500000)
+    {
+        a == 'All others';
+        return true;
+    }
+    return true;
 }
