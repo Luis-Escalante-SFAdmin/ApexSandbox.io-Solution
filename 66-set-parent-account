@@ -3,4 +3,8 @@ public void setParent(Account acc, Contact con, Opportunity opp) {
     {
         (con.AccountId = true) && (opp.AccountId = true);
     }
+    else
+    {
+        (con.AccountId = false) && (opp.AccountId = false);
+    }
 }
