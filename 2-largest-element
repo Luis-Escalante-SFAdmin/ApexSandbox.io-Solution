@@ -3,7 +3,7 @@ public static Integer findLargest(List<Integer> nums) {
 
     for(Integer i : nums)
     {
-        n = n + i;
+        n += i;
     }
     return n;
 }
