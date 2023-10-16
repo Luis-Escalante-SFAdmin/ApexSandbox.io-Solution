@@ -9,5 +9,5 @@ public Boolean sameParent(Account acc, Contact con, Opportunity opp) {
     {
         return false;
     }
-    return true;
+    return false;
 }
