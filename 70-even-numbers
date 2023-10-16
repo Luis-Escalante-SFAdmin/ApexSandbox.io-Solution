@@ -3,7 +3,7 @@ public List<Integer> evenNumbers(Integer n) {
 
     for(Integer i = 2; i < n; i++)
     {
-        if(Math.mod(n * 2) == 2)
+        if(Math.mod(n, 2) == 2)
         {
             n.add(even);
         }
