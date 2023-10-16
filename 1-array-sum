@@ -1,4 +1,7 @@
 public static Integer arraySum(List<Integer> numbers) {
+
+    Integer sum = numbers.size();
+
     if(numbers == null) return null;
 
     if(numbers != null)
