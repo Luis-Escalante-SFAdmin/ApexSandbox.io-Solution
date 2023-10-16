@@ -7,5 +7,5 @@ public Boolean sameParent(Contact c, Opportunity opp) {
     {
         return false;
     }
-    return false;
+    return true;
 }
