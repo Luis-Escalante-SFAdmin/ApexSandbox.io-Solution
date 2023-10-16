@@ -2,7 +2,7 @@ public void setParent(Account acc, Contact con, Opportunity opp) {
 
     if(acc == null)
     {
-     System.debug('No Id');
+     System.debug(acc);
     }
 
     if(acc.Id != null)
