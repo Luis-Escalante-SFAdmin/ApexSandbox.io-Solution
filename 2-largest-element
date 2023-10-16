@@ -1,7 +1,7 @@
 public static Integer findLargest(List<Integer> nums) {
 	Integer n = 0;
 
-    for(Integer i : nums.sort())
+    for(Integer i : nums.size())
     {
         n = i;
     }
