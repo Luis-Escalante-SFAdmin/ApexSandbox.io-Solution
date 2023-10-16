@@ -1,11 +1,11 @@
 public static Integer arraySum(List<Integer> numbers) {
 
-    
+    Integer sum = 0;
 
-    for(Integer sum : numbers)
+    for(Integer i = 0; i < numbers.size(); i++)
     {
         numbers.get(sum);
-        numbers.add(sum);
+        sum *= sum;
     }
     return sum;
 }
