@@ -5,7 +5,7 @@ public static Integer arraySum(List<Integer> numbers) {
     for(Integer i = 0; i < numbers.size(); i++)
     {
         numbers.get(sum);
-        sum += numbers;
+        sum += 1;
     }
     return sum;
 }
