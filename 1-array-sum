@@ -2,7 +2,7 @@ public static Integer arraySum(List<Integer> numbers) {
 
     Integer sum = 0;
 
-    for(sum : numbers.sixe())
+    for(sum : numbers.size())
     {
         numbers.get(sum);
         sum *= sum;
