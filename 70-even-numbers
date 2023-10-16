@@ -1,5 +1,5 @@
 public List<Integer> evenNumbers(Integer n) {
-    List<Integer> even = new List<Integer>;
+    List<Integer> even = new List<Integer>();
 
     for(Integer i = 2; i < n; i++)
     {
