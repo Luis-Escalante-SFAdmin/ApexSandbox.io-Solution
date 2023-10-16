@@ -8,6 +8,6 @@ public void setParent(Account acc, Contact con, Opportunity opp) {
     
     if(acc.Id == null)
     {
-        opp.AccountId = opp.Id && con.AccountId = con.Id;
+        opp.AccountId == opp.Id && con.AccountId == con.Id;
     }
 }
