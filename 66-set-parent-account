@@ -1,5 +1,5 @@
 public void setParent(Account acc, Contact con, Opportunity opp) {
-    if(acc.Id == null) System.debug('There is no Account Id');
+    if(acc == null) System.debug('There is no Account Id');
 
     if(acc.Id != null)
     {
