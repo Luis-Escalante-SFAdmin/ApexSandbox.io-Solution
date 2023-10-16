@@ -10,6 +10,6 @@ public void linkParent(Case c1, Case c2) {
     }
     else if(c1.ContactId == null || c2.ContactId == null)
     {
-        System.debug('No Parent Id');
+        c2.ParentId = null;
     }
 }
