@@ -8,7 +8,7 @@ public void linkParent(Case c1, Case c2) {
     {
         c2.Id = c1.Id;
     }
-    else if(c1.ContactId != c2.ContactId)
+    else if((c1.ContactId != c2.ContactId) || (c2.ContactId != c1.ContactId))
     {
         System.debug('No parent Ids');
     }
