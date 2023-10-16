@@ -1,0 +1,8 @@
+public static Integer arraySum(List<Integer> numbers) {
+    if(numbers == null) return null;
+
+    if(numbers != null)
+    {
+        return numbers.sum();
+    }
+}
