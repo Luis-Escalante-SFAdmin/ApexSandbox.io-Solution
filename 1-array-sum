@@ -7,7 +7,7 @@ public static Integer arraySum(List<Integer> numbers) {
         numbers.get(sum);
         if(numbers != null)
         {
-            return numbers++;
+            return numbers =+ sum;
         }
     }
     return sum;
