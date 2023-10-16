@@ -1,7 +1,7 @@
 public void setParent(Account acc, Contact con, Opportunity opp) {
     if(acc.Id != null)
     {
-        (con.AccountId = true) && (opp.AccountId = true);
+        (con.AccountId = acc.Id) && (opp.AccountId = acc.Id);
         return true;
     }
 }
