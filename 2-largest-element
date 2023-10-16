@@ -1,5 +1,6 @@
 public static Integer findLargest(List<Integer> nums) {
-	Integer n = nums[nums.size() + 1];
+    nums.sort();
+	Integer n = nums[nums.size() - 1];
 
     for(Integer i : nums)
     {
