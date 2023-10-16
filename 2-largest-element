@@ -1,5 +1,5 @@
 public static Integer findLargest(List<Integer> nums) {
-	Integer n = 0;
+	Integer n;
 
     for(Integer i : nums)
     {
