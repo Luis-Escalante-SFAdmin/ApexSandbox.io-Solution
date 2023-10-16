@@ -1,0 +1,5 @@
+public List<String> getNamesInAscOrder(List<String> accountNames)
+{
+    accountNames = [SELECT Id, FirstName FROM Account ORDER BY FirstName ASC];
+    return accountNames;
+}
