@@ -2,7 +2,8 @@ public void setParent(Account acc, Contact con, Opportunity opp) {
 
     if(acc == null)
     {
-     acc.Id = null;
+     con.AccountId = con.Id;
+     opp.AccountId = opp.Id;
     }
 
     if(acc.Id != null)
