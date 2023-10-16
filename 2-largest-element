@@ -1,9 +1,9 @@
 public static Integer findLargest(List<Integer> nums) {
-	Integer n;
+	Integer n = 0;
 
     for(Integer i : nums)
     {
-        n = i.size();
+        n = i;
     }
     return n;
 }
