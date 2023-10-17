@@ -9,6 +9,6 @@ public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     {
         fN.add(lastNames[j]);
     }
-    return fN[i] + fN[j];
+    return fN;
     
 }
