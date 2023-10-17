@@ -1,6 +1,6 @@
 public Integer maxConsecutiveOnes(Integer[] numbers) {
     Integer count = 0;
-    Integer maxCount = 0
+    Integer maxCount = 0;
     if(numbers == null) return null;
 
     for(Integer i = 0; i < numbers.size(); i++)
