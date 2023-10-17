@@ -1,15 +1,25 @@
 public Integer maxConsecutiveOnes(Integer[] numbers) {
     Integer count = 0;
-    Integer maxCount = 0;
-    if(numbers == null) return null;
 
-    for(Integer i = 0; i < numbers.size(); i++)
-    {
-        if(numbers[i] != null)
-        {
-        count = count + 1;
-        maxCount = Math.max(maxCount, count);
+     Integer maxCount = 0;
+
+    for(Integer i=0;i<numbers.size();i++){
+
+        if(numbers[i] == 0){
+
+            count = 0;
+
         }
+
+        else{
+
+            count = count + 1;
+
+            maxCount = Math.max(maxCount, count);
+
+        }
+
     }
+
     return maxCount;
 }
