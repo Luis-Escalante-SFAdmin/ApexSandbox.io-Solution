@@ -3,11 +3,11 @@ public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
 
     for(Integer i = 0; i < firstNames.size(); i++)
     {
-       fN.add(i);
+       fN.add(i, firstNames);
     }
     for(Integer j = 0; j < lastNames.size(); j++)
     {
-        fN.add(j);
+        fN.add(j, lastNames);
     }
     
 }
