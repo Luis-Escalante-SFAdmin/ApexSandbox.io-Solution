@@ -1,9 +1,13 @@
 public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     List<String> fN = new List<String>();
 
-    for(Integer i = 0; i < firstNames.size() && i < lastNames.size(); i++)
+    for(Integer i = 0; i < firstNames.size(); i++)
     {
-       fN.add(firstNames[i] && lastNames[i]);
+       fN.add(firstNames[i]);
+    }
+    for(Integer j = 0; j < lastNames.size(); j++)
+    {
+        fN.add(lastNames[j]);
     }
     return fN;
     
