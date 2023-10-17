@@ -1,9 +1,9 @@
 public void insertAtStart(String cityName, List<String> cities) {
-    if(cityName == '') System.debug('No new cities');
+    if(cityName.size() == 0) System.debug('No new cities');
 
     if(cityName != '')
     {
     cities.add(0, cityName);
     }
-    
+
 }
