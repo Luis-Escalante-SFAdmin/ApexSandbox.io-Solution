@@ -5,5 +5,5 @@ public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     {
         for(Integer j = 0; j < lastNames.size(); j++)
     }
-    return fN.add(i) + fN.add(j);
+    return (fN.add(i) + fN.add(j));
 }
