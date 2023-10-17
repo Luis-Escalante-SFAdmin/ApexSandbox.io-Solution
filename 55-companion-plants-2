@@ -1,8 +1,8 @@
 public Boolean companionPlants(List<String> plants) {
     
-    if(plants == ('lettuce' && 'cucumbers'))
+    if('lettuce' && 'cucumbers')
     {
-        return true;
+        plants = true;
     }
     else if(plants == 'lettuce' && 'onions')
     {
