@@ -1,7 +1,7 @@
 public void insertAtStart(String cityName, List<String> cities) {
-    if(cities.size() != 1)
+    if(cities.size() == 0)
     {
-        cities.add();
+        System.debug(cities);
     }
 
     if(cities.size() > 0)
