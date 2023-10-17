@@ -1,0 +1,24 @@
+public Boolean companionPlants(List<String> plants) {
+    List<String> companions = new List<String>();
+
+    for(String plant : plants)
+    {
+        if('lettuce' && 'cucumbers')
+        {
+            return true;
+        }
+        else if('lettuce' && 'onions')
+        {
+            return true;
+        }
+        else if('onions' && 'carrots')
+        {
+            return true;
+        }
+        else if('onions' && 'tomatoes')
+        {
+            return true;
+        }
+        return false;
+    }
+}
