@@ -1,4 +1,21 @@
 public Boolean companionPlants(List<String> plants) {
-    List<String> companions = new List<String>();
-
+    
+    if(plants == 'lettuce' && 'cucumbers')
+    {
+        return true;
+    }
+    else if(plants == 'lettuce' && 'onions')
+    {
+        return true;
+    }
+    else if(plants == 'onions' && 'carrots')
+    {
+        return true;
+    }
+    else if(plants == 'onions' && 'tomatoes')
+    {
+        return true;
+    }
+    return false;
+    
 }
