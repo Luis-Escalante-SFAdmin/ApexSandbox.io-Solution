@@ -3,7 +3,7 @@ public Boolean companionPlants(List<String> plants) {
 
     for(String plant : plants)
     {
-        if('lettuce' == true && 'cucumbers' == true)
+        if('lettuce' && 'cucumbers' == true)
         {
             return true;
         }
