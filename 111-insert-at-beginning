@@ -1,4 +1,4 @@
 public void insertAtStart(String cityName, List<String> cities) {
+    if(cityName == null) System.debug('No new cities');
     cities.add(0, cityName);
-    
 }
