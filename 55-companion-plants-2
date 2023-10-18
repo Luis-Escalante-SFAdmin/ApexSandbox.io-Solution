@@ -20,8 +20,8 @@ public Boolean companionPlants(List<String> plants) {
     }
     else
     {
-        return true;
+        return false;
     }
     }
-    return false;
+    return true;
 }
