@@ -20,7 +20,7 @@ public Boolean companionPlants(List<String> plants) {
     }
     else if(plant == null)
     {
-        return false;
+        return true;
     }
     }
     return false;
