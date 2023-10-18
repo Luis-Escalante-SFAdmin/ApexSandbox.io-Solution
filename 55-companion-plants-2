@@ -2,7 +2,6 @@ public Boolean companionPlants(List<String> plants) {
 
     for(String plant : plants)
     {
-        if(plant == '') return false;
     if((plant == 'lettuce') && (plant == 'cucumbers'))
     {
         return true;
@@ -12,10 +11,6 @@ public Boolean companionPlants(List<String> plants) {
         return true;
     }
     else if((plant == 'onions') && (plant == 'carrots'))
-    {
-        return true;
-    }
-    else if((plant == 'onions') && (plant == 'tomatoes'))
     {
         return true;
     }
