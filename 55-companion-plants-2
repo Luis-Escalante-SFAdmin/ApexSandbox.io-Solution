@@ -2,34 +2,18 @@ public Boolean companionPlants(List<String> plants) {
 
     for(String plant : plants)
     {
-    if(plant == 'lettuce' && plant == 'cucumbers')
-    {
-        return true;
-    }
-    else if(plant == 'lettuce' && plant == 'onions')
-    {
-        return true;
-    }
-    else if(plant == 'onions' && plant == 'carrots')
-    {
-        return true;
-    }
-    else if(plant == 'tomatoes')
-    {
-        return false;
-    }
-    else if(plant == 'onions')
-    {
-        return false;
-    }
-    else if(plant == 'tomatoes' && plant == 'onions')
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+        if((plant == 'lettuce' && plant == 'cucumbers') || (plant == 'onions' && plant == 'cucumbers'))
+        {
+            return true;
+        }
+        else if((plant == 'onions' && plant == 'carrots') || (plant == 'onions' && plant == 'tomatoes'))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     
     return true;
