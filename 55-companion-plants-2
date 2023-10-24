@@ -2,7 +2,7 @@ public Boolean companionPlants(List<String> plants) {
 
     if(plants.isEmpty()) return true;
 
-    if(plants == 0)
+    if(!plants.isEmpty())
     {
     for(String plant : plants)
     {
