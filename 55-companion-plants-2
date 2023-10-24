@@ -10,9 +10,9 @@ public Boolean companionPlants(List<String> plants) {
         {
             return true;
         }
-        else if(plants[i] == plants[i])
+        else
         {
-            return true;
+            return false;
         }
     }
     }
