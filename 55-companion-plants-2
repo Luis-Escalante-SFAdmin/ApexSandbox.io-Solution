@@ -6,11 +6,11 @@ public Boolean companionPlants(List<String> plants) {
     {
     for(Integer i = 0; i <= plants.size() - 1; i++)
     {
-        if(plants[i] == plants[i - 1])
+        if(plants[i] != plants[i - 1])
         {
             return false;
         }
-        else if(plants[i] != plants[i - 1])
+        else if(plants[i] == plants[i - 1])
         {
             return true;
         }
