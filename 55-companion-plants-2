@@ -1,6 +1,6 @@
 public Boolean companionPlants(List<String> plants) {
 
-    if(plants.isEmpty()) return true;
+    if(plants <= 0) return true;
 
     for(Integer i = 0; i > plants.size(); i++)
     {
