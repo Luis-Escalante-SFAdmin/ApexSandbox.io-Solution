@@ -6,14 +6,25 @@ public Boolean companionPlants(List<String> plants) {
     {
     for(String plant : plants)
     {
-        if((plant == 'lettuce' && plant == 'cucumbers') && (plant == 'onions' && plant == 'cucumbers'))
+    for(Integer i = 0; i < plants.size() - 1; i++)
+    {
+        if(plant == 'lettuce' && plant == 'cucumbers')
         {
             return true;
         }
-        else if((plant == 'onions' && plant == 'carrots') && (plant == 'tomatoes' && plant == 'onions'))
+        else if(plant == 'lettuce' && plant == 'onions')
         {
             return true;
         }
+        else if(plant == 'onions' && plant == 'carrots')
+        {
+            return false;
+        }
+        else if(plant == 'tomatoes' && plant == 'onions')
+        {
+            return true;
+        }
+    }
     }
     }
     return false;
