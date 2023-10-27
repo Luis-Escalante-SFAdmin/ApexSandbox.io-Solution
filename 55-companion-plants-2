@@ -2,6 +2,8 @@ public Boolean companionPlants(List<String> plants) {
 
     if(plants.size() <= 1) return true;
     
+    if(plants.size() >= 1)
+    {
     for(Integer i = 0; i < plants.size() - 1; i++)
     {
         if(plants[i] != plants[i])
@@ -9,6 +11,6 @@ public Boolean companionPlants(List<String> plants) {
             return true;
         }
     }
-    
+    }
     return false;
 }
