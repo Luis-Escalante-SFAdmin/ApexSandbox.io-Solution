@@ -11,8 +11,8 @@ public Boolean companionPlants(List<String> plants) {
             return true;
         }
     }
-    return true;
-    
+}
+
     public Boolean companionPlants(String plant1, String plant2) {
     if(plant1 == 'lettuce' && plant2 == 'cucumbers'){
         return true;
@@ -32,4 +32,3 @@ public Boolean companionPlants(List<String> plants) {
         return true;
     }
     }
-}
