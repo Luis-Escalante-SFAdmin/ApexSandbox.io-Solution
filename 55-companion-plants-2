@@ -30,5 +30,5 @@ public Boolean companions(String plant1, String plant2) {
     }else if(plant2 == 'onions' && plant1 == 'tomatoes'){
         return true;
     }
-    return true;
+    return false;
 }
