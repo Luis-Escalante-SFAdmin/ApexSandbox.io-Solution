@@ -13,7 +13,7 @@ public Boolean companionPlants(List<String> plants) {
 }
 public Boolean companions(String plant1, String plant2) {
 
-    if(plant1 == null && plant2 == null) return true;
+    if(plant1 == null && plant2 == null) return false;
 
     if(plant1 == 'lettuce' && plant2 == 'cucumbers'){
         return true;
