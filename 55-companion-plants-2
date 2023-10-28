@@ -23,5 +23,5 @@ public Boolean companions(String plant1, String plant2) {
         return true;
     }
     
-    return true;
+    return false;
 }
