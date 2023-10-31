@@ -6,6 +6,8 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> f = new List<Integer>();
     if(n < 2) return null;
     
+    if(n > 2)
+    {
     for(Integer fib : f)
     {
         
@@ -16,6 +18,7 @@ public List<Integer> fibonacciSeries(Integer n) {
         {
             c = a + b;
         }
+    }
     }
     return f;
 }
