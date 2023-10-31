@@ -17,5 +17,6 @@ public List<Integer> fibonacciSeries(Integer n) {
     
     }
     f.add(c);
+    insert f;
     return f;
 }
