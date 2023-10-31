@@ -13,7 +13,7 @@ public List<Integer> fibonacciSeries(Integer n) {
         b = c;
         c = b + a;
         }
-        f.add(c);
+        f.add(c.size());
     }
     return f;
 }
