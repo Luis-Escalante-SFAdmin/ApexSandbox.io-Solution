@@ -4,15 +4,14 @@ public List<Integer> fibonacciSeries(Integer n) {
     Integer c = 0;
 
     List<Integer> f = new List<Integer>();
-    if(n < 2) return null;
+    if(n <= 2) return null;
     
     for(Integer i = 0; i < n; i++)
     {
-        a = b;
-        b = c;
         if(n > 2)
         {
-        
+        a = b;
+        b = c;
         c = b + a;
         }
         f.add(c);
