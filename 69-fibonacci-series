@@ -14,7 +14,7 @@ public List<Integer> fibonacciSeries(Integer n) {
         {
         a = b;
         b = c;
-        n.add(fib);
+        
         }
     }
     
