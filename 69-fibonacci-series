@@ -1,6 +1,6 @@
 public List<Integer> fibonacciSeries(Integer n) {
     Integer a = 1;
-    Integer b = 1;
+    Integer b = 0;
     Integer c = 1;
 
     List<Integer> f = new List<Integer>();
