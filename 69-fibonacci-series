@@ -8,13 +8,13 @@ public List<Integer> fibonacciSeries(Integer n) {
     
     for(Integer fib : f)
     {
-        c = a + b;
+        
         a = b;
         b = c;
 
         if(n > 2)
         {
-        
+            c = a + b;
         }
     }
     return f;
