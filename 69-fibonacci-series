@@ -10,7 +10,8 @@ public List<Integer> fibonacciSeries(Integer n) {
         c = a + b;
         a = b;
         b = c;
+        f.add(c);
     }
-    f.add(c);
+    
     return f;
 }
