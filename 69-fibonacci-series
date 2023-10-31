@@ -8,9 +8,10 @@ public List<Integer> fibonacciSeries(Integer n) {
     
     for(Integer fib : f)
     {
+        c = a + b;
+        
         if(n > 2)
         {
-        c = a + b;
         a = b;
         b = c;
         f.add(fib);
