@@ -3,9 +3,9 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
 
     for(String o : orgs)
     {
-        for(Integer i = 0; i < o.size(); i++)
+        for(Integer i = 0; i < o; i++)
         {
-            orgs.add(o[i]);
+            orgs.add(o);
         }
     }
     return orgs;
