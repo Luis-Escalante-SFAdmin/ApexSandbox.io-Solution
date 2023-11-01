@@ -1,7 +1,7 @@
 public List<String> orgNames(List<String> adjectives, List<String> animals) {
     List<String> orgs = new List<String>();
 
-    for(List o : orgs)
+    for(String[] o : orgs)
     {        
         for(Integer i = 0; i < adjectives.size() && i < animals.size(); i++)
         {
