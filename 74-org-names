@@ -7,7 +7,6 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
         {
             o.add(adjectives);
             o.add(animals);
-            org.add(o);
         }
     }
     return orgs;
