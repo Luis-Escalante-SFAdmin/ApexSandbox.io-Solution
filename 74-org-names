@@ -3,7 +3,7 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
 
     for(String o : orgs)
     {        
-        for(Integer i = 0; i < adjectives.size() && i < animals.size(); i++)
+        for(Integer i = 0; i <= adjectives.size() && i <= animals.size(); i++)
         {
             orgs.add(o);
         }
