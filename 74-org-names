@@ -7,8 +7,7 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
         {
             if(adjectives != null && animals != null)
             {
-                o.add(adjectives);
-                o.add(animals);
+                return adjectives + animals;
             }
         }
     }
