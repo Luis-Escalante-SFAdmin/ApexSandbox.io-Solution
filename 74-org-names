@@ -2,13 +2,10 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     List<String> orgs = new List<String>();
 
     for(String o : orgs)
-    {
-        if(o != null)
-        {
+    {        
         for(Integer i = 0; i < adjectives.size() && i < animals.size(); i++)
         {
             orgs.add(o);
-        }
         }
     }
     return orgs;
