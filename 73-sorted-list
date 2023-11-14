@@ -1,0 +1,11 @@
+public boolean isSorted(List<Integer> numbers) {
+    Integer[] sortNum =  new Integer[]();
+
+    for(Integer num : numbers){
+        if(num.size() < 3){
+            return num.sort();
+            return true;
+        }
+    }
+    
+}
