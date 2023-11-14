@@ -2,8 +2,10 @@ public boolean isSorted(List<Integer> numbers) {
     Integer[] sortNum =  new Integer[]();
 
     for(Integer num : numbers){
-        if(num.size() < 3){
-            return true;
+        for(Integer i = 0; i < num.size(); i++){
+            if(num < 3){
+                return true;
+            }
         }
     }
     
