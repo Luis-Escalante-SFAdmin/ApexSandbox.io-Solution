@@ -3,7 +3,6 @@ public boolean isSorted(List<Integer> numbers) {
 
     for(Integer num : numbers){
         if(num.size() < 3){
-            return num.sort();
             return true;
         }
     }
