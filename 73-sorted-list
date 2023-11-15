@@ -1,7 +1,7 @@
 public boolean isSorted(List<Integer> numbers) {
     Integer[] sortNum =  new Integer[]{};
 
-    if(sortNum.equals(numbers)) return true;
+    if(sortNum.sort()) return true;
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
