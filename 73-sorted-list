@@ -8,7 +8,7 @@ public boolean isSorted(List<Integer> numbers) {
                 return true;
             }
             else if(numbers[i] == num){
-                return false;
+                return true;
             }
     }
     }
