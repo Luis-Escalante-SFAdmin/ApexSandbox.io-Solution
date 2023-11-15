@@ -1,14 +1,12 @@
 public boolean isSorted(List<Integer> numbers) {
     Set<Integer> sortNum = new Set<Integer>();
 
-   
-
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
 
-             Boolean result = sortNum.contains(num);
+            Boolean result = sortNum.contains(num);
 
-            if(result) {
+            if(result == num) {
                 return true;
             }
             else{
