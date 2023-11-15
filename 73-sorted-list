@@ -6,7 +6,7 @@ public boolean isSorted(List<Integer> numbers) {
 
             Boolean result = sortNum.contains(num);
 
-            if(result == num) {
+            if(result) {
                 return result;
             }
             else{
