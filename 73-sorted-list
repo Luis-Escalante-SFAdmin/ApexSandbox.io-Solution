@@ -10,9 +10,6 @@ public boolean isSorted(List<Integer> numbers) {
             else if(numbers[i] < num){
                 return false;
             }
-            else if(i == numbers.size() + 1){
-                return false;
-            }
     }
     }
    return true; 
