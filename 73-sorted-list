@@ -8,6 +8,9 @@ public boolean isSorted(List<Integer> numbers) {
             else if(num == 0){
                 return true;
             }
+            else if(!num.sort()){
+                return false;
+            }
     }
     }
    return true; 
