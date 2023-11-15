@@ -1,9 +1,10 @@
 public boolean isSorted(List<Integer> numbers) {
     Set<Integer> sortNum = new Set<Integer>();
 
-    if(numbers == null) return false;
-    
+    if(numbers.size() == null) return false;
+
     for(Integer num : numbers){
+
         for(Integer i = 0; i < numbers.size(); i++){
 
             if(num < 3) {
