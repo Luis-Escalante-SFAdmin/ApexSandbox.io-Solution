@@ -1,7 +1,7 @@
 public boolean isSorted(List<Integer> numbers) {
     Set<Integer> sortNum = new Set<Integer>();
 
-    if(numbers.size() == +1) return false;
+    if(numbers.size() == 0) return false;
 
     for(Integer num : numbers){
 
