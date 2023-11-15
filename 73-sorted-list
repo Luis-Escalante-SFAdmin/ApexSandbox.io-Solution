@@ -3,8 +3,9 @@ public boolean isSorted(List<Integer> numbers) {
 
     if(sortNum == null) return false;
     sortNum.sort();
-    
+
     for(Integer num : numbers){
+        num = num.sort();
         for(Integer i = 0; i < numbers.size(); i++){
             if(num <= 3){
                 return true;
