@@ -3,9 +3,11 @@ public boolean isSorted(List<Integer> numbers) {
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
-
             if(num != null) {
                 return true;
+            }
+            else{
+                return false;
             }
     }
     }
