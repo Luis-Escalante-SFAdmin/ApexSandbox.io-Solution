@@ -9,8 +9,8 @@ public boolean isSorted(List<Integer> numbers) {
             else if(num > 3){
                 return false;
             }
-            else if(num == 3){
-                return true;
+            else{
+                return false;
             }
     }
     }
