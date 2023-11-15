@@ -5,7 +5,6 @@ public boolean isSorted(List<Integer> numbers) {
     sortNum.sort();
 
     for(Integer num : numbers){
-        num = numbers.sort();
         for(Integer i = 0; i < numbers.size(); i++){
             if(num <= 3){
                 return true;
