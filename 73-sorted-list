@@ -1,11 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
-    List<Integer> sortNum =  new List<Integer>();
-
-    sortNum = numbers;
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
-            if(num < 3) {
+            if(num > num - 1) {
                 return true;
             }
             else{
