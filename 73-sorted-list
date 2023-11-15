@@ -6,6 +6,9 @@ public boolean isSorted(List<Integer> numbers) {
             if(num < 3){
                 return true;
             }
+            else if(num.equals(numbers)){
+                return true;
+            }
             else{
                 return false;
             }
