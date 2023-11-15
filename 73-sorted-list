@@ -1,6 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    numbers.sort()
+    if(numbers.sort() == true){
+        return true;
+    }
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
