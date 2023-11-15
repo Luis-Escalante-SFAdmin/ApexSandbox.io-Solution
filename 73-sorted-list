@@ -11,9 +11,6 @@ public boolean isSorted(List<Integer> numbers) {
             else if(!sortNum.contains(num)){
                 return false;
             }
-            else{
-                return false;
-            }
     }
     }
    return true; 
