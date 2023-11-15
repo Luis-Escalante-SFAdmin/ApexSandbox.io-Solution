@@ -1,9 +1,12 @@
 public boolean isSorted(List<Integer> numbers) {
     Set<Integer> sortNum = new Set<Integer>();
 
-    Boolean result = sortNum.contains(numbers);
+   
+
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
+
+             Boolean result = sortNum.contains(num);
             if(num < 3) {
                 return true;
             }
