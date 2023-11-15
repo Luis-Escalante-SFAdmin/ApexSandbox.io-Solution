@@ -7,8 +7,9 @@ public boolean isSorted(List<Integer> numbers) {
                 return true;
             }
             else if(num < 3){
-                return true;
+                return false;
             }
+
     }
     }
    return true; 
