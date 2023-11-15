@@ -1,5 +1,4 @@
 public boolean isSorted(List<Integer> numbers) {
-    List<Integer> sortNum =  new List<Integer>();
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
