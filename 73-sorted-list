@@ -9,7 +9,7 @@ public boolean isSorted(List<Integer> numbers) {
             else if(!sortNum.contains(num)){
                 return false;
             }
-            else if(sortNum.contains(num)){
+            else if(sortNum.equals(num)){
                 return true;
             }
     }
