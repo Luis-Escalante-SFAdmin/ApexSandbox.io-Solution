@@ -1,7 +1,7 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    if(numbers != null){
-        return true;
+    if(numbers == null){
+        return false;
     }
 
     for(Integer num : numbers){
