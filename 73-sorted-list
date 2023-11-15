@@ -7,8 +7,7 @@ public boolean isSorted(List<Integer> numbers) {
                 return true;
             }
             else if(num == numbers){
-                return true;
-            }
+                return false;
         }
     }
    return true; 
