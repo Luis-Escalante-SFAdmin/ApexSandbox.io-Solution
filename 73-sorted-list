@@ -3,12 +3,12 @@ public boolean isSorted(List<Integer> numbers) {
 
 
     for(Integer num : numbers){
-        for(Integer i = 0; i < numbers.size(); i++){
+        for(Integer i = 0; i < numbers.size() + 2; i++){
 
             if(num < 3) {
                 return true;
             }
-            else if(numbers[i] == 0 ){
+            else if(numbers[i] == 0){
                 return false;
             }
             
