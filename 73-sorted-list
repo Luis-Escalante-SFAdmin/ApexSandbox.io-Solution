@@ -5,7 +5,7 @@ public boolean isSorted(List<Integer> numbers) {
             if(num < 0 || num > 0) {
                 return true;
             }
-            else{
+            else if(num == 0){
                 return false;
             }
     }
