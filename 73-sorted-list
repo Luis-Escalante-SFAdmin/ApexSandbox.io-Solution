@@ -8,7 +8,7 @@ public boolean isSorted(List<Integer> numbers) {
 
         for(Integer i = 1; i < numbers.size(); i++){
 
-            if(num < 3) {
+            if(lastNum < 3) {
                 return true;
             }
             else if(numbers[i] < numbers[i - 1]){
