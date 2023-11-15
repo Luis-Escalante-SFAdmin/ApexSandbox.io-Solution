@@ -2,7 +2,7 @@ public boolean isSorted(List<Integer> numbers) {
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
-            if((num < 0 || num > 0) && num == 0) {
+            if((num < 0 || num > 0) || num == 0) {
                 return true;
             }
             else{
