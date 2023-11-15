@@ -1,13 +1,15 @@
 public boolean isSorted(List<Integer> numbers) {
     Integer[] sortNum =  new Integer[]{};
+    Set<Integer> setList = new Set<Integer>();
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
             if(num < 3){
                 return true;
             }
-            else if(numbers == sortNum){
-                return false;
+            else if(num.contains(sortNum)){
+                setList.add(num);
+                return true;
             }
             else{
                 return false;
