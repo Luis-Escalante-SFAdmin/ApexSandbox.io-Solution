@@ -6,7 +6,7 @@ public boolean isSorted(List<Integer> numbers) {
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
 
-            Boolean result = sortNum.contains(num);
+            Boolean result = sortNum.contains(num < 3);
 
             if(result != null) {
                 return true;
