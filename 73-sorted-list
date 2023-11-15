@@ -1,6 +1,5 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    if(numbers == null || numbers.size() <= 1) return true;
 
     Integer lastNum = numbers[numbers.size() - 1];
 
