@@ -10,10 +10,6 @@ public boolean isSorted(List<Integer> numbers) {
             if(!sortNum.equals(num)){
                 return false;
             }
-            else
-            {
-                return false;
-            }
     }
     }
    return true; 
