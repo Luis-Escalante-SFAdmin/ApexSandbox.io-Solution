@@ -6,9 +6,6 @@ public boolean isSorted(List<Integer> numbers) {
             if(num < 3){
                 return true;
             }
-            else if(num == i + 1){
-                return true;
-            }
             else{
                 return false;
             }
