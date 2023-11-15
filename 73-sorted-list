@@ -1,13 +1,10 @@
 public boolean isSorted(List<Integer> numbers) {
 
-
-    Integer lastNum = numbers[numbers.size() - 1];
-
     for(Integer num : numbers){
 
-        for(Integer i = 1; i < numbers.size(); i++){
+        for(Integer i = 0; i < numbers.size(); i++){
 
-            if(lastNum < 3) {
+            if(numbers < 3) {
                 return true;
             }
             else if(numbers[i] < numbers[i - 1]){
