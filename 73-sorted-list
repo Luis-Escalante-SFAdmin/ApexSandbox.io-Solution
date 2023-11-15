@@ -6,10 +6,10 @@ public boolean isSorted(List<Integer> numbers) {
 
         for(Integer i = 1; i < numbers.size(); i++){
 
-            if(numbers[i] < 3) {
+            if(num < 3) {
                 return true;
             }
-            else if(numbers[i] < numbers[i]){
+            else if(numbers[i] < num){
                 return false;
             }
     }
