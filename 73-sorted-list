@@ -1,8 +1,5 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    if(numbers == null && numbers.isEmpty())
-
-        return true;
 
     for(Integer num : numbers){
 
