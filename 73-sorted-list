@@ -16,5 +16,5 @@ public boolean isSorted(List<Integer> numbers) {
     numbers.sort();
     }
     
-   return false; 
+   return true; 
 }
