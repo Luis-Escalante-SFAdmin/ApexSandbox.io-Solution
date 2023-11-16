@@ -1,15 +1,14 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    numbers.sort((a, b) => (a == null) ? 1 : ((b == null) ? -1 : a - b)); return false;
+    if(numbers.size() < 3) {
+                return true;
+            }
 
     for(Integer num : numbers){
 
         for(Integer i = 1; i < numbers.size(); i++){
 
-            if(num < 3) {
-                return true;
-            }
-            else if(numbers[i - 1] < numbers[i]){
+            if(numbers[i - 1] < numbers[i]){
                 return false;
             }
             
