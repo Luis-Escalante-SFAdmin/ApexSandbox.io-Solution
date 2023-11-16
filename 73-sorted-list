@@ -4,8 +4,6 @@ public boolean isSorted(List<Integer> numbers) {
 
         for(Integer i = 1; i < numbers.size(); i++){
 
-            
-
             if(num < 3) {
                 return true;
             }
