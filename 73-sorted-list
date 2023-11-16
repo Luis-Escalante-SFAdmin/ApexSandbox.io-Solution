@@ -1,6 +1,6 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    numbers.sort((a, b) => (a == -1 ? 1 : ((b == null) ? -1 : a - b)));
+    numbers.sort((a, b) => (a == -1) ? 1 : ((b == null) ? -1 : a - b));
 
     for(Integer num : numbers){
 
