@@ -14,7 +14,7 @@ public boolean isSorted(List<Integer> numbers) {
             }
             else if(numbers[i] > num){
 
-                return false;
+                return true;
                 }
     }
     }
