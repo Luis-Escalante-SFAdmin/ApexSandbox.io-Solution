@@ -11,8 +11,9 @@ public boolean isSorted(List<Integer> numbers) {
             if(numbers[i - 1] < numbers[i]){
                 return false;
             }
-            numbers.sort();
+            
     }
+    numbers.sort();
     }
    return true; 
 }
