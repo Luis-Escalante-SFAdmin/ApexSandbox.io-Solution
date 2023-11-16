@@ -1,6 +1,6 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    if(numbers == null || numbers.isEmpty())
+    if(numbers == null && numbers.isEmpty())
 
         return false;
 
