@@ -11,10 +11,6 @@ public boolean isSorted(List<Integer> numbers) {
             if(numbers[i] < numbers[i]){
                 return false;
             }
-            else{
-                return false;
-            }
-            
     }
     }
     
