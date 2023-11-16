@@ -13,7 +13,6 @@ public boolean isSorted(List<Integer> numbers) {
             }
             
     }
-    num.sort();
     }
    return true; 
 }
