@@ -1,6 +1,6 @@
 public boolean isSorted(List<Integer> numbers) {
 
-    if((numbers.size() > 3) || (numbers.size() < 3)) {
+    if((numbers.size() > 3) && (numbers.size() < 3)) {
                 return false;
             }
 
