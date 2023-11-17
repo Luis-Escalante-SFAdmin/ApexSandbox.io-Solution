@@ -10,6 +10,9 @@ public boolean isSorted(List<Integer> numbers) {
             else if(numbers[i] < 3){
                 return false;
             }
+            else{
+                return true;
+            }
             
     }
     }
