@@ -4,10 +4,10 @@ public Integer secondLargest(List<Integer> numbers) {
 
     if(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] > l){
-            return num;
+            return l;
         }
         else if(numbers[i] < m){
-            return num;
+            return m;
         }
     }
     return m;
