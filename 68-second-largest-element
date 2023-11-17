@@ -10,5 +10,5 @@ public Integer secondLargest(List<Integer> numbers) {
             return m;
         }
     }
-    return m;
+    return numbers;
 }
