@@ -3,10 +3,10 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer m = -2147483647 - 1;
 
     if(Integer i = 0; i < numbers; i++){
-        if(numbers[0] > l){
+        if(numbers > l){
             return l;
         }
-        else if(numbers[0] < m){
+        else if(numbers < m){
             return m;
         }
     }
