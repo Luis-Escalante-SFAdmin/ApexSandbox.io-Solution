@@ -7,7 +7,7 @@ public boolean isSorted(List<Integer> numbers) {
             if(numbers[i - 1] > numbers[i]){
                 return false;
             }
-            else if(numbers[i] <= num){
+            else if(num < 3){
                 return false;
             }
             
