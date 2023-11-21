@@ -3,7 +3,11 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer maxValue = secondHigh;
     Integer minValue = secondHigh;
 
-    //for(Integer)
+    for(Integer j = 0; j < numbers.size(); j++){
+        if(numbers[i]> secondHigh){
+            secondHigh = numbers[i];
+        }
+    }
 
         for(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] > minValue){
