@@ -6,6 +6,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
             return set1;
         }
         else if(set2 == set1){
+            set2.add(set1);
             return set2;
         }
     }
