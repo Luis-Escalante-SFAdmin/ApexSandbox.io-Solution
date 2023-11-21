@@ -1,9 +1,9 @@
 public Integer secondLargest(List<Integer> numbers) {
-    Integer maxValue = -2147483647 - 1;
+    Integer maxValue = numbers[numbers.size() - 1];
     Integer minValue = -2147483647;
 
     for(Integer num : numbers){
-        for(Integer i = 0; i < numbers.size() + 1; i++){
+        for(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] < maxValue){
             return maxValue = numbers[i];
         }
