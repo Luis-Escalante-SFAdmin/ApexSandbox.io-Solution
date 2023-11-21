@@ -11,7 +11,7 @@ public Integer secondLargest(List<Integer> numbers) {
             return minValue;
         }
         else if(numbers[i] == maxValue){
-            return numbers[i];
+            return maxValue;
         }
         }
     }
