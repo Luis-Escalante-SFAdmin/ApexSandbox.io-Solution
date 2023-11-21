@@ -1,5 +1,5 @@
 public Integer secondLargest(List<Integer> numbers) {
-    Integer maxValue = numbers[-1];
+    Integer maxValue = numbers[1];
     Integer minValue = numbers[0];
 
     for(Integer num : numbers){
