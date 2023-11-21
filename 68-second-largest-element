@@ -12,5 +12,5 @@ public Integer secondLargest(List<Integer> numbers) {
             minValue = num;
         }
     }
-    return maxValue;
+    return minValue;
 }
