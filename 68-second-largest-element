@@ -8,6 +8,9 @@ public Integer secondLargest(List<Integer> numbers) {
         if(numbers[i] < maxValue){
             maxValue = numbers[numbers.size() - 1];
         }
+        else{
+            return minValue;
+        }
         }
     }
     return maxValue;
