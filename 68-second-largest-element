@@ -9,7 +9,7 @@ public Integer secondLargest(List<Integer> numbers) {
             return maxValue = numbers[i];
         }
         else if(numbers[i] > minValue){
-            return minValue;
+            return minValue = numbers[i];
         }
         }
     }
