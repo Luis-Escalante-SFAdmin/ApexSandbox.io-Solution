@@ -6,6 +6,5 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
             return set1;
         }
     }
-    set.add(set1);
     return set3;
 }
