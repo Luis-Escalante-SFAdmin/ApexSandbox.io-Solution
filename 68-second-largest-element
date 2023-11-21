@@ -5,7 +5,7 @@ public Integer secondLargest(List<Integer> numbers) {
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] < maxValue){
-            return maxValue = numbers[i + 1];
+            return maxValue = numbers[i - 1];
         }
         else if(numbers[i] > minValue){
             return minValue = numbers[i];
