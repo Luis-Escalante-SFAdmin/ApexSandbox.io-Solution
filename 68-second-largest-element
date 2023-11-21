@@ -3,7 +3,7 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer minValue = -2147483647 - 1;
 
     for(Integer num : numbers){
-        num.sort();
+        numbers.sort();
         for(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] < maxValue){
             return maxValue = numbers[i];
