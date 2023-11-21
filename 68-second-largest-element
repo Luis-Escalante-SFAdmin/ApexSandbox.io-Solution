@@ -1,6 +1,7 @@
 public Integer secondLargest(List<Integer> numbers) {
-    Integer maxValue = numbers[0];
-    Integer minValue = numbers[1];
+    Integer secondHigh = numbers[0];
+    Integer maxValue = secondHigh;
+    Integer minValue = secondHigh;
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
