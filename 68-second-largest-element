@@ -4,7 +4,7 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer minValue = secondHigh;
 
     for(Integer j = 0; j < numbers.size(); j++){
-        if(numbers[j] > secondHigh){
+        if(numbers[j] < secondHigh){
             secondHigh = numbers[j];
         }
     }
