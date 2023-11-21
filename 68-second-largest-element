@@ -5,10 +5,10 @@ public Integer secondLargest(List<Integer> numbers) {
 
     for(Integer num : numbers){
         for(Integer i = 0; i < numbers.size(); i++){
-        if(numbers < maxValue[i]){
+        if(numbers[i] < maxValue){
             return maxValue;
         }
-        else if(numbers > minValue[i]){
+        else if(numbers[i] > minValue){
             return minValue;
         }
         }
