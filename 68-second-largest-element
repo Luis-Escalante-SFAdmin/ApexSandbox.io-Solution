@@ -7,5 +7,5 @@ public Integer secondLargest(List<Integer> numbers) {
             maxValue = numbers[i];
         }
     }
-    return numbers;
+    return maxValue;
 }
