@@ -4,10 +4,10 @@ public Integer secondLargest(List<Integer> numbers) {
 
     for(Integer i = 0; i < numbers.size(); i++){
         if(numbers[i] < maxValue){
-            maxValue = numbers[i];
+            return maxValue;
         }
         else if(numbers[i] < minValue){
-            minValue = numbers[i];
+            return minValue;
         }
     }
     return maxValue;
