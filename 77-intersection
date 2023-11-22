@@ -3,7 +3,6 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for(Integer i = 0; i < set1.size(); i++){
         if(!set2.isEmpty() && !set1.isEmpty()){
-            set1.containsAll(set2);
             set1.retainAll(set2);
             set1.addAll(set2);
             return set1;
