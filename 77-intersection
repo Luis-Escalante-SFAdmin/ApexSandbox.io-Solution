@@ -4,6 +4,6 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     for(Integer i = 0; i < set1.size(); i++){
         set1.retainAll(set2);
     }
-    set3.retainAll(set1);
+    set3.addAll(set1);
     return set3;
 }
