@@ -3,7 +3,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for(Integer i = 0; i < set1.size(); i++){
         if(set1.equals(set2)){
-            set1.add(set2);
+            set2.addAll(set1);
             return set1;
         }
         else if(set2 == set1){
