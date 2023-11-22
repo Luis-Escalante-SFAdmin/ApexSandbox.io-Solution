@@ -2,7 +2,11 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     Set<Integer> set3 = new Set<Integer>();
 
     for(Integer i = 0; i < set1.size(); i++){
-        set1.addAll(set2);
+        if(set2.retainAll(set1)){
+            set1.addAll(set2);
+            
+            return set1;
+        }
         
     }
     set3.addAll(set1);
