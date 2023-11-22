@@ -1,13 +1,14 @@
 public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     Set<Integer> set3 = new Set<Integer>();
 
-    for(Integer i = 0; i < set1.size(); i++){
+    if(set1 == null) return null;
+    /*for(Integer i = 0; i < set1.size(); i++){
         if(set1 == set2){
             return set1;
         }
         else if(set2 == set1){
             return set2;
         }
-    }
+    }*/
     return set3;
 }
