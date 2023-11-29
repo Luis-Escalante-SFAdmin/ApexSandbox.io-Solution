@@ -1,0 +1,7 @@
+public Set<Id> accountIds(List<Opportunity> opps) {
+    Set<Id> accId = new Set<Id>();
+
+    accId.retainAll(opps);
+
+    return accId;
+}
