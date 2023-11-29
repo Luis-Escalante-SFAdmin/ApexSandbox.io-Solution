@@ -5,7 +5,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for(Integer common : set1){
         
-            return common;
+            set3.addAll(common);
 
     }  
     return set3;
