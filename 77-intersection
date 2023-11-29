@@ -6,7 +6,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for(Integer common : set1){
         
-            set3.addAll(common);
+            set3.contains(common);
 
     }  
     return set3;
