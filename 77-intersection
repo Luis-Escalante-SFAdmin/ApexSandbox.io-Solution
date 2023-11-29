@@ -4,7 +4,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     set1.retainAll(set2);
 
     for(Integer common : set1){
-        if(set2.containsAll(common)){
+        if(set2.contains(common)){
             set3.addAll(common);
         }
         
