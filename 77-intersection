@@ -4,13 +4,9 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     set1.retainAll(set2);
 
     for(Integer common : set1){
-        for(Integer i = 0; i < set1.size(); i++){
-            if(set1 == set2){
-                set1.addAll(set1);
-            }
+        if(set2.contains(common)){
+            set3.add(common);
         }
-            // set1.containsAll(set2);
-            // return set1;
         
     }  
     set3.addAll(set1);
