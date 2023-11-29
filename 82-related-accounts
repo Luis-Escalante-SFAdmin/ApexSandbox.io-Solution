@@ -1,7 +1,5 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
-    Set<Id> accId = new Set<Id>();
-
-    accId.contains(opps);
+    Set<Id> accId = new Set<Id>(opps);
 
     return accId;
 }
