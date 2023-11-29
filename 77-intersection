@@ -5,8 +5,8 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for(Integer common : set1){
         for(Integer i = 0; i < set1.size(); i++){
-            if(common[i] == set2[i]){
-                common.addAll(set1);
+            if(set1[i] == set2[i]){
+                set1.addAll(set1);
             }
         }
             // set1.containsAll(set2);
