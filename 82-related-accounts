@@ -2,7 +2,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> accId = new Set<Id>();
 
     for(Opportunity opp : opps) {
-        if(opp != null)
+       
         opp = [SELECT Id, Name FROM Opportunity LIMIT 1];
         opps.add(opp);
     }
