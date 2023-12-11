@@ -5,6 +5,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
        Opportunity o = [SELECT Id, Name FROM Opportunity LIMIT 1];
        if(o != null)
         opp = o.Id;
+        accId.add(opp);
     }
     
     return accId;
