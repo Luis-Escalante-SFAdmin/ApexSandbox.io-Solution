@@ -1,8 +1,8 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> accId = new Set<Id>();
 
-    for(Opportunity opp : [SELECT Id, Name FROM Opportunity LIMIT 1]) {
-       
+    for(Opportunity opp : opps) {
+       opp = [SELECT Id, Name FROM Opportunity LIMIT 1];
         accId.add(opp);
     }
 
