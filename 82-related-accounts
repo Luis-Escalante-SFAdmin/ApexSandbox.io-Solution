@@ -3,7 +3,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
 
     for(Opportunity opp : [SELECT Id, Name FROM Opportunity LIMIT 1]) {
        
-        opps.add(opp);
+        opp.add(opps);
     }
 
     return accId;
