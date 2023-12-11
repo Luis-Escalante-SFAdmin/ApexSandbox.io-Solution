@@ -4,7 +4,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     for(Opportunity opp : opps) {
        Opportunity o = [SELECT Id, Name FROM Opportunity LIMIT 1];
        if(o != null)
-        opp = o.Id;
+        opp.add(o);
         accId.add(opp);
     }
     
