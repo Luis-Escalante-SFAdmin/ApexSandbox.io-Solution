@@ -4,8 +4,8 @@ public Set<Id> accountIds(List<Opportunity> opps) {
 
     for(Opportunity opp : opps) {
        
-       if(o != null)
-        opps.add(o);
+       if(opp != null)
+        opps.add(opp);
         
     }
     
