@@ -1,5 +1,7 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
-    Set<Id> accId = new Set<Id>(opps);
+    Set<Id> accId = new Set<Id>();
+
+    
 
     return accId;
 }
