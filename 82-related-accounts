@@ -5,6 +5,6 @@ public Set<Id> accountIds(List<Opportunity> opps) {
        opp = [SELECT Id, Name FROM Opportunity LIMIT 1];
         opps.add(opp);
     }
-
+    accId.addAll(opps);
     return accId;
 }
