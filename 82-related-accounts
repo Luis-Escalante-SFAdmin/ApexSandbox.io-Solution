@@ -3,7 +3,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
 
     for(Opportunity opp : opps) {
         if(opp != null)
-        opp = [SELECT Id, Name FROM Opportunity WHERE Id =: accId];
+        opp = [SELECT Id, Name FROM Opportunity];
         opps.add(opp);
     }
 
