@@ -5,7 +5,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
        Opportunity o = [SELECT Id, Name FROM Opportunity LIMIT 1];
        if(o != null)
         opps.add(o);
-        accId.add(opp);
+        accId.add(opps);
     }
     
     return accId;
