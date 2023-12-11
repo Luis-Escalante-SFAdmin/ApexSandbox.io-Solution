@@ -5,7 +5,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     for(Opportunity opp : opps) {
        opp = [SELECT Id, Name FROM Opportunity WHERE Id = :accId LIMIT 1];
        if(opp != null) {
-           opp = accId;
+           accId.add(opp.Id);
        }
     }
     
