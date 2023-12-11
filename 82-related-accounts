@@ -4,10 +4,6 @@ public Set<Id> accountIds(List<Opportunity> opps) {
 
     for(Opportunity opp : opps) {
        Opportunity o = [SELECT Id, Name FROM Opportunity WHERE Id = :accId LIMIT 1];
-       if(o != null) {
-           accId.add(o);
-       }
-        
         
     }
     
