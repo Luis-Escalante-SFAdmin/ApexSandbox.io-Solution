@@ -8,6 +8,6 @@ public Set<Id> accountIds(List<Opportunity> opps) {
            a.add(acc);
        
     }
-    
+    accId.add(a);
     return accId;
 }
