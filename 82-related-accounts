@@ -1,7 +1,7 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> accId = new Set<Id>();
     
-    Set<Account> a = new Set<Account>();
+    Account[] a = new Account[]{};
     for(Opportunity opp : opps) {
        Opportunity o = [SELECT Id, Name FROM Opportunity LIMIT 1];
            
