@@ -3,11 +3,10 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     
     Set<Account> a = new Set<Account>();
     for(Opportunity opp : opps) {
-       Account acc = [SELECT Id, Name, (SELECT AccountId FROM Opportunities) FROM Account LIMIT 1];
+       op acc = [SELECT Id, Name, (SELECT AccountId FROM Opportunities) FROM Account LIMIT 1];
            
-           accId.add(acc);
+           a.add(acc);
        
     }
-    accId.add(a);
     return accId;
 }
