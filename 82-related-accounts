@@ -3,7 +3,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     
     Account[] a = new Account[]{};
     for(Opportunity opp : opps) {
-       Account acc = [SELECT Id, Name, (SELECT AccountId FROM Opportunities) FROM Account WHERE Id = :AccountId LIMIT 1];
+       Account acc = [SELECT Id, Name, (SELECT AccountId FROM Opportunities) FROM Account LIMIT 1];
            
            o.add(opp);
        
