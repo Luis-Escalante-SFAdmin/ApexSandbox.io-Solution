@@ -5,7 +5,9 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     for(Opportunity opp : opps) {
        Opportunity o = [SELECT Id, Name FROM Opportunity LIMIT 1];
            
-           a.addAll(o);
+        if(opps.AccountId == Account.Id) {
+            a.add(opp);
+        }
        
     }
     return accId;
