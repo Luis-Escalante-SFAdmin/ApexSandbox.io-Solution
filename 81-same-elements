@@ -5,10 +5,10 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     elementes1.addAll(nums1);
     elementes2.addAll(nums2);
 
-    if(elementes1.contains(elementes2)){
+    if(elementes1.containsAll(elementes2)){
         return true;
     }
-    else if(elementes2.contains(elementes1)){
+    else if(elementes2.containsAll(elementes1)){
         return true;
     }
     else {
