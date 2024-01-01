@@ -3,10 +3,10 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     result.addAll(nums);
 
-    if(result.size() >= 1) return false;
+    if(result.isEmpty() || result.size() == 1) return false;
     
     for(Integer n : nums) {
-        if(!result.isEmpty() || result.contains(n)){
+        if(result.contains(n)){
             return true;
         }
         else if(!result.contains(n)){
