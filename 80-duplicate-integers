@@ -13,7 +13,7 @@ public Boolean containsDuplicates(List<Integer> nums) {
             return false;
         }
         else {
-            return false;
+            return true;
         }
     }
     return true;
