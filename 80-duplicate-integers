@@ -12,7 +12,7 @@ public Boolean containsDuplicates(List<Integer> nums) {
         else if(!result.contains(n) || result.size() == 1){
             return false;
         }
-        else if(result.size() > 1 && !result.contains(n)) {
+        else if(result.size() > 1 && result.contains(n)) {
             return false;
         }
     }
