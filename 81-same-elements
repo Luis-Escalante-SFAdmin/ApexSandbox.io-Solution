@@ -1,0 +1,17 @@
+public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
+    Set<Integer> elementes1 = new Set<Integer>();
+    Set<Integer> elementes2 = new Set<Integer>();
+
+    elementes1.addAll(nums1);
+    elementes2.addAll(nums2);
+
+    if(elementes1.contains(elementes2)){
+        return true;
+    }
+    else if(elementes2.contains(elementes1)){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
