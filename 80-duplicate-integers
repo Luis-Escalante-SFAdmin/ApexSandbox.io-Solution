@@ -16,5 +16,5 @@ public Boolean containsDuplicates(List<Integer> nums) {
             return true;
         }
     }
-    return true;
+    return false;
 }
