@@ -9,7 +9,7 @@ public Boolean containsDuplicates(List<Integer> nums) {
         if(result.contains(n)){
             return true;
         }
-        else if(result == null || result.size() == 0){
+        else if(result == null && result.size() == 0){
             return false;
         }
     }
