@@ -6,7 +6,7 @@ public Boolean containsDuplicates(List<Integer> nums) {
     if(result.isEmpty()) return false;
     
     for(Integer n : nums) {
-        else if(result.isEmpty() || result.size() == 1){
+        if(result.isEmpty() || result.size() == 1){
             return false;
         }
         else if(result.size() > 1 && result.contains(n)){
