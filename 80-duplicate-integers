@@ -3,18 +3,18 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     result.addAll(nums);
 
-    //if(result.isEmpty()) return false;
+    if(result.isEmpty()) return false;
     
     for(Integer n : nums) {
-        if(result.isEmpty() || result.size() == 1){
+        if(result.contains(n)){
+            return true;
+        }
+        else if(result.isEmpty() || result.size() == 1){
             return false;
         }
         else if(result.size() > 1 && result.contains(n)){
             return false;
         }
-        else if(result.contains(n)){
-            return true;
-        }
     }
-    return false;
+    return true;
 }
