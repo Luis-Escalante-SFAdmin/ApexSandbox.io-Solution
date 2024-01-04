@@ -16,8 +16,8 @@ public Boolean containsDuplicates(List<Integer> nums) {
     for(Integer n : result) {
         if(result.contains(n)) {
             result.add(n); 
-                return true;
+            return true;
         }
     }
-    return false;
+    return true;
 }
