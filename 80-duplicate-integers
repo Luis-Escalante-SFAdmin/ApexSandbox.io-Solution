@@ -9,5 +9,5 @@ public Boolean containsDuplicates(List<Integer> nums) {
             return true;
         }
     }
-    return false;
+    return true;
 }
