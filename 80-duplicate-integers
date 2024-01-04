@@ -9,6 +9,9 @@ public Boolean containsDuplicates(List<Integer> nums) {
         if(result.contains(n)){
             return true;
         }
+        else if((result.size() > n) || (!result.contains(n))){
+            return false;
+        }
     }
-    return false;
+    return true;
 }
