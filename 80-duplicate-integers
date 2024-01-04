@@ -8,11 +8,11 @@ public Boolean containsDuplicates(List<Integer> nums) {
             return true;
         }
 
-    for(Integer n = 0; n < nums.size() + n; n++) {
+    //for(Integer n = 0; n < nums.size() + n; n++) {
         
         if(!result.contains(n)) {
             return false;
         }
-    }
+    //}
     return false;
 }
