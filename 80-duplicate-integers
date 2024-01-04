@@ -3,14 +3,14 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     result.addAll(nums);
 
-    if(result.isEmpty() || !result.containsAll(nums)) return false;
+    if(result.isEmpty()) return false;
     
     for(Integer n = 0; n < nums.size() + n; n++) {
         if(result.contains(n)){
             result.add(n);
             return true;
         }
-        else {
+        else if(!result.containsAll(n)) {
             return false;
         }
     }
