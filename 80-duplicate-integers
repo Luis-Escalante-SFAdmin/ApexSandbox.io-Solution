@@ -4,10 +4,10 @@ public Boolean containsDuplicates(List<Integer> nums) {
     result.addAll(nums);
 
     for(Integer n = 0; n < nums.size(); n++) {
-        if(result.add(n)){
+        if(result.add(nums)){
             return true;
         }
-        else if(!result.add(n)) {
+        else if(!result.add(nums)) {
             return false;
         }
     }
