@@ -10,9 +10,6 @@ public Boolean containsDuplicates(List<Integer> nums) {
             result.add(n);
             return false;
         }
-        else {
-            return true;
-        }
     }
     return true;
 }
