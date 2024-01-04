@@ -3,7 +3,7 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     result.addAll(nums);
 
-    if(result.containsAll(nums)) return true;
+    if(result.isEmpty()) return false;
     
     for(Integer n = 0; n < result.size(); n++) {
         if(result.contains(n)){
@@ -13,5 +13,5 @@ public Boolean containsDuplicates(List<Integer> nums) {
             return false;
         }
     }
-    return false;
+    return true;
 }
