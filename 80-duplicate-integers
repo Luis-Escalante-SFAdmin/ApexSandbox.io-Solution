@@ -17,6 +17,9 @@ public Boolean containsDuplicates(List<Integer> nums) {
         if(numSet.contains(num)) {
             return true;
         }
+        else {
+            numSet.add(num);
+        }
     }
     return false;
 }
