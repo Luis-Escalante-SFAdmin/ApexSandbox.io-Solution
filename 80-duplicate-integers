@@ -1,8 +1,10 @@
 public Boolean containsDuplicates(List<Integer> nums) {
     Set<Integer> result = new Set<Integer>();
 
-    if(result.containsAll(nums)) return true;
+    if(result.containsAll(nums)) {
     result.addAll(nums);
+    return true;
+    }
 
     /*for(Integer n = 0; n < nums.size(); n++) {
         if(result.contains(n)){
