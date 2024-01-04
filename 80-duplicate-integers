@@ -3,13 +3,21 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     result.addAll(nums);
 
-    for(Integer n = 0; n < nums.size(); n++) {
+    /*for(Integer n = 0; n < nums.size(); n++) {
         if(result.contains(n)){
             result.add(n);
             return true;
         }
         else if(!result.contains(n)) {
             return false;
+        }
+    }*/
+
+    for(Integer n : result) {
+        if(result.contains(n)) {
+            result.add(n) {
+                return true;
+            }
         }
     }
     return false;
