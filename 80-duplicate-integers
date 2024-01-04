@@ -8,6 +8,9 @@ public Boolean containsDuplicates(List<Integer> nums) {
             result.add(n);
             return false;
         }
+        if(!result.contains(n)) {
+            return true;
+        }
     }
     return true;
 }
