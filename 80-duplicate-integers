@@ -3,15 +3,15 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     result.addAll(nums);
 
-    if(result.isEmpty()) return false;
+    if(result.contains(nums)) return true;
     
     for(Integer n = 0; n < result.size(); n++) {
-        if(result.contains(nums)){
+        if(result.contains(n)){
             return true;
         }
         else {
             return false;
         }
     }
-    return true;
+    return false;
 }
