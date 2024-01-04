@@ -4,9 +4,12 @@ public Boolean containsDuplicates(List<Integer> nums) {
     result.containsAll(nums); 
 
     for(Integer n = 0; n < nums.size(); n++) {
-        if((nums.size() > n + 1) && (nums.size() == n)){
+        if((nums.size() > n + 1) || (nums.size() == n)){
             result.add(n);
             return true;
+        }
+        else if((nums.size() == n * 2) && (!result.contains(n))) {
+            return false;
         }
     }
     return false;
