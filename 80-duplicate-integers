@@ -18,6 +18,9 @@ public Boolean containsDuplicates(List<Integer> nums) {
             result.add(n); 
             return true;
         }
+        else {
+            return false;
+        }
     }
-    return true;
+    return false;
 }
