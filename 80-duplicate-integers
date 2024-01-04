@@ -2,13 +2,11 @@ public Boolean containsDuplicates(List<Integer> nums) {
     Set<Integer> result = new Set<Integer>();
 
     //if(nums.isEmpty()) return false;
-    if(!nums.isEmpty()) {
     for(Integer n : nums) {
         if(result.contains(n)){
             result.add(n);
             return true;
         }
-    }
     }
     return false;
 }
