@@ -1,18 +1,16 @@
 public Boolean containsDuplicates(List<Integer> nums) {
     Set<Integer> result = new Set<Integer>();
 
-    //result.addAll(nums);
+    result.addAll(nums);
 
-    if(result.containsAll(nums)){
-            //result.addAll(nums);
+    for(Integer n = 0; n < nums.size() + n; n++) {
+        if(result.contains(n)){
+            result.add(n);
             return true;
         }
-
-    //for(Integer n = 0; n < nums.size() + n; n++) {
-        
-        if(!result.containsAll(nums)) {
+        else if(!result.contains(n)) {
             return false;
         }
-    //}
+    }
     return false;
 }
