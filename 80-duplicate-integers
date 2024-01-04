@@ -7,10 +7,10 @@ public Boolean containsDuplicates(List<Integer> nums) {
     
     for(Integer n = 0; n < result.size(); n++) {
         if(result.contains(n)){
-            return true;
+            return false;
         }
         else if((result.size() > n) && (!result.contains(n))){
-            return false;
+            return true;
         }
     }
     return true;
