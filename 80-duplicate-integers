@@ -18,7 +18,7 @@ public Boolean containsDuplicates(List<Integer> nums) {
             result.add(n); 
             return true;
         }
-        else {
+        else if(!result.contains(n) || n = null){
             return false;
         }
     }
