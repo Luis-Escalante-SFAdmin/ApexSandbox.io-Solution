@@ -2,6 +2,11 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
     String defaultEmail = 'info@apexsandbox.io';
 
     Boolean contains = employeeIdToEmail.containsKey(employeeId);
+
+    if(contains == true) {
         employeeIdToEmail.get(employeeId);
-        return true;
+    } else {
+        return defaultEmail;
+    }
+        
 }
