@@ -1,6 +1,5 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
     String defaultEmail = 'info@apexsandbox.io';
-    String em = '';
 
     employeeIdToEmail.put(employeeId, em);
     
@@ -8,7 +7,7 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
         return defaultEmail;
     } else {
         employeeIdToEmail.get(employeeId);
-        return em;
+        return true;
     }
     
 
