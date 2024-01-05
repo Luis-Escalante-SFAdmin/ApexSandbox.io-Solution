@@ -3,5 +3,5 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
 
     Boolean contains = employeeIdToEmail.containsKey(employeeId);
         employeeIdToEmail.get(employeeId);
-    
+        return true;
 }
