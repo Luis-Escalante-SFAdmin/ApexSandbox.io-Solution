@@ -1,11 +1,11 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
     String defaultEmail = 'info@apexsandbox.io';
 
-    employeeIdToEmail.put(employeeId, defaultEmail);
+    employeeIdToEmail.put(employeeId, String);
     
-    if(employeeIdToEmail.containsKey(employeeId)) {
-        employeeIdToEmail.get(employeeId);
-        return employeeIdToEmail;
-    }
+    String e = employeeIdToEmail.get(employeeId);
+
+    System.assertEquals(employeeId, String);
+    
 
 }
