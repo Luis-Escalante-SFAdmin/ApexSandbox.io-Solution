@@ -4,9 +4,12 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
 
     employeeIdToEmail.put(employeeId, em);
     
-    String e = employeeIdToEmail.get(employeeId);
-
-    return em;
+    if(employeeIdToEmail.containsKey(employeeId)) {
+        employeeIdToEmail.get(em);
+        return em;
+    } else {
+        return defaultEmail;
+    }
     
 
 }
