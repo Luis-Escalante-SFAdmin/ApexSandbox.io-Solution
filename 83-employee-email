@@ -7,7 +7,7 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
         employeeIdToEmail.get(employeeId);
 
     } else {
-        return employeeIdToEmail.get(employeeId);
+        return defaultEmail;
     }
 
 }
