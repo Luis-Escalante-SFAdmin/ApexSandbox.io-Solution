@@ -1,6 +1,6 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
     String defaultEmail = 'info@apexsandbox.io';
-    employeeIdToEmail.put(employeeId, 'email');
+    employeeIdToEmail.put(employeeId, defaultEmail);
 
     if(employeeIdToEmail.containsKey(employeeId)) {
         employeeIdToEmail.get(employeeId);
