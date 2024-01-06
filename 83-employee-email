@@ -4,7 +4,7 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
     if(!employeeIdToEmail.containsKey(employeeId)) {
         return defaultEmail;
     } else {
-        return employeeIdToEmail;
+        return employeeIdToEmail.get(employeeId);
     }
     
 
