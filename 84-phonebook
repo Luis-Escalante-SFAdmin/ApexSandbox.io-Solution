@@ -1,6 +1,6 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
     Map<Contact, String> nameAndPhone = new Map<Contact, String>();
-    String[] p = new String[]{};
+    String p = new String();
 
     for(Contact c : contacts) {
         if(p != null) {
