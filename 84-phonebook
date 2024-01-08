@@ -8,6 +8,6 @@ public Map<String, String> phonebook(List<Contact> contacts) {
             nameAndPhone.put(c, p);
         }
         
-        return nameAndPhone.put(c, p);
+        return nameAndPhone.get(c, p);
     }
 }
