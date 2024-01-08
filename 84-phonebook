@@ -2,7 +2,7 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     Map<String, String> nameAndPhone = new Map<String, String>();
 
     for(Contact c : contacts) {
-        if(p != null) {
+        if(c != null) {
             nameAndPhone.put(contacts, String);
         }
         return nameAndPhone;
