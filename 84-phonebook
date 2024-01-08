@@ -4,10 +4,10 @@ public Map<String, String> phonebook(List<Contact> contacts) {
 
     for(Contact c : contacts) {
         if(p != null){
-            nameAndPhone.get(c, p);
+            
             nameAndPhone.put(c, p);
         }
         
-        return nameAndPhone;
+        return nameAndPhone.get(c, p);
     }
 }
