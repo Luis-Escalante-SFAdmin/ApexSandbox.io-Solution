@@ -4,8 +4,8 @@ public Map<String, String> phonebook(List<Contact> contacts) {
 
     for(Contact c : contacts) {
         if(p != null){
-            nameAndPhone.getAll(contacts);
-            nameAndPhone.put(contacts);
+            nameAndPhone.get(c);
+            nameAndPhone.put(c);
         }
         
         return nameAndPhone;
