@@ -7,6 +7,6 @@ public Map<String, String> phonebook(List<Contact> contacts) {
             nameAndPhone.put(c, p);
         }
         
-        nameAndPhone;
+        nameAndPhone.get(c, p);
     }
 }
