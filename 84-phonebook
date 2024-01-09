@@ -1,6 +1,6 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
     Map<String, String> nameAndPhone = new Map<String, String>();
-    List<Contact> contact;
+    String contact = JSON.serialize(contacts);
     String phoneNum;
 
     contact.addAll(contacts);
