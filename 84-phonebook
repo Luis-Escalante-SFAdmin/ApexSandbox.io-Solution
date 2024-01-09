@@ -3,7 +3,7 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     String contact = JSON.serialize(contacts);
     String phoneNum;
 
-    for(String c : contacts) {
+    for(Contact c : contacts) {
         if(phoneNum != null) {
             nameAndPhone.get(phoneNum);
             nameAndPhone.put(contact, phoneNum);
