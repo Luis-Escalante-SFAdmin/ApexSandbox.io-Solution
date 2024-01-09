@@ -4,7 +4,7 @@ public Map<String, String> phonebook(List<Contact> contacts) {
 
     for(Contact c : contacts) {
         if(!phoneNum.isEmpty()) {
-            nameAndPhone.put(c, phoneNum)
+            nameAndPhone.put(c, phoneNum);
         }
     }
     return nameAndPhone;
