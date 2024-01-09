@@ -1,5 +1,5 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
-    Map<String, String> nameAndPhone = new Map<String, String>(contacts);
+    Map<String, String> nameAndPhone = new Map<String, String>();
     String phoneNum;
 
     for(Contact c : contacts) {
