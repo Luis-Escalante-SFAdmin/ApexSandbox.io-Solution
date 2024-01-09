@@ -1,13 +1,12 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
-    Map<String, String> nameAndPhone = new Map<String, String>();
-    String p = '';
+    Map<String, String> nameAndPhone = new Map<String, String>(contacts);
+    String phoneNum;
 
     for(Contact c : contacts) {
-        if(p != null){
-            nameAndPhone.get(c);
-            nameAndPhone.put(c, p);
+        if(!phoneNum.isEmpty()) {
+            nameAndPhone.put(c, phoneNum)
         }
-        
-        return nameAndPhone;
     }
+    return nameAndPhone;
+    
 }
