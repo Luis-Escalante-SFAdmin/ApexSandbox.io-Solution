@@ -5,8 +5,6 @@ public Map<String, String> phonebook(List<Contact> contacts) {
 
         if(phoneNum != null) {
             nameAndPhone.put(contact, phoneNum);
-        } else {
-            contacts.add(contact);
         }
     
     return nameAndPhone;
