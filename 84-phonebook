@@ -2,12 +2,13 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     Map<String, String> nameAndPhone = new Map<String, String>();
     String contact = JSON.serialize(contacts);
     String phoneNum;
-
-    for(Contact c : contacts) {
+    
         if(phoneNum != null) {
             nameAndPhone.get(phoneNum);
-            nameAndPhone.put(c, phoneNum);
+            nameAndPhone.put(contact, phoneNum);
+        } else {
+            return System.debug('Phone Number cannot be empty');
         }
-    }
+    
     return nameAndPhone;
 }
