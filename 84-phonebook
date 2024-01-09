@@ -5,10 +5,10 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     
         if(phoneNum != null) {
             nameAndPhone.get(phoneNum);
-            nameAndPhone.put(contact, phoneNum);
+            
         } else {
             System.debug('Phone Number cannot be empty');
         }
     
-    return nameAndPhone;
+    return nameAndPhone.put(contact, phoneNum);;
 }
