@@ -1,12 +1,11 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
     Map<String, String> nameAndPhone = new Map<String, String>();
-    String[] contact = JSON.serialize(contacts);
+    String contact = JSON.serialize(contacts);
     String phoneNum;
 
-    for(Contact c : contact) {
         if(phoneNum != null) {
             nameAndPhone.put(c, phoneNum);
         }
-    }
+    
     return nameAndPhone;
 }
