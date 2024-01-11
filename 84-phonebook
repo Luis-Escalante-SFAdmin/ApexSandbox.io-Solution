@@ -1,10 +1,9 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
-    Map<String, String> nameAndPhone = new Map<String, String>();
+    Map<String, String> nameAndPhone = new Map<String, String>([SELECT Phone FROM Contact WHERE Phone != null]);
     String contact = JSON.serialize(contacts);
-    String phoneNum;
     
-        if(phoneNum != null) {
-            nameAndPhone.get(phoneNum);
+        if(Phone != null) {
+            nameAndPhone.get(Phone);
             nameAndPhone.put(contact, phoneNum);
         }
     
