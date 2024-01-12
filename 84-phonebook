@@ -1,10 +1,10 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
     String phone;
-    Map<List<Contact>, String> nameAndPhone = new Map<List<Contact>, String>{contacts => phone};
-    
+
     for(Contact con : contacts){
+        Map<List<Contact>, String> nameAndPhone = new Map<List<Contact>, String>{contacts => phone};
         if(phone != null) {
-            nameAndPhone.put(phone);
+        nameAndPhone.put(phone);
         }
         }
     
