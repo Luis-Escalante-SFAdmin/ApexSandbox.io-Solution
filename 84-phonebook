@@ -4,6 +4,7 @@ public Map<String, String> phonebook(List<Contact> contacts) {
 
     for(Contact c : contacts) {
         if(phone != null) {
+            c.Name = '';
             newMap.put(c);
         }
     }
