@@ -3,7 +3,7 @@ public Map<String, Account> phoneToAccount(List<Account> accounts) {
 
     for(Account acc : accounts) {
         if(acc.Phone != null) {
-            newMap.get(acc.Phone, acc.Name);
+            newMap.put(acc.Phone, acc.Name);
         }
     }
     return newMap;
