@@ -9,5 +9,5 @@ public Map<String, String> phonebook(List<Contact> contacts) {
         }
         }*/
     
-    return nameAndPhone.put(contacts, phone);
+    return nameAndPhone;
 }
