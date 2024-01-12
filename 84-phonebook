@@ -3,5 +3,11 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     String phone;
     Map<Contact, String> newMap = new Map<Contact, String>();
 
+    for(Contact c : con) {
+        if(phone != null) {
+            newMap.put(con, phone);
+        }
+    }
+
     return newMap;
 }
