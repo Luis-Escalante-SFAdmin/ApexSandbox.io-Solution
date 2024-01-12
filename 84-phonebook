@@ -2,12 +2,12 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     String phone;
     Map<List<Contact>, String> nameAndPhone = new Map<List<Contact>, String>{contacts => phone};
     
-    /*for(Contact con : contacts){
+    for(Contact con : contacts){
         if(phone != null) {
             nameAndPhone.get(phone);
             //nameAndPhone.put(phone);
         }
-        }*/
+        }
     
     return nameAndPhone;
 }
