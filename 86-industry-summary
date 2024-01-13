@@ -1,12 +1,11 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
-    Map<String, Decimal> newMap = new Map<String, Decimal>();
-    Decimal sum;
+    Map<String, Decimal> newMap = [SELECT Id, sum(AnnualRevenue), Industry FROM Account];
+    //Decimal sum;
 
     for(Account acc : accounts) {
         if(newMap.containsKey(acc.Industry)) {
             newMap.put(acc.Industry, acc.AnnualRevenue);
-            sum = sum += acc.AnnualRevenue;
-            newMap.put(acc.Industry, sum);
+
         }
     }
     return newMap;
