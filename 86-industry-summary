@@ -1,5 +1,5 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
-    Map<String, Decimal> newMap = [SELECT Id, sum(AnnualRevenue), Industry FROM Account];
+    Map<String, Decimal> newMap = [SELECT sum(AnnualRevenue), Industry FROM Account];
     //Decimal sum;
 
     for(Account acc : accounts) {
