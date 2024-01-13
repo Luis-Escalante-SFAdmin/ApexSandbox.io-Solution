@@ -1,7 +1,7 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> newMap = new Map<String, Decimal>();
 
-    for(Account acc : [SELECT sum(AnnualRevenue), Industry FROM Account]) {
+    for(Account acc : [SELECT sum(AnnualRevenue), Industry FROM Account WHERE Industry != null]) {
         if(newMap.containsKey(acc.Industry)) {
             newMap.put(acc.Industry, acc.AnnualRevenue);
             
