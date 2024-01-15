@@ -6,8 +6,6 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
         if(newMap.containsKey(acc.Industry)) {
             newMap.put(acc.Industry, (acc.AnnualRevenue)++);
             
-        } else {
-            newMap.put(acc.Industry, acc.AnnualRevenue);
         }
     }
     return newMap;
