@@ -7,5 +7,5 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             
         }
     }
-    return newMap;
+    //return newMap;
 }
