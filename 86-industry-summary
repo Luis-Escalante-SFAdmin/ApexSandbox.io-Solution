@@ -3,7 +3,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
 
     for(Account acc : accounts) {
         if(acc.Industry != null) {
-            acc.AnnualRevenue++;
+            newMap.get(acc.Industry);
             
         }
     }
