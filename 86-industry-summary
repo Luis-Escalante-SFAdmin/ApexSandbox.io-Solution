@@ -4,6 +4,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
     for(Account acc : accounts) {
         if(acc.Industry != null) {
             newMap.get(acc.Industry);
+            newMap.put(acc.Industry, acc.AnnualRevenue);
             
         }
     }
