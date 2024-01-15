@@ -3,8 +3,8 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
 
     for(Account acc : accounts) {
         if(acc.Industry != null) {
-            newMap.get(acc.Industry, acc.AnnualRevenue);
-            //newMap.put(acc.Industry, acc.AnnualRevenue);
+            //newMap.get(acc.Industry, acc.AnnualRevenue);
+            newMap.put(acc.Industry, acc.AnnualRevenue);
             
         }
     }
