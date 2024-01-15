@@ -1,6 +1,6 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> newMap = new Map<String, Decimal>();
-    Decimal sum = accounts.AnnualRevenue++;
+    Decimal sum = AnnualRevenue++;
 
     for(Account acc : accounts) {
         if(acc.Industry != null) {
