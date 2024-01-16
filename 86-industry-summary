@@ -1,6 +1,7 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> newMap = new Map<String, Decimal>();
-    Set<String> keys = new Set<String>(accounts);
+    Set<String> keys = new Set<String>();
+    keys = keys.putAll(accounts);
 
     for(Account acc : accounts) {
         if(newMap.containsKey(keys)) {
