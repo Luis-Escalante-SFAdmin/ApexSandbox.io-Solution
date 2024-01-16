@@ -5,7 +5,8 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
         if(acc.Industry != null) {
             //newMap.get(acc.Industry);
             newMap.put(acc.Industry, (acc.AnnualRevenue)++);
-            
+        } else {
+            System.debug('Error');
         }
     }
     return newMap;
