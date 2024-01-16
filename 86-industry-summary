@@ -1,12 +1,10 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> newMap = new Map<String, Decimal>();
-    Decimal sum = 0;
 
     for(Account acc : accounts) {
         if(newMap.containsKey(acc.Industry)) {
-            sum = sum + acc.AnnualRevenue;
-            newMap.get(acc.Industry, sum++);
-            newMap.put(acc.Industry, sum++);
+            newMap.get(acc.Industry, acc.AnnualRevenue);
+            newMap.put(acc.Industry);
         }
     }
     return newMap;
