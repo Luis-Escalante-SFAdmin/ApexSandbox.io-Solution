@@ -1,5 +1,5 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
-    Map<String, Decimal> resuly = new Map<String, Decimal>();
+    Map<String, Decimal> result = new Map<String, Decimal>();
 
     for(Account acc : accounts) {
         Map<String, Decimal> newMap = new Map<String, Decimal>{acc.Industry => acc.AnnualRevenue};
@@ -7,5 +7,5 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             newMap.put(acc.Industry, acc.AnnualRevenue);
         }
     }
-    return resuly.putAll(newMap);
+    return result;
 }
