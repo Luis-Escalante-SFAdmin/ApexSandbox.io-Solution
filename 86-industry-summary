@@ -4,9 +4,9 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
 
     newSet.addAll(accounts);
 
-    for(Account acc : newSet) {
-        if(newMap.containsKey(acc.Industry)) {
-            newMap.get(acc.Industry);
+    for(Account acc : accounts) {
+        if(newSet.containsKey(acc.Industry)) {
+            newSet.get(acc.Industry);
             //newMap.put(acc.Industry, acc.AnnualRevenue);
         }
     }
