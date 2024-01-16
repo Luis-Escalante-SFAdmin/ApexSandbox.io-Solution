@@ -6,7 +6,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
 
     for(Account acc : nSet) {
         if(result.containsKey(acc.Industry)) {
-            result.put(acc.Industry, acc.AnnualRevenue);
+            result.put(acc.Industry);
         }
     }
     return result;
