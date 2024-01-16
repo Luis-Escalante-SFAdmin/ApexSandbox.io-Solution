@@ -1,4 +1,13 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> result = new Map<String, Decimal>();
+    Set<Account> nSet = new Set<Account>();
 
+    nSet.addAll(accounts);
+
+    for(Account acc : nSet) {
+        if(result.containsKey(acc.Industry)) {
+            result.put(acc.Industry, acc.AnnualRevenue);
+        }
+    }
+    return result;
 }
