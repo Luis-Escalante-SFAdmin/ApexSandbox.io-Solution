@@ -6,6 +6,8 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
         if(result.containsKey(c.Type)) {
             result.get(c.Type);
             result.put(c.Type, myCase);
+        } else {
+            result.put(c.Type, myCase);
         }
     }
     return result;
