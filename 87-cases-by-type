@@ -2,7 +2,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> result = new Map<String, List<Case>>();
     
 
-    for(Case c : [SELECT Type FROM Case WHERE Type != null]) {
+    for(Case c : cases) {
         if(result.containsKey(c.Type)) {
             Case[] myCase = result.get(c.Type);
             myCase.add(Type);
