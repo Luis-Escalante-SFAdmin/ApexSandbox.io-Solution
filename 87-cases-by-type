@@ -4,7 +4,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
 
     for(Case c : cases) {
         if(result.containsKey(c.Type)) {
-            result.put(c.Type, result.put(c.Type, myCase));
+            result.put(c.Type, c.myCase);
         }
     }
     return result;
