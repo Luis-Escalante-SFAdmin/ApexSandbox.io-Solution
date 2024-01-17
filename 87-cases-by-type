@@ -7,6 +7,8 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             Case[] myCase = result.get(c.Type);
             myCase.add(c.Type);
             result.put(c.Type, myCase);
+        } else {
+            result.put(c.Type, new List<Case> {myCase});
         }
     }
     return result;
