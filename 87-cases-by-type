@@ -1,6 +1,6 @@
 public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> result = new Map<String, List<Case>>();
-    
+    Case[] myCase = new Case[]{};
 
     for(Case c : cases) {
         if(result.containsKey(c.Type)) {
