@@ -3,7 +3,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     
 
     for(Case[] c : [SELECT Type FROM Case]) {
-        if(result.containsKey(c.Type)) {
+        if(result.containsKey(Type)) {
             Case[] myCase = new Case[]{};
             myCase.addAll(c.Type);
             result.put(c.Type, myCase);
