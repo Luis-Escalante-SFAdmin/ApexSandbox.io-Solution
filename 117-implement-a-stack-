@@ -24,6 +24,6 @@ public class Stack {
     }
     
     public Boolean isEmpty() {
-        return newStack.size() == 0;
+        return size() == 0;
     }
 }
