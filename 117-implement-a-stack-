@@ -21,15 +21,10 @@ public class Stack {
     }
     
     public Boolean isEmpty() {
-        Integer[] num = new Integer[]{};
-        if(!newStack.isEmpty()) {
-            for(Integer i : newStack) {
-                num.add(i);
-                return false;
-            }
-        } else {
+        if(newStack != null && newStack.isEmpty()) {
             return true;
+        } else {
+            return false;
         }
-        return true;
     }
 }
