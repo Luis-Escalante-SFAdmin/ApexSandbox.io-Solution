@@ -25,7 +25,8 @@ public class Stack {
 
         if(newStack.isEmpty()) {
             empty = true;
+        } else {
+            return empty = false;
         }
-        return empty = false;
     }
 }
