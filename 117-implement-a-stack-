@@ -21,11 +21,12 @@ public class Stack {
     }
     
     public Boolean isEmpty() {
-        Integer i = 0;
+        Integer[] int = new Integer[]{};
         if(!newStack.isEmpty()) {
-            i = newStack[0];
-            return false;
+            for(Integer i : newStack) {
+                int.add(i);
+                return false;
+            }
         }
-        return true;
     }
 }
