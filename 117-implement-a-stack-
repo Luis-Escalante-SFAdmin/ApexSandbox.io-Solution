@@ -26,6 +26,5 @@ public class Stack {
         } else {
             return false;
         }
-        return newStack;
     }
 }
