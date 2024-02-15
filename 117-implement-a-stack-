@@ -25,6 +25,7 @@ public class Stack {
         if(!newStack.isEmpty()) {
             for(Integer i : newStack) {
                 num.add(i);
+                return false;
             }
         } else {
             return true;
