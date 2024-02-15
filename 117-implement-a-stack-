@@ -12,13 +12,16 @@ public class Stack {
     
     public Integer size() {
         Integer s = newStack.size();
+        return s;
     }
     
     public Object peek(){
         newStack.get(-1);
+        return newStack;
     }
     
     public Boolean isEmpty() {
         newStack.isEmpty();
+        return newStack;
     }
 }
