@@ -23,7 +23,7 @@ public class Stack {
     public Boolean isEmpty() {
         Integer i = 0;
         if(newStack.isEmpty()) {
-            i = newStack[];
+            i = newStack[-1];
             return true;
         }
         return false;
