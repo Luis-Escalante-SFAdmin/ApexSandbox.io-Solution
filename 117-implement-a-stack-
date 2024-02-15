@@ -1,5 +1,5 @@
 public class Stack {
-    List<String> newStack = new List<String>();
+    List<Integer> newStack = new List<Integer>();
     
     public void push(Object obj) {
         newStack.add(0, 0);
