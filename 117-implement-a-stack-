@@ -2,7 +2,7 @@ public class Stack {
     List<sObject> newStack = new List<sObject>();
     
     public void push(Object obj) {
-        newStack.add(0, obj);
+        newStack.add(0, 1);
     }
     
     public Object pop() {
