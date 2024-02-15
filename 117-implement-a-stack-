@@ -28,5 +28,6 @@ public class Stack {
                 return false;
             }
         }
+        return true;
     }
 }
