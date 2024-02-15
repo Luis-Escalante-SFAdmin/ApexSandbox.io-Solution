@@ -1,8 +1,8 @@
 public class Stack {
-    List<sObject> newStack = new List<sObject>();
+    List<Integer> newStack = new List<Integer>();
     
     public void push(Object obj) {
-        newStack.add(0, push);
+        newStack.add(0, obj);
     }
     
     public Object pop() {
