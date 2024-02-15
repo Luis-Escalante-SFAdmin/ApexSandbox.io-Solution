@@ -21,6 +21,10 @@ public class Stack {
     }
     
     public Boolean isEmpty() {
-        return newStack.isEmpty();
+        if(newStack.isEmpty()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
