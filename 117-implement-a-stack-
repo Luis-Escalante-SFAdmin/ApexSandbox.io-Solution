@@ -30,6 +30,6 @@ public class Stack {
         } else {
             return true;
         }
-        return false;
+        return true;
     }
 }
