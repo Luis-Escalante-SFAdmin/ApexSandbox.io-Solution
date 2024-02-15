@@ -26,5 +26,6 @@ public class Stack {
             i = newStack[0];
             return false;
         }
+        return true;
     }
 }
