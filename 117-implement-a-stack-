@@ -22,7 +22,8 @@ public class Stack {
     
     public Boolean isEmpty() {
         if(newStack.size() == 0) {
-            return newStack.isEmpty();
+            newStack.isEmpty();
+            return true;
         } 
     }
 }
