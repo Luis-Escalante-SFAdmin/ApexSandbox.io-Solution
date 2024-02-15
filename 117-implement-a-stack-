@@ -13,8 +13,7 @@ public class Stack {
     }
     
     public Integer size() {
-        Integer s = newStack.size();
-        return s;
+        return newStack.size();
     }
     
     public Object peek(){
