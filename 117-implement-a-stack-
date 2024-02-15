@@ -1,0 +1,23 @@
+public class Stack {
+    List<sObject> newStack = new List<sObject>();
+    
+    public void push(Object obj) {
+        newStack.add(0, obj);
+    }
+    
+    public Object pop() {
+        newStack.remove(0);
+    }
+    
+    public Integer size() {
+        Integer s = newStack.size();
+    }
+    
+    public Object peek(){
+        newStack.get(-1);
+    }
+    
+    public Boolean isEmpty() {
+        newStack.isEmpty();
+    }
+}
