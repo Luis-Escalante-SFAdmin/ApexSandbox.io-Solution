@@ -18,9 +18,9 @@ public class Stack {
     
     public Object peek(){
         if (isEmpty()) {
-            throw new StackUnderflowException();
+            return newStack.get(size() - 1);
         }
-        return newStack.get(size() - 1);
+        
     }
     
     public Boolean isEmpty() {
