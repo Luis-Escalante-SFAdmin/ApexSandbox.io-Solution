@@ -28,6 +28,6 @@ public class Stack {
         } else {
             return empty = false;
         }
-        return empty;
+        return newStack;
     }
 }
