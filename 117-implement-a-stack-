@@ -17,7 +17,7 @@ public class Stack {
     }
     
     public Object peek(){
-        newStack.get(-1);
+        newStack.get(size() - 1);
         return newStack;
     }
     
