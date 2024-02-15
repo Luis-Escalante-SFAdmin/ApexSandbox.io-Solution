@@ -27,6 +27,6 @@ public class Stack {
         if(isEmpty()) {
         return true;
         }
-        return null;
+        return false;
     }
 }
