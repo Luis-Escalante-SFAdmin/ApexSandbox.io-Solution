@@ -23,6 +23,6 @@ public class Stack {
     public Boolean isEmpty() {
         if(isEmpty()) {
             return true;
-        }
+        } return false;
     }
 }
