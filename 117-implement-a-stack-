@@ -9,6 +9,7 @@ public class Stack {
         if(!isEmpty()) {
             return newStack.remove(newStack.size() - 1);
         }
+        return null;
     }
     
     public Integer size() {
