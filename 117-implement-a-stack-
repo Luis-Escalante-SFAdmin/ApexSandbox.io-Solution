@@ -2,12 +2,13 @@ public class Stack {
     List<Object> newStack = new List<Object>();
     
     public void push(Object obj) {
-        newStack.add(obj);
+        newStack.add(0, obj);
     }
     
     public Object pop() {
-        newStack.remove(0);
-        return newStack;
+        if(!isEmpty()) {
+            return newStack.remove(newStack.size() == -1)
+        }
     }
     
     public Integer size() {
