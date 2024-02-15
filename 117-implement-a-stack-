@@ -17,10 +17,7 @@ public class Stack {
     }
     
     public Object peek(){
-        if (isEmpty()) {
-            return newStack.get(size() - 1);
-        }
-        return peek;
+        if (isEmpty()) return newStack.get(size() - 1);
     }
     
     public Boolean isEmpty() {
