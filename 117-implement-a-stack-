@@ -24,6 +24,7 @@ public class Stack {
         Integer i;
         if(!newStack.isEmpty()) {
             i = newStack[0];
+            return false;
         }
     }
 }
