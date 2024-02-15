@@ -22,7 +22,7 @@ public class Stack {
     
     public Boolean isEmpty() {
         Boolean b = Boolean.valueOf(newStack);
-        if(Boolean.isEmpty()) {
+        if(b.isEmpty()) {
             return true;
         }
     }
