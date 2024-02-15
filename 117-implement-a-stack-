@@ -24,6 +24,5 @@ public class Stack {
         if(newStack.size() == 1) {
             return newStack.isEmpty();
         }
-            return !newStack.isEmpty();
     }
 }
